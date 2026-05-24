@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:layout_marginVertical="@dimen/margin_8"
+        android:background="@drawable/circle_bg_white"
+        android:contentDescription="@string/close"
+        android:padding="@dimen/margin_8"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toTopOf="@+id/ll_languages"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_top_edittext_background_16"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+            android:id="@+id/tvLanguageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:text="@string/which_language_do_you_prefer" />
+
+        <GridLayout
+            android:id="@+id/gridLayoutLanguages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="4">
+
+            <!-- Language Item Buttons -->
+            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+                android:id="@+id/btnEnglish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="@dimen/margin_6"
+                android:layout_marginBottom="@dimen/margin_6"
+                android:background="@drawable/rounded_border_edittext_background_selected_100"
+                android:drawableStart="@drawable/ic_en"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_8"
+                android:text="@string/english" />
+
+            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+                android:id="@+id/btnHindi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="@dimen/margin_6"
+                android:layout_marginBottom="@dimen/margin_6"
+                android:background="@drawable/rounded_border_edittext_background_100"
+                android:drawableStart="@drawable/ic_hi"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_8"
+                android:text="@string/hindi" />
+
+            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+                android:id="@+id/btnMarathi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/margin_6"
+                android:layout_marginEnd="@dimen/margin_6"
+                android:layout_marginBottom="@dimen/margin_6"
+                android:background="@drawable/rounded_border_edittext_background_100"
+                android:drawableStart="@drawable/ic_mr"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_8"
+                android:text="@string/marathi" />
+
+            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+                android:id="@+id/btnBengali"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="@dimen/margin_6"
+                android:layout_marginTop="@dimen/margin_6"
+                android:layout_marginBottom="@dimen/margin_6"
+                android:background="@drawable/rounded_border_edittext_background_100"
+                android:drawableStart="@drawable/ic_bn"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_8"
+                android:text="@string/bengali" />
+
+            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+                android:id="@+id/btnKannada"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/margin_6"
+                android:layout_marginEnd="@dimen/margin_6"
+                android:layout_marginBottom="@dimen/margin_6"
+                android:background="@drawable/rounded_border_edittext_background_100"
+                android:drawableStart="@drawable/ic_kn"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_8"
+                android:text="@string/kannada" />
+
+            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+                android:id="@+id/btnTamil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="@dimen/margin_6"
+                android:layout_marginTop="@dimen/margin_6"
+                android:layout_marginBottom="@dimen/margin_6"
+                android:background="@drawable/rounded_border_edittext_background_100"
+                android:drawableStart="@drawable/ic_ta"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_8"
+                android:text="@string/tamil" />
+
+            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+                android:id="@+id/btnTelugu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="@dimen/margin_6"
+                android:layout_marginEnd="@dimen/margin_6"
+                android:layout_marginBottom="@dimen/margin_6"
+                android:background="@drawable/rounded_border_edittext_background_100"
+                android:drawableStart="@drawable/ic_te"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_8"
+                android:text="@string/telugu" />
+
+        </GridLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_secondary">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_1"
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:background="@color/divider_color"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_date_header"
+        app:layout_constraintEnd_toStartOf="@+id/tv_date_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_date_header" />
+
+    <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+        android:id="@+id/tv_date_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_12"
+        android:background="@drawable/bg_date"
+        android:gravity="center"
+        android:padding="@dimen/margin_4"
+        app:layout_constraintBottom_toTopOf="@+id/ll_table_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_1"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_24"
+        android:background="@color/divider_color"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_date_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_date_header"
+        app:layout_constraintTop_toTopOf="@+id/tv_date_header" />
+
+    <LinearLayout
+        android:id="@+id/ll_table_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/margin_12"
+        android:paddingVertical="@dimen/margin_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_header">
+
+        <!-- Date Column Header -->
+        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="start|center_vertical"
+            android:text="@string/date" />
+
+        <!-- Notes Column Header -->
+        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/margin_8"
+            android:text="@string/notes" />
+
+        <!-- Amount Column Header -->
+        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+            android:id="@+id/tvCashOutAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="end|center_vertical"
+            android:paddingStart="@dimen/margin_8"
+            android:text="@string/rupee_amount" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

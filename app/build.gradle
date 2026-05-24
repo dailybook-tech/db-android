@@ -1,0 +1,114 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
+    id("com.google.firebase.firebase-perf")
+    alias(libs.plugins.baselineprofile)
+}
+
+android {
+    namespace 'com.laborbook'
+    compileSdk 35
+
+    signingConfigs {
+        release {
+            storeFile file('keystore')
+            storePassword 'laborbook@123'
+            keyAlias = 'laborbook'
+            keyPassword 'laborbook@123'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.laborbook"
+        minSdk 24
+        targetSdk 35
+        versionCode 56
+        versionName "1.5.2"
+
+        testInstrumentationRunner "com.laborbook.LaborBookTestRunner"
+        resourceConfigurations += ['en', 'hi', 'ta', 'te', 'kn', 'mr', 'bn']
+    }
+
+    bundle {
+        language {
+            // Specifies that the app bundle should not support
+            // configuration APKs for language resources. These
+            // resources are instead packaged with each base and
+            // dynamic feature APK.
+            enableSplit = false
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    
+    buildFeatures {
+        buildConfig = true
+    }
+}
+
+dependencies {
+
+    implementation project(':boilerplate:network')
+    implementation project(':boilerplate:navigator')
+    implementation project(':feature:auth')
+    implementation project(':feature:base')
+    implementation project(':feature:keep')
+    implementation libs.play.services.ads
+    implementation project(':boilerplate:uikit')
+    implementation project(':boilerplate:analytics')
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+    implementation libs.koin
+    implementation libs.splashscreen
+    implementation(libs.retrofit.gson)
+    implementation(libs.flow.call.adapter)
+    implementation libs.androidx.datastore
+    implementation libs.androidx.datastore.preferences.core
+    implementation libs.androidx.datastore.preferences.rxjava3
+    implementation libs.firebase.common.ktx
+    implementation libs.firebase.crashlytics.ktx
+    implementation libs.firebase.perf
+    implementation platform(libs.firebase.bom)
+    implementation libs.firebase.messaging
+    implementation libs.firebase.analytics
+    implementation(libs.google.firebase.analytics)
+    implementation(libs.mixpanel)
+    implementation project(':feature:expense')
+    implementation project(':feature:income')
+    implementation libs.androidx.profileinstaller
+    implementation libs.inmobi.ads.kotlin
+    implementation libs.inmobi
+    implementation libs.facebook.android.sdk
+    implementation libs.install.referrer
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+    androidTestImplementation libs.androidx.uiautomator
+    androidTestImplementation libs.androidx.benchmark.macro.junit4
+    baselineProfile project(':app:baselineprofile')
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="laborbook" translatable="false">Laborbook</string>
+    <string name="made_in_india">भारतामध्ये तयार 🇮🇳</string>
+    <string name="enter_mobile_number">आपला मोबाइल क्रमांक प्रविष्ट करा</string>
+    <string name="login_number_hint">मोबाइल क्रमांक</string>
+    <string name="login_number_prefix">+91</string>
+    <string name="get_otp">ओटीपी मिळवा</string>
+    <string name="or_with">किंवा पुढे चालू ठेवा</string>
+    <string name="login_with_truecaller">Truecaller ने लॉगिन करा</string>
+    <string name="terms_and_conditions">सुरू ठेवल्याने तुम्ही आमचे <font color="#3270D2">नियम व अटी</font> आणि <font color='#3270D2'>गोपनीयता धोरण</font> वाचले आहे आणि तुम्ही ते स्वीकारले आहे असे तुम्ही कबूल करता.</string>
+    <string name="back">मागे</string>
+    <string name="verify_otp">ओटीपी सत्यापित करा</string>
+    <string name="otp_has_been_sent_to">ओटीपी पाठवण्यात आला आहे</string>
+    <string name="invalid_otp">अवैध ओटीपी</string>
+    <string name="resend_otp">ओटीपी मिळाला नाही? <font color="#3270D2"><u>पुन्हा पाठवा</u></font></string>
+    <string name="_100_secure_data">100% सुरक्षित डेटा</string>
+    <string name="daily_labour_attendance">दैनिक कामगार हजेरी</string>
+</resources>

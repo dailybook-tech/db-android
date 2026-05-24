@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name=".screen.login.view.LoginActivity"
+            android:theme="@style/Theme.Laborbook"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <receiver android:name=".common.sms.AuthOTPBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

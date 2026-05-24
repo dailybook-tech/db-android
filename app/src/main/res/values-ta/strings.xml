@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Laborbook</string>
+    <string name="your_daily_attendance_app">உங்கள் தினசரி வருகை செயலி</string>
+    <string name="secure_made_in_india">100% பாதுகாப்பு ∙ இந்திய தயாரிப்பு 🇮🇳</string>
+    <string name="truecaller_client_id" translatable="false">30xn92jvwyvm7avw8rkdfhgdlxxo8phijj4n-0w-znq</string>
+    <string name="attendance_reminder_title">உங்கள் குழுவிற்கு தேவையான தலைவர் ஆகுங்கள்! 💪</string>
+    <string name="attendance_reminder_content">இப்போதே தொழிலாளர்களின் வருகையை பதிவு செய்யுங்கள்.</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true">
+
+    <!-- Close Button -->
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:padding="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Success Content -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Success Icon -->
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_check_green"
+            android:layout_marginBottom="@dimen/margin_24"/>
+
+        <!-- Success Title -->
+        <com.boilerplate.uikit.views.textviews.text22.TextViewBold22
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subscription_activated"
+            android:layout_marginBottom="@dimen/margin_12"/>
+
+        <!-- Success Message -->
+        <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_now_have_access_to_all_premium_features"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_32"/>
+
+    </LinearLayout>
+
+    <!-- Continue Button -->
+    <com.boilerplate.uikit.views.buttons.RoundedPrimaryButton
+        android:id="@+id/btn_continue"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_48"
+        android:text="@string/ok"
+        android:layout_marginHorizontal="@dimen/margin_24"
+        android:layout_marginBottom="@dimen/margin_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

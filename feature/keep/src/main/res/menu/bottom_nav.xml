@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_staff"
+        android:icon="@drawable/ic_staff"
+        android:title="@string/staff"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/navigation_cashbook"
+        android:icon="@drawable/ic_expense"
+        android:title="@string/cashbook"/>
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings"/>
+
+</menu>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_16">
+
+        <!-- REPORT Title -->
+        <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+            android:id="@+id/tv_report_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REPORT"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_16" />
+
+        <!-- Name and Phone Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/margin_16">
+
+            <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                android:id="@+id/tv_name_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name:"
+                android:padding="@dimen/margin_8"
+                android:background="@drawable/rounded_border_edittext_background_100"
+                android:layout_marginEnd="@dimen/margin_4" />
+
+            <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                android:id="@+id/tv_phone_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Phone number:"
+                android:padding="@dimen/margin_8"
+                android:background="@drawable/rounded_border_edittext_background_100"
+                android:layout_marginStart="@dimen/margin_4" />
+        </LinearLayout>
+
+        <!-- Summary Title -->
+        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:layout_marginBottom="@dimen/margin_12" />
+
+        <!-- Table Container with Border -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/table_border">
+
+            <!-- Summary Table Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_48"
+                    android:orientation="horizontal">
+
+                    <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="@string/date"
+                        android:gravity="start|center_vertical"
+                        android:paddingHorizontal="@dimen/margin_8"
+                        android:minHeight="@dimen/margin_48"
+                        android:background="@drawable/table_cell_border_right_bottom" />
+
+                    <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="@string/notes"
+                        android:gravity="start|center_vertical"
+                        android:paddingHorizontal="@dimen/margin_8"
+                        android:minHeight="@dimen/margin_48"
+                        android:background="@drawable/table_cell_border_right_bottom" />
+
+                    <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:text="@string/rupee_amount"
+                        android:gravity="start|center_vertical"
+                        android:paddingStart="@dimen/margin_8"
+                        android:minHeight="@dimen/margin_48"
+                        android:background="@drawable/table_cell_border_bottom" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Transaction Items Container -->
+            <LinearLayout
+                android:id="@+id/ll_transaction_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <!-- Total Earnings Row -->
+        <LinearLayout
+            android:id="@+id/ll_total_earnings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_8">
+
+            <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                android:id="@+id/tv_total_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Earnings"
+                android:gravity="start" />
+
+            <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                android:id="@+id/tv_total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹0"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <!-- Thank You Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginVertical="@dimen/margin_24">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_1"
+                android:layout_weight="1"
+                android:background="@color/divider_color" />
+
+            <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THANK YOU"
+                android:paddingHorizontal="@dimen/margin_16" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_1"
+                android:layout_weight="1"
+                android:background="@color/divider_color" />
+        </LinearLayout>
+
+        <!-- Marketing Footer -->
+        <LinearLayout
+            android:id="@+id/ll_marketing_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/button_enabled_bg_color"
+            android:padding="@dimen/margin_12"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                android:id="@+id/tv_report_generated_by"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/report_generated_by_laborbook"
+                android:textColor="@color/white"
+                android:gravity="start|center_vertical" />
+
+            <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                android:id="@+id/tv_download_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/download_app_for_free_newline"
+                android:textColor="@color/white"
+                android:gravity="end|center_vertical" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

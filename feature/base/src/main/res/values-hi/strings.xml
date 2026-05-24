@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="close" translatable="false">Close</string>
+    <string name="which_language_do_you_prefer">आप किस भाषा को पसंद करते हैं?</string>
+    <string name="english" translatable="false">English</string>
+    <string name="hindi" translatable="false">हिन्दी</string>
+    <string name="marathi" translatable="false">मराठी</string>
+    <string name="kannada" translatable="false">ಕನ್ನಡ</string>
+    <string name="tamil" translatable="false">தமிழ்</string>
+    <string name="telugu" translatable="false">తెలుగు</string>
+    <string name="bengali" translatable="false">বাংলা</string>
+    <string name="share_content">क्या आप कागज पर हाजिरी लगाने से थक गए हैं? चिंता मत करो। Play Store लिंक से Laborbook ऐप डाउनलोड करें और हाजिरी जल्दी से लगाना शुरू करें।\n\n        अभी Google Play से डाउनलोड करें: https://play.google.com/store/apps/details?id=com.laborbook</string>
+
+    <string name="name">नाम</string>
+    <string name="phone_number_label">फ़ोन नंबर:</string>
+    <string name="attendance_summary">उपस्थिति सारांश</string>
+    <string name="present_label">उपस्थित</string>
+    <string name="absent_label">अनुपस्थित</string>
+    <string name="overtime_label">अतिरिक्त समय</string>
+    <string name="half_day_label">आधा दिन</string>
+    <string name="p_plus_half_label">उपस्थित + 1/2</string>
+    <string name="p_plus_p_label">उपस्थित + उपस्थित</string>
+    <string name="payment_summary">भुगतान सारांश</string>
+    <string name="advance_amount_label">अग्रिम राशि</string>
+    <string name="total_earnings_label">कुल कमाई</string>
+    <string name="report_generated_by_laborbook">रिपोर्ट Laborbook द्वारा बनाई गई</string>
+    <string name="download_app_for_free_newline">ऐप मुफ्त में डाउनलोड करें\nGoogle Play पर प्राप्त करें</string>
+    <string name="refer_friend_whatsapp_message">मैं दैनिक काम को आसानी से प्रबंधित करने के लिए Laborbook का उपयोग करता हूं। अब 5 लाख+ लोग इसका उपयोग कर रहे हैं! यहाँ आज़माएं 👉 https://play.google.com/store/apps/details?id=com.laborbook</string>
+</resources>

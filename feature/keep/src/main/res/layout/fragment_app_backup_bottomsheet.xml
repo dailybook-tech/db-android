@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:layout_marginVertical="@dimen/margin_8"
+        android:background="@drawable/circle_bg_dark"
+        android:contentDescription="@string/close"
+        android:padding="@dimen/margin_8"
+        android:src="@drawable/ic_close"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/cl_backup_content"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_backup_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_top_edittext_background_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_backup_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="@dimen/margin_24"
+            android:src="@drawable/ic_secure"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tv_backup_title"
+            android:layout_marginBottom="@dimen/margin_12" />
+
+        <com.boilerplate.uikit.views.textviews.text18.TextViewBold18
+            android:id="@+id/tv_backup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_backup"
+            android:textColor="@color/text_color"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_backup_icon"
+            app:layout_constraintBottom_toTopOf="@+id/tv_backup_message"
+            android:layout_marginBottom="@dimen/margin_12" />
+
+        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+            android:id="@+id/tv_backup_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/your_data_backup_is_up_to_date"
+            android:gravity="start"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_backup_title"
+            app:layout_constraintBottom_toTopOf="@+id/tv_last_updated"
+            android:layout_marginBottom="@dimen/margin_8" />
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+            android:id="@+id/tv_last_updated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_backup_message"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_24" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:background="@color/divider_color"
+            app:layout_constraintBottom_toTopOf="@+id/btn_ok"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.boilerplate.uikit.views.buttons.PrimaryButton
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:text="@string/ok"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

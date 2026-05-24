@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Transparent background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <!-- Blue underline at the bottom -->
+    <item
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="-1dp"
+        android:height="2dp"
+        android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_primary" />
+        </shape>
+    </item>
+</layer-list>
+

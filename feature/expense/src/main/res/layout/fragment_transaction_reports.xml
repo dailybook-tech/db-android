@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_secondary">
+
+    <!-- Header -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingVertical="@dimen/margin_8"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="@dimen/margin_48"
+            android:src="@drawable/ic_arrow_back_small"
+            android:padding="@dimen/margin_12"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.boilerplate.uikit.views.textviews.text18.TextViewBold18
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cash_out_reports"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/iv_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Date Range Selection -->
+    <LinearLayout
+        android:id="@+id/ll_date_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/margin_12"
+        android:paddingTop="@dimen/margin_12"
+        android:paddingBottom="@dimen/margin_12"
+        android:background="@color/background_secondary"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+            android:id="@+id/tv_from_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_border_edittext_background_100"
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawablePadding="@dimen/margin_8"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_10"
+            android:text="@string/from"
+            android:textSize="@dimen/text_14"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <View
+            android:layout_width="@dimen/margin_12"
+            android:layout_height="1dp" />
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+            android:id="@+id/tv_to_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_border_edittext_background_100"
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawablePadding="@dimen/margin_8"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_10"
+            android:text="@string/to"
+            android:textSize="@dimen/text_14"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <!-- Table Header -->
+    <LinearLayout
+        android:id="@+id/ll_table_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_4"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/ll_date_range">
+
+        <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="@string/date"
+            android:paddingVertical="@dimen/margin_8" />
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/margin_8"
+            android:paddingVertical="@dimen/margin_8"
+            android:text="@string/notes" />
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="start|center_vertical"
+            android:paddingStart="@dimen/margin_8"
+            android:paddingVertical="@dimen/margin_8"
+            android:text="@string/rupee_amount" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/header_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/divider_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_table_header"/>
+
+    <!-- Transaction List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_4"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/margin_40"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/header_divider"
+        app:layout_constraintBottom_toTopOf="@id/ll_share_buttons" />
+
+    <!-- Share Buttons -->
+    <LinearLayout
+        android:id="@+id/ll_share_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_12"
+        android:background="@color/white"
+        android:elevation="@dimen/margin_4"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_share_pdf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:background="@drawable/rounded_white_blue_corner_100"
+            android:text="@string/share_pdf"
+            android:textColor="@color/white"
+            android:textAllCaps="false" />
+
+        <com.boilerplate.uikit.views.textviews.text16.TextViewBoldWhite16
+            android:id="@+id/btn_share_whatsapp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/share"
+            android:background="@drawable/rounded_green_corner_100"
+            android:drawableStart="@drawable/ic_whatsapp"
+            android:padding="@dimen/margin_12"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

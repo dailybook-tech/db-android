@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaults>
+  <entry>
+    <key>home_page_ads_enabled</key>
+    <value>true</value>
+  </entry>
+  <entry>
+    <key>google_ads_enabled</key>
+    <value>true</value>
+  </entry>
+  <entry>
+    <key>custom_ad_enabled</key>
+    <value>true</value>
+  </entry>
+  <entry>
+    <key>custom_ad_image_url</key>
+    <value>https://firebasestorage.googleapis.com/v0/b/laborbook-14.appspot.com/o/mc_banner_1.png?alt=media&amp;token=b502f04e-227f-46cf-a378-01fa8751db00</value>
+  </entry>
+  <entry>
+    <key>custom_ad_redirect_url</key>
+    <value>https://play.google.com/apps/internaltest/4701440510571070242</value>
+  </entry>
+  <entry>
+    <key>custom_ad_title</key>
+    <value></value>
+  </entry>
+  <entry>
+    <key>subscriptions_enabled</key>
+    <value>false</value>
+  </entry>
+  <entry>
+    <key>interstitial_ads_per_day</key>
+    <value>1</value>
+  </entry>
+  <entry>
+    <key>free_user_max_staff_count</key>
+    <value>1</value>
+  </entry>
+  <entry>
+    <key>paywall_reviews_auto_scroll_enabled</key>
+    <value>true</value>
+  </entry>
+</defaults>

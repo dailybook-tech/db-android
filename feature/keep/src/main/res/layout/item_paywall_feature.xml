@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/margin_8">
+
+    <ImageView
+        android:id="@+id/iv_feature_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_feature_icon_circle"
+        android:scaleType="fitCenter"
+        android:contentDescription="@null"/>
+
+    <com.boilerplate.uikit.views.textviews.text12.TextViewWhiteRegular12
+        android:id="@+id/tv_feature_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_12"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="@color/paywall_text_color"
+        android:textSize="12sp"
+        android:lineSpacingMultiplier="1.2"
+        tools:text="Unlimited\nStaffs"/>
+</LinearLayout>

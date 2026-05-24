@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_secondary"
+    tools:context=".screen.calendar.fragment.LaborMonthlyCalendarFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/back"
+            android:paddingHorizontal="@dimen/margin_8"
+            android:paddingVertical="@dimen/margin_12"
+            android:src="@drawable/ic_arrow_back_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.boilerplate.uikit.views.textviews.text18.TextViewBold18
+            android:id="@+id/tv_toolbar_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_12"
+            app:layout_constraintEnd_toStartOf="@+id/tv_edit"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/iv_back"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_back"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_border_button_4"
+            android:drawableStart="@drawable/ic_edit"
+            android:drawablePadding="@dimen/margin_4"
+            android:gravity="center"
+            android:text="@string/edit"
+            app:layout_constraintEnd_toStartOf="@+id/iv_delete_staff"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingHorizontal="@dimen/margin_6"
+            android:paddingVertical="@dimen/margin_2"
+            android:layout_marginEnd="@dimen/margin_6"
+            android:textSize="@dimen/text_12"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/iv_delete_staff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_delete"
+            android:layout_marginEnd="@dimen/margin_8"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/divider_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!-- Month Picker moved from toolbar - Fixed at top -->
+    <LinearLayout
+        android:id="@+id/ll_date_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_4">
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/overview"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_16_color" />
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+            android:id="@+id/tv_month_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_border_button_4"
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawableEnd="@drawable/ic_chevron_down"
+            android:drawablePadding="@dimen/margin_4"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_6"
+            android:paddingVertical="@dimen/margin_4"
+            android:textSize="@dimen/text_12"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/divider_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_date_selector">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:background="@color/background"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_4">
+
+            <!-- First Row - 4 metrics with dropdown arrow -->
+            <LinearLayout
+                android:id="@+id/ll_stats_first_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/margin_4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.boilerplate.uikit.views.textviews.text16.TextViewBoldGreen16
+                        android:id="@+id/tv_total_present"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center" />
+
+                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/total_present" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.boilerplate.uikit.views.textviews.text16.TextViewBoldError16
+                        android:id="@+id/tv_total_absent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center" />
+
+                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/total_absent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                        android:id="@+id/tv_total_ot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/text_16_color"/>
+
+                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/over_time" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                        android:id="@+id/tv_total_advance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/total_advance" />
+                </LinearLayout>
+
+                <!-- Dropdown arrow -->
+                <ImageView
+                    android:id="@+id/iv_stats_dropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_4"
+                    android:src="@drawable/ic_chevron_down"
+                    android:padding="@dimen/margin_4"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:tint="@color/color_primary" />
+            </LinearLayout>
+
+            <!-- Second Row - 4 metrics (collapsible) -->
+            <LinearLayout
+                android:id="@+id/ll_stats_second_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:minHeight="60dp"
+                android:padding="@dimen/margin_8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                        android:id="@+id/tv_total_half_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center" />
+
+                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/half_day" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                        android:id="@+id/tv_total_pp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center" />
+
+                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/total_pp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                        android:id="@+id/tv_total_ph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/text_16_color"/>
+
+                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/total_ph" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <com.boilerplate.uikit.views.textviews.text14.TextViewBoldPrimaryColor14
+                            android:id="@+id/tv_add_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/color_primary"/>
+
+                        <ImageView
+                            android:id="@+id/iv_refresh_amount"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_refresh"
+                            android:layout_marginStart="8dp"
+                            android:contentDescription="@string/refresh"/>
+                    </LinearLayout>
+
+                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/amount_to_pay" />
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+            <!-- Report and Payslip buttons below stats -->
+            <LinearLayout
+                android:id="@+id/ll_open_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin_8"
+                android:paddingBottom="@dimen/margin_8"
+                android:background="#f2f7ff">
+
+                <ImageView
+                    android:id="@+id/iv_report_icon"
+                    android:layout_width="@dimen/margin_20"
+                    android:layout_height="@dimen/margin_20"
+                    android:src="@drawable/ic_report"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:contentDescription="@string/open_report" />
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewBoldPrimaryColor14
+                    android:id="@+id/btn_open_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_report"
+                    android:textColor="@color/color_primary"
+                    android:background="@android:color/transparent"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="@dimen/margin_1"
+                    android:layout_height="@dimen/margin_16"
+                    android:background="@color/divider_color"
+                    android:layout_marginHorizontal="@dimen/margin_12" />
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewBoldPrimaryColor14
+                    android:id="@+id/btn_generate_payslip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/generate_payslip"
+                    android:textColor="@color/color_primary"
+                    android:background="@android:color/transparent"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_table_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:orientation="horizontal"
+                android:background="@color/background"
+                android:layout_marginTop="@dimen/margin_4">
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/margin_12"
+                    android:paddingVertical="@dimen/margin_4"
+                    android:text="@string/date" />
+
+                <View
+                    android:id="@+id/divider_1"
+                    android:layout_width="@dimen/margin_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider_color" />
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingVertical="@dimen/margin_8"
+                    android:paddingStart="@dimen/margin_12"
+                    android:text="@string/attendance" />
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/margin_4"
+                    android:padding="@dimen/margin_4"
+                    android:src="@drawable/ic_more"
+                    android:visibility="invisible" />
+
+                <View
+                    android:id="@+id/divider_2"
+                    android:layout_width="@dimen/margin_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider_color" />
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingHorizontal="@dimen/margin_12"
+                    android:paddingVertical="@dimen/margin_8"
+                    android:text="@string/advance" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/divider_color" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/margin_64"
+                android:background="@color/background"
+                android:layout_marginTop="@dimen/margin_4"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:nestedScrollingEnabled="false"
+                tools:itemCount="31"
+                tools:listitem="@layout/item_calendar_attendance" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/divider_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/divider_color"
+        app:layout_constraintBottom_toTopOf="@+id/fl_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nested_scroll_view" />
+
+    <FrameLayout
+        android:id="@+id/fl_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.boilerplate.uikit.views.buttons.PrimaryButton
+            android:id="@+id/btn_mark_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginVertical="@dimen/margin_8"
+            android:text="@string/ok" />
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginVertical="@dimen/margin_48"
+        android:background="@drawable/rounded_button_black_100"
+        android:drawablePadding="@dimen/margin_4"
+        android:fontFamily="@font/inter_bold"
+        android:paddingHorizontal="@dimen/margin_12"
+        android:paddingVertical="@dimen/margin_8"
+        android:text="@string/share_to"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_whatsapp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

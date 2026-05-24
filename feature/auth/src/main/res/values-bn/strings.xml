@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="laborbook" translatable="false">লেবারবুক</string>
+    <string name="made_in_india">ভারতে তৈরি 🇮🇳</string>
+    <string name="enter_mobile_number">আপনার মোবাইল নম্বর লিখুন</string>
+    <string name="login_number_hint">মোবাইল নম্বর</string>
+    <string name="login_number_prefix">+91</string>
+    <string name="get_otp">ওটিপি পান</string>
+    <string name="or_with">অথবা চালিয়ে যান</string>
+    <string name="login_with_truecaller">ট্রুকলারের সাথে লগ ইন করুন</string>
+    <string name="terms_and_conditions">চালিয়ে যাওয়ার মাধ্যমে আপনি সম্মত হচ্ছেন যে আপনি আমাদের <font color="#3270D2">শর্তাবলী</font> এবং <font color='#3270D2'>গোপনীয়তা নীতি</font> পড়েছেন এবং গ্রহণ করেছেন।</string>
+    <string name="back">ফিরে যান</string>
+    <string name="verify_otp">ওটিপি যাচাই করুন</string>
+    <string name="otp_has_been_sent_to">ওটিপি পাঠানো হয়েছে</string>
+    <string name="invalid_otp">অবৈধ ওটিপি</string>
+    <string name="resend_otp">ওটিপি পাওয়া যায়নি? <font color="#3270D2"><u>পুনরায় পাঠান</u></font></string>
+    <string name="_100_secure_data">100% সুরক্ষিত ডেটা</string>
+    <string name="daily_labour_attendance">দৈনিক শ্রমিক উপস্থিতি</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#FFFFFF</color>
+    <color name="border_color">#e4e7ec</color>
+    <color name="border_color_selected">#0b58ea</color>
+    <color name="webview_toolbar_background">#FFFFFF</color>
+    <color name="webview_toolbar_title">#185cc3</color>
+    <color name="webview_toolbar_icon_text">#000000</color>
+</resources>

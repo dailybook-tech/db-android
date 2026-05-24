@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- White background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:topLeftRadius="@dimen/margin_16"
+                android:topRightRadius="@dimen/margin_16"/>
+        </shape>
+    </item>
+    
+    <!-- Confetti shapes - scattered across the background -->
+    <!-- Pink circle -->
+    <item android:left="20dp" android:top="30dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFB6C1" />
+            <size android:width="12dp" android:height="12dp" />
+        </shape>
+    </item>
+    
+    <!-- Blue star -->
+    <item android:left="80dp" android:top="50dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#87CEEB" />
+            <size android:width="10dp" android:height="10dp" />
+        </shape>
+    </item>
+    
+    <!-- Yellow circle -->
+    <item android:left="150dp" android:top="25dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFD700" />
+            <size android:width="8dp" android:height="8dp" />
+        </shape>
+    </item>
+    
+    <!-- Green triangle -->
+    <item android:left="220dp" android:top="45dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#98FB98" />
+            <size android:width="10dp" android:height="10dp" />
+        </shape>
+    </item>
+    
+    <!-- Purple circle -->
+    <item android:left="280dp" android:top="35dp">
+        <shape android:shape="oval">
+            <solid android:color="#DDA0DD" />
+            <size android:width="9dp" android:height="9dp" />
+        </shape>
+    </item>
+    
+    <!-- Pink squiggle -->
+    <item android:left="50dp" android:top="100dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFB6C1" />
+            <size android:width="14dp" android:height="6dp" />
+        </shape>
+    </item>
+    
+    <!-- Blue circle -->
+    <item android:left="120dp" android:top="110dp">
+        <shape android:shape="oval">
+            <solid android:color="#87CEEB" />
+            <size android:width="11dp" android:height="11dp" />
+        </shape>
+    </item>
+    
+    <!-- Yellow star -->
+    <item android:left="200dp" android:top="95dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFD700" />
+            <size android:width="9dp" android:height="9dp" />
+        </shape>
+    </item>
+    
+    <!-- Green circle -->
+    <item android:left="260dp" android:top="105dp">
+        <shape android:shape="oval">
+            <solid android:color="#98FB98" />
+            <size android:width="7dp" android:height="7dp" />
+        </shape>
+    </item>
+    
+    <!-- Purple squiggle -->
+    <item android:left="30dp" android:top="150dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#DDA0DD" />
+            <size android:width="12dp" android:height="5dp" />
+        </shape>
+    </item>
+    
+    <!-- Pink circle -->
+    <item android:left="100dp" android:top="160dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFB6C1" />
+            <size android:width="10dp" android:height="10dp" />
+        </shape>
+    </item>
+    
+    <!-- Blue triangle -->
+    <item android:left="180dp" android:top="145dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#87CEEB" />
+            <size android:width="8dp" android:height="8dp" />
+        </shape>
+    </item>
+    
+    <!-- Yellow circle -->
+    <item android:left="250dp" android:top="155dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFD700" />
+            <size android:width="9dp" android:height="9dp" />
+        </shape>
+    </item>
+</layer-list>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.BookKeepActivity">
+
+    <!-- Main fragment area -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav" />
+
+    <!-- Shadow above bottom nav -->
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_2"
+        android:background="@drawable/shadow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav" />
+
+    <!-- Bottom navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        style="@style/Widget.MaterialComponents.BottomNavigationView"
+        app:menu="@menu/bottom_nav"
+        app:itemBackground="@drawable/tab_item_background"
+        app:itemTextColor="@color/nav_item_color"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemActiveIndicatorStyle="@drawable/tab_item_background"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ads_barrier" />
+
+    <!-- Optional shadow between bottom nav and ads -->
+    <View
+        android:id="@+id/ads_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_2"
+        android:background="@drawable/shadow"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ads_barrier" />
+
+    <!-- Wrapper for both Ad types -->
+    <FrameLayout
+        android:id="@+id/ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Google AdMob Banner -->
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-4991346658410627/7843571317" />
+
+        <!-- Custom Ad Fallback -->
+        <com.laborbook.base.ads.CustomAdView
+            android:id="@+id/customAdView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- ✅ Barrier now references the FrameLayout wrapper (sibling) -->
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/ads_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:barrierAllowsGoneWidgets="true"
+        app:constraint_referenced_ids="ad_container" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

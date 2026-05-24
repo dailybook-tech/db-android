@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_plan_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_12"
+    android:background="@drawable/plan_unselected_border"
+    android:paddingHorizontal="@dimen/margin_16"
+    android:paddingVertical="@dimen/margin_16">
+
+    <!-- Plan Name (e.g., "Yearly") -->
+    <TextView
+        android:id="@+id/tv_plan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Yearly"/>
+
+    <!-- Discount Badge (e.g., "50% OFF") -->
+    <TextView
+        android:id="@+id/tv_discount_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_discount_badge"
+        android:paddingHorizontal="@dimen/margin_12"
+        android:paddingVertical="@dimen/margin_4"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_8"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/tv_plan_name"
+        app:layout_constraintTop_toTopOf="@id/tv_plan_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_plan_name"
+        tools:text="50% OFF"
+        tools:visibility="visible"/>
+
+    <!-- Selection Checkmark -->
+    <ImageView
+        android:id="@+id/iv_selection_check"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_check_circle"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"/>
+
+    <!-- Weekly breakdown text (e.g., "₹17/weekly, billed yearly at ₹899") -->
+    <TextView
+        android:id="@+id/tv_plan_breakdown"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/margin_8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_plan_name"
+        tools:text="₹17/weekly, billed yearly at ₹899"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

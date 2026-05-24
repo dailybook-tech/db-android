@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:layout_marginVertical="@dimen/margin_8"
+        android:background="@drawable/circle_bg_white"
+        android:contentDescription="@string/close"
+        android:padding="@dimen/margin_8"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cl_edit_profile"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_top_edittext_background_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.boilerplate.uikit.views.textviews.text18.TextViewBold18
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/edit_profile"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_staff_name_label"/>
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+            android:id="@+id/tv_staff_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/staff_name"
+            android:layout_marginTop="@dimen/margin_16"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/margin_16"/>
+
+        <EditText
+            android:id="@+id/et_staff_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@drawable/rounded_filled_edittext_background_100"
+            android:hint="@string/enter_staff_name"
+            android:padding="@dimen/margin_12"
+            android:textSize="@dimen/text_14"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/hint_text_color"
+            app:layout_constraintTop_toBottomOf="@id/tv_staff_name_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+            android:id="@+id/tv_mobile_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_number"
+            android:layout_marginTop="@dimen/margin_16"
+            app:layout_constraintTop_toBottomOf="@id/et_staff_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/margin_16"/>
+
+        <EditText
+            android:id="@+id/et_mobile_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@drawable/rounded_filled_edittext_background_100"
+            android:hint="@string/enter_mobile_number"
+            android:padding="@dimen/margin_12"
+            android:textSize="@dimen/text_14"
+            android:inputType="phone"
+            android:textColorHint="@color/hint_text_color"
+            app:layout_constraintTop_toBottomOf="@id/tv_mobile_number_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+            android:id="@+id/tv_salary_type_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/salary_type"
+            android:layout_marginTop="@dimen/margin_16"
+            app:layout_constraintTop_toBottomOf="@id/et_mobile_number"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/margin_16"/>
+
+        <RadioGroup
+            android:id="@+id/rg_salary_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_4"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            app:layout_constraintTop_toBottomOf="@id/tv_salary_type_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <RadioButton
+                android:id="@+id/rb_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daily"
+                android:checked="true"
+                android:button="@null"
+                android:textColor="@color/custom_radio_text_color"
+                android:background="@drawable/rounded_border_edittext_background_selected_100"
+                android:drawableEnd="@drawable/ic_language_selected"
+                android:drawablePadding="@dimen/margin_48"
+                android:paddingHorizontal="@dimen/margin_16"
+                android:paddingVertical="@dimen/margin_8"/>
+
+        </RadioGroup>
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+            android:id="@+id/tv_salary_amount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_salary_amount"
+            android:layout_marginTop="@dimen/margin_16"
+            app:layout_constraintTop_toBottomOf="@id/rg_salary_type"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/margin_16"/>
+
+        <EditText
+            android:id="@+id/et_salary_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@drawable/rounded_filled_edittext_background_100"
+            android:hint="@string/enter_daily_salary_amount"
+            android:padding="@dimen/margin_12"
+            android:textSize="@dimen/text_14"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/hint_text_color"
+            app:layout_constraintTop_toBottomOf="@id/tv_salary_amount_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+            android:id="@+id/tv_bonus_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bonus_this_month"
+            android:layout_marginTop="@dimen/margin_16"
+            app:layout_constraintTop_toBottomOf="@id/et_salary_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/margin_16"/>
+
+        <EditText
+            android:id="@+id/et_bonus_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@drawable/rounded_filled_edittext_background_100"
+            android:hint="@string/bonus_hint"
+            android:padding="@dimen/margin_12"
+            android:textSize="@dimen/text_14"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/hint_text_color"
+            app:layout_constraintTop_toBottomOf="@id/tv_bonus_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/divider_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_marginTop="@dimen/margin_24"
+            android:background="@color/divider_color"
+            app:layout_constraintTop_toBottomOf="@+id/et_bonus_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.boilerplate.uikit.views.buttons.PrimaryButton
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:enabled="false"
+            app:layout_constraintTop_toBottomOf="@id/divider_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout> 

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Date Column -->
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingVertical="@dimen/margin_4">
+
+            <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+            android:id="@+id/tv_notes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="start|center_vertical"
+            android:layout_gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/margin_8"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+            android:id="@+id/tv_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:paddingStart="@dimen/margin_8"
+            android:layout_gravity="start|center_vertical"
+            android:gravity="start" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/divider_color" />
+</LinearLayout>

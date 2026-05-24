@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_box_top_corner_white">
+
+    <!-- Confetti Animation View - positioned absolutely to cover content -->
+    <com.laborbook.keep.screen.home.fragment.ConfettiView
+        android:id="@+id/confetti_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_box_top_corner_white" />
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_24">
+
+        <!-- Laborbook Title -->
+        <ImageView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:src="@drawable/ic_laborbook_logo_primary" />
+
+        <!-- 5 Lakh+ Family! -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_5_lakh_family"
+            android:textColor="@color/text_20_color"
+            android:gravity="center"
+            style="@style/textview_bold_48"
+            android:textSize="@dimen/text_size_36"
+            android:layout_marginBottom="@dimen/margin_12" />
+
+        <!-- Thank You Message -->
+        <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thank_you_refer_message"
+            android:textColor="@color/text_20_color"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_32" />
+
+        <com.boilerplate.uikit.views.textviews.text16.TextViewBoldGreen16
+            android:id="@+id/btn_share_whatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/refer_a_friend"
+            android:background="@drawable/rounded_share_bg"
+            android:drawableStart="@drawable/ic_whatsapp"
+            android:drawableEnd="@drawable/ic_empty"
+            android:padding="@dimen/margin_12"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".screen.login.view.OtpFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+        android:id="@+id/tv_verify_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_otp"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+        android:id="@+id/tv_otp_sent_to_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/otp_has_been_sent_to"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_4"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verify_otp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.mukeshsolanki.OtpView
+        android:id="@+id/otp_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_18"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/inter_bold"
+        android:inputType="number"
+        android:textColor="?attr/otpTextColor"
+        android:textSize="@dimen/text_size_24"
+        app:OtpItemCount="4"
+        app:OtpItemWidth="@dimen/margin_44"
+        app:OtpItemHeight="@dimen/margin_44"
+        app:OtpItemSpacing="@dimen/margin_12"
+        app:OtpLineColor="@color/color_primary"
+        app:OtpState_filled="false"
+        app:OtpViewType="rectangle"
+        app:OtpItemRadius="@dimen/margin_8"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_otp_sent_to_number" />
+
+    <com.boilerplate.uikit.views.textviews.text14.TextViewError14
+        android:id="@+id/tv_otp_error"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_error"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_view"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:drawablePadding="@dimen/margin_8"
+        android:visibility="gone"
+        android:text="@string/invalid_otp"/>
+
+    <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+        android:id="@+id/iv_resend_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_otp_error"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_8"
+        android:drawablePadding="@dimen/margin_8"
+        android:text="@string/resend_otp"/>
+
+    <com.boilerplate.uikit.views.buttons.PrimaryButton
+        android:id="@+id/btn_verify_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:text="@string/verify_otp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_terms_and_conditions"/>
+
+    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+        android:id="@+id/tv_terms_and_conditions"
+        android:layout_width="@dimen/margin_240"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_and_conditions"
+        android:gravity="center"
+        android:layout_marginVertical="@dimen/margin_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

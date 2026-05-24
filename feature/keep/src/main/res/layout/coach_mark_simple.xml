@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_coach_content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/coach_mark_simple_background"
+    android:padding="16dp"
+    android:maxWidth="280dp"
+    android:minWidth="200dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Staff Details"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap the edit button to update daily wage and staff name. This helps you manage your team efficiently."
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/btn_got_it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Got it!"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_primary"
+        android:background="@drawable/coach_mark_button_background"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:layout_gravity="end"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout> 
