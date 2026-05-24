@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <!--  Colors set for light theme  -->
+    <color name="background">#ffffff</color>
+    <color name="background_secondary">#f7f7f7</color>
+    <color name="ripple">#80ffffff</color>
+    <color name="color_primary">#D21A3F</color>
+    <color name="border_color">#dbdbdb</color>
+    <color name="divider_color">#ededed</color>
+    <color name="initial_bg_color">#ffe8d3</color>
+    <color name="transparent_black_66">#66000000</color>
+    <color name="yellow">#faff13</color>
+
+    <color name="present">#38A775</color>
+    <color name="absent">#EA2323</color>
+
+    <color name="hyperlink_text">#3270D2</color>
+    <color name="truecaller">#0087ff</color>
+    <color name="sub_text_color">#424248</color>
+    <color name="body_text_color">#000000</color>
+    <color name="error_state_color">#DE1836</color>
+    <color name="text_color">#000000</color>
+
+    <color name="button_enabled_bg_color">#D21A3F</color>
+    <color name="button_disabled_bg_color">#b8b8b8</color>
+
+    <color name="button_red_color">#c33532</color>
+    <color name="button_green_color">#008548</color>
+
+    <color name="button_enabled_text_color">#ffffff</color>
+    <color name="button_disabled_text_color">#ffffff</color>
+
+    <color name="progress_bar_color">#ffffff</color>
+
+    <!--  Text colors  -->
+    <color name="text_20_color">#000000</color>
+    <color name="text_18_color">#000000</color>
+    <color name="text_16_color">#000000</color>
+    <color name="text_14_color">#000000</color>
+    <color name="text_12_color">#000000</color>
+    <color name="text_10_color">#000000</color>
+    <color name="otp_text_color">#000000</color>
+    <color name="hint_text_color">#909192</color>
+</resources>

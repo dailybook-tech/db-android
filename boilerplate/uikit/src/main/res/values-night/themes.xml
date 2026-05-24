@@ -1,0 +1,211 @@
+<resources>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+        <item name="postSplashScreenTheme">@style/Theme.Laborbook</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Laborbook" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="backgroundColor">@color/background</item>
+        <!--    Buttons    -->
+        <item name="buttonEnabledBgColor">@color/button_enabled_bg_color</item>
+        <item name="buttonDisabledBgColor">@color/button_disabled_bg_color</item>
+        <item name="buttonTextColor">@color/button_enabled_text_color</item>
+        <item name="buttonEnabledTextColor">@color/button_enabled_text_color</item>
+        <item name="buttonDisabledTextColor">@color/button_enabled_text_color</item>
+        <item name="buttonProgressColor">@color/progress_bar_color</item>
+        <item name="buttonRedColor">@color/button_red_color</item>
+        <item name="buttonGreenColor">@color/button_green_color</item>
+
+        <!--    TextViews    -->
+        <item name="text20Color">@color/text_20_color</item>
+        <item name="text18Color">@color/text_18_color</item>
+        <item name="text16Color">@color/text_16_color</item>
+        <item name="text14Color">@color/text_14_color</item>
+        <item name="text12Color">@color/text_12_color</item>
+        <item name="text10Color">@color/text_10_color</item>
+        <item name="otpTextColor">@color/otp_text_color</item>
+        <item name="hintTextColor">@color/hint_text_color</item>
+
+        <item name="bottomSheetDialogTheme">@style/TransparentBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="Theme.Laborbook" parent="Base.Theme.Laborbook" />
+
+    <!--  Top Corner Cardview  -->
+    <style name="TopCornersCurved" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/margin_16</item>
+        <item name="cornerSizeTopRight">@dimen/margin_16</item>
+        <item name="cornerSizeBottomLeft">@dimen/margin_0</item>
+        <item name="cornerSizeBottomRight">@dimen/margin_0</item>
+    </style>
+
+    <!--  Textview styles  -->
+    <!--  Text 20  -->
+    <style name="textview_20">
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:textColor">?attr/text20Color</item>
+    </style>
+
+    <style name="textview_regular_20" parent="textview_20">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="textview_bold_20" parent="textview_20">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="textview_bold_primary_color_20" parent="textview_bold_20">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="textview_bold_white_20" parent="textview_bold_20">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+    <!--  Text 20  -->
+
+    <!--  Text 22  -->
+    <style name="textview_22">
+        <item name="android:textSize">@dimen/text_size_22</item>
+        <item name="android:textColor">?attr/text22Color</item>
+    </style>
+
+    <style name="textview_regular_22" parent="textview_22">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="textview_bold_22" parent="textview_22">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+    <!--  Text 22  -->
+
+    <style name="textview_bold_primary_color_24" parent="textview_bold_20">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <style name="textview_bold_white_24" parent="textview_bold_20">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <style name="textview_bold_yellow_24" parent="textview_bold_20">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <style name="textview_bold_48" parent="textview_bold_20">
+        <item name="android:textSize">@dimen/text_size_48</item>
+    </style>
+    <!--  Text 18  -->
+    <style name="textview_18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">?attr/text18Color</item>
+    </style>
+
+    <style name="textview_regular_18" parent="textview_18">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="textview_bold_18" parent="textview_18">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="textview_bold_primary_color_18" parent="textview_regular_18">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--  Text 16  -->
+    <style name="textview_16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">?attr/text16Color</item>
+    </style>
+
+    <style name="textview_regular_16" parent="textview_16">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="textview_bold_16" parent="textview_16">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="textview_bold_error_16" parent="textview_16">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/absent</item>
+    </style>
+
+    <style name="textview_bold_green_16" parent="textview_16">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/present</item>
+    </style>
+
+    <!--  Text 14  -->
+    <style name="textview_14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">?attr/text14Color</item>
+    </style>
+
+    <style name="textview_regular_14" parent="textview_14">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="textview_regular_primary_color_14" parent="textview_14">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="textview_bold_14" parent="textview_14">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="textview_bold_primary_color_14" parent="textview_bold_14">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--  Text 12  -->
+    <style name="textview_12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">?attr/text14Color</item>
+    </style>
+
+    <style name="textview_regular_12" parent="textview_12">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="textview_regular_white_12" parent="textview_12">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textview_bold_12" parent="textview_12">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <!--  Text 10  -->
+    <style name="textview_10">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">?attr/text10Color</item>
+    </style>
+
+    <style name="textview_regular_10" parent="textview_10">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="textview_bold_10" parent="textview_10">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <!-- Custom Bottom Sheet Theme -->
+    <style name="TransparentBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/TransparentBottomSheetStyle</item>
+    </style>
+
+    <style name="TransparentBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

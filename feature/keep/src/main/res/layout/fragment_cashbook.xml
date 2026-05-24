@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_secondary"
+    tools:context=".screen.home.fragment.CashbookFragment">
+
+    <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+        android:id="@+id/tv_cashbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_12"
+        android:text="@string/cashbook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+        android:id="@+id/tv_month_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_12"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:background="@drawable/transparent_border_button_4"
+        android:drawableStart="@drawable/ic_calendar"
+        android:drawableEnd="@drawable/ic_chevron_down"
+        android:drawablePadding="@dimen/margin_4"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/margin_6"
+        android:paddingVertical="@dimen/margin_2"
+        android:textSize="@dimen/text_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginEnd="@dimen/margin_12" />
+
+    <!-- Expense/Income Tabs -->
+    <LinearLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_12"
+        android:layout_marginStart="@dimen/margin_12"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cashbook">
+
+        <FrameLayout
+            android:id="@+id/fl_expense_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                android:id="@+id/btn_expense_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingVertical="@dimen/margin_8"
+                android:text="@string/expense"
+                android:textColor="@color/color_primary"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <View
+                android:id="@+id/v_expense_underline"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@color/color_primary"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_income_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16">
+
+            <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                android:id="@+id/btn_income_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingVertical="@dimen/margin_8"
+                android:text="@string/income"
+                android:textColor="@color/tab_unselected_text_color"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <View
+                android:id="@+id/v_income_underline"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@color/color_primary"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Balance Summary Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_balance_summary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_8"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/ll_tabs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/margin_12"
+            android:paddingHorizontal="@dimen/margin_8">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cash_in"/>
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                    android:id="@+id/tv_total_cash_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:text="₹0"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/divider_color"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cash_out"/>
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                    android:id="@+id/tv_total_cash_out_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/button_red_color"
+                    android:text="₹0"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/divider_color"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance"/>
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹0"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_balance_summary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

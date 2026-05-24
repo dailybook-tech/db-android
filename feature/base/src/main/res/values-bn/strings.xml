@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="close" translatable="false">বন্ধ করুন</string>
+    <string name="which_language_do_you_prefer">আপনি কোন ভাষা পছন্দ করেন?</string>
+    <string name="english" translatable="false">English</string>
+    <string name="hindi" translatable="false">हिन्दी</string>
+    <string name="marathi" translatable="false">मराठी</string>
+    <string name="kannada" translatable="false">ಕನ್ನಡ</string>
+    <string name="tamil" translatable="false">தமிழ்</string>
+    <string name="telugu" translatable="false">తెలుగు</string>
+    <string name="bengali" translatable="false">বাংলা</string>
+    <string name="share_content">যদি আপনি কাগজে উপস্থিতি চিহ্নিত করতে করতে ক্লান্ত হন, তবে চিন্তা করবেন না। প্লে স্টোরের লিঙ্ক থেকে লেবারবুক অ্যাপ ডাউনলোড করুন এবং দ্রুত উপস্থিতি চিহ্নিত করতে শুরু করুন।\n\n        এখনই গুগল প্লেতে ডাউনলোড করুন: https://play.google.com/store/apps/details?id=com.laborbook</string>
+
+    <string name="name">নাম</string>
+    <string name="phone_number_label">ফোন নম্বর:</string>
+    <string name="attendance_summary">উপস্থিতির সারাংশ</string>
+    <string name="present_label">উপস্থিত</string>
+    <string name="absent_label">অনুপস্থিত</string>
+    <string name="overtime_label">অতিরিক্ত সময়</string>
+    <string name="half_day_label">অর্ধ দিবস</string>
+    <string name="p_plus_half_label">উপস্থিত + 1/2</string>
+    <string name="p_plus_p_label">উপস্থিত + উপস্থিত</string>
+    <string name="payment_summary">পেমেন্ট সারাংশ</string>
+    <string name="advance_amount_label">অগ্রিম অর্থ</string>
+    <string name="total_earnings_label">মোট উপার্জন</string>
+    <string name="report_generated_by_laborbook">রিপোর্টটি Laborbook দ্বারা তৈরি</string>
+    <string name="download_app_for_free_newline">অ্যাপটি বিনামূল্যে ডাউনলোড করুন\nGoogle Play থেকে পান</string>
+    <string name="refer_friend_whatsapp_message">আমি দৈনন্দিন কাজ সহজে পরিচালনা করতে Laborbook ব্যবহার করি। এখন 5 লক্ষ+ মানুষ এটি ব্যবহার করছে! এখানে চেষ্টা করুন 👉 https://play.google.com/store/apps/details?id=com.laborbook</string>
+</resources>

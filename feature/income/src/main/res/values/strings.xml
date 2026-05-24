@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="expense">Expense</string>
+    <string name="we_don_t_show_your_data_to_anyone_100_safe">We don’t show your data to anyone, 100% Safe</string>
+    <string name="track_daily_income">Track your Income</string>
+    <string name="cash_out">Cash Out</string>
+    <string name="cash_in">Cash In</string>
+    <string name="add_your_first_entry">Add your first entry</string>
+    <string name="search_by_expense_name">Search by Expense name</string>
+    <string name="total_out">Total Cash Out</string>
+    <string name="total_in">Total Cash In</string>
+    <string name="entries">Entries</string>
+    <string name="save">Save</string>
+    <string name="delete_entry">Delete Entry</string>
+    <string name="_0">0</string>
+    <string name="rupee">₹</string>
+    <string name="edit">Edit</string>
+    <string name="ok">Ok</string>
+    <string name="_rupee_0">₹0</string>
+    <string name="updated_successfully">₹ %1$s %2$s updated successfully</string>
+    <string name="added_successfully">₹ %1$s %2$s added successfully</string>
+    <string name="delete_expense">Delete Expense</string>
+    <string name="are_you_sure_you_want_to_delete_this_expense">Are you sure you want to delete this expense?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="total_entries">Total Entries</string>
+    <string name="search_by_income_name">Search by Income name</string>
+    <string name="income">CASH IN</string>
+    <string name="eg_party_name_building_name_area_name">Eg. (Party name, Building name, Area name)</string>
+    <string name="select_month_amp_year">Select Month &amp; Year</string>
+    <string name="select_year">Select year</string>
+    <string name="select_month">Select month</string>
+    <string name="online" translatable="false">Online</string>
+    <string name="cash" translatable="false">Cash</string>
+    <string name="view_reports">View reports</string>
+    <string name="arrow">Arrow</string>
+    <string name="date">Date</string>
+    <string name="notes">Notes</string>
+    <string name="rupee_amount">₹ Amount</string>
+    <string name="amount">Amount</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="unhide_income_to_edit">Please unhide income to edit</string>
+    <string name="disable_privacy_mode_to_access_reports">Please disable privacy mode to access reports</string>
+    <string name="cash_out_reports">Cash Out Reports</string>
+    <string name="cash_in_reports">Cash In Reports</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="share_pdf">Share PDF</string>
+    <string name="share">Share</string>
+    <string name="back">Back</string>
+    <string name="generating_pdf">Generating PDF...</string>
+    <string name="sponsored" translatable="false">Ad</string>
+</resources>

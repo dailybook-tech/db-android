@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_secondary"
+    tools:context=".screen.home.fragment.StaffListFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_logo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_laborbook_logo_primary"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_pro_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:src="@drawable/pro_tag"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ll_logo_container"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_logo_container"/>
+
+    <com.boilerplate.uikit.views.textviews.text12.TextViewHyperLinkBold12
+        android:id="@+id/tv_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:text="@string/refer_a_friend"
+        android:background="@drawable/rounded_share_bg"
+        android:drawableStart="@drawable/ic_whatsapp"
+        android:drawablePadding="@dimen/margin_4"
+        android:paddingVertical="@dimen/margin_4"
+        android:paddingHorizontal="@dimen/margin_6"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/iv_pro_tag"
+        app:layout_constraintTop_toTopOf="@+id/ll_logo_container"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_logo_container"/>
+
+    <ImageView
+        android:id="@+id/ll_add_staff_tool_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:src="@drawable/ic_empty_state"
+        android:layout_marginBottom="@dimen/margin_24"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_staff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_logo_container"
+        app:layout_constraintVertical_bias="0.5"/>
+
+    <EditText
+        android:id="@+id/et_search_staffs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:layout_marginVertical="@dimen/margin_16"
+        android:background="@drawable/rounded_border_edittext_background_100"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/margin_8"
+        android:hint="@string/search_by_name_or_mobile_number"
+        android:padding="@dimen/margin_10"
+        android:textSize="@dimen/text_14"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/hint_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_logo_container" />
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_team_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_4"
+        android:scrollbars="none"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/et_search_staffs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_team_chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="@dimen/margin_4" />
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:layout_marginVertical="@dimen/margin_12"
+        app:layout_constraintTop_toBottomOf="@+id/hsv_team_filter"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+            android:id="@+id/tv_staffs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_staffs"
+            android:visibility="gone"
+            android:textAllCaps="true"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_staffs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:background="@drawable/rounded_edittext_background_16"
+            tools:listitem="@layout/item_contact_list"
+            android:visibility="gone"
+            tools:itemCount="10" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_down_chevron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:visibility="gone"
+        android:src="@drawable/ic_chevrons_right"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_staff"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add_staff"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add_staff"/>
+
+    <com.boilerplate.uikit.views.buttons.RoundedPrimaryButton
+        android:id="@+id/btn_add_staff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:text="@string/add_labor"
+        android:textAllCaps="true"
+        app:cornerRadius="@dimen/margin_36"
+        app:icon="@drawable/ic_add_staff"
+        app:iconPadding="@dimen/margin_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

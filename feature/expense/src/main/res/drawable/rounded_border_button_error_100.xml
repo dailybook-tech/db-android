@@ -1,0 +1,11 @@
+<!-- res/drawable/custom_button_background_with_ripple.xml -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorControlHighlight">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/margin_100"/>
+            <stroke android:color="@color/error_state_color"
+                android:width="@dimen/margin_1"/>
+        </shape>
+    </item>
+</ripple>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="close" translatable="false">Close</string>
+    <string name="which_language_do_you_prefer">நீங்கள் எந்த மொழியை விரும்புகிறீர்கள்?</string>
+    <string name="english" translatable="false">English</string>
+    <string name="hindi" translatable="false">हिन्दी</string>
+    <string name="marathi" translatable="false">मराठी</string>
+    <string name="kannada" translatable="false">ಕನ್ನಡ</string>
+    <string name="tamil" translatable="false">தமிழ்</string>
+    <string name="telugu" translatable="false">తెలుగు</string>
+    <string name="bengali" translatable="false">বাংলা</string>
+    <string name="share_content">பேப்பரில் ஹாஜரீயை குறிக்க விட்டு களைத்து விட்டீர்களா? கவலைப்படாதீர்கள். Laborbook செயலியை Play Store லிங்கிலிருந்து பதிவிறக்கி, ஹாஜரீயை விரைவாக குறிக்க தொடங்குங்கள்.\n\n        இப்போது Google Play இல் பதிவிறக்கவும்: https://play.google.com/store/apps/details?id=com.laborbook</string>
+
+    <string name="name">பெயர்</string>
+    <string name="phone_number_label">தொலைபேசி எண்:</string>
+    <string name="attendance_summary">வருகை சுருக்கம்</string>
+    <string name="present_label">வருகை</string>
+    <string name="absent_label">இல்லை</string>
+    <string name="overtime_label">அதிக நேரம்</string>
+    <string name="half_day_label">அரை நாள்</string>
+    <string name="p_plus_half_label">வருகை + 1/2</string>
+    <string name="p_plus_p_label">வருகை + வருகை</string>
+    <string name="payment_summary">கொடுக்கும் தொகை சுருக்கம்</string>
+    <string name="advance_amount_label">முன்பணம்</string>
+    <string name="total_earnings_label">மொத்த வருமானம்</string>
+    <string name="report_generated_by_laborbook">இந்த அறிக்கையை லேபர்புக் உருவாக்கியது</string>
+    <string name="download_app_for_free_newline">இணையத்தில் இலவசமாக பதிவிறக்கவும்\nGoogle Play இல் பெறுங்கள்</string>
+    <string name="refer_friend_whatsapp_message">நான் தினசரி வேலையை எளிதாக நிர்வகிக்க Laborbook பயன்படுத்துகிறேன். இப்போது 5 லட்சம்+ பேர் இதைப் பயன்படுத்துகிறார்கள்! இங்கே முயற்சிக்கவும் 👉 https://play.google.com/store/apps/details?id=com.laborbook</string>
+</resources>

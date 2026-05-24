@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Laborbook</string>
+    <string name="your_daily_attendance_app">तुमचे दैनिक हजेरी अ‍ॅप</string>
+    <string name="secure_made_in_india">100% सुरक्षित डेटा ∙ भारतात तयार केलेले 🇮🇳</string>
+    <string name="truecaller_client_id" translatable="false">30xn92jvwyvm7avw8rkdfhgdlxxo8phijj4n-0w-znq</string>
+    <string name="attendance_reminder_title">तुमच्या टीमला लागणारे लीडर बना! 💪</string>
+    <string name="attendance_reminder_content">आता मजुरांची हजेरी नोंदवा.</string>
+</resources>

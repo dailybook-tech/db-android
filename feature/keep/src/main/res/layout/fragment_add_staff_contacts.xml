@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_secondary"
+    tools:context=".screen.addstaff.fragment.AddStaffContactsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:padding="@dimen/margin_8"
+            android:contentDescription="@string/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+            android:id="@+id/tv_toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_back"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_back"
+            app:layout_constraintHorizontal_bias="0"
+            tools:text="@string/back"/>
+
+        <ImageView
+            android:id="@+id/iv_refresh_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_back"
+            android:src="@drawable/ic_refresh"
+            android:padding="@dimen/margin_12"
+            tools:text="@string/back"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_add_staff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:layout_marginVertical="@dimen/margin_16"
+        android:background="@drawable/rounded_edittext_background_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/ll_add_staff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_add_staff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_12"
+                android:src="@drawable/ic_add_staff_primary_color"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewRegularPrimaryColor14
+                    android:id="@+id/tv_add_staff_manually"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_staff_manually"
+                    android:textColor="@color/color_primary"/>
+
+                <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/non_contact_staff_info"
+                    android:textColor="@color/sub_text_color"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_chevron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_12"
+                android:src="@drawable/ic_chevron_down"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_staff_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_12"
+            android:layout_marginVertical="@dimen/margin_16"
+            android:background="@drawable/rounded_border_edittext_background_100"
+            android:hint="@string/enter_staff_name"
+            android:padding="@dimen/margin_10"
+            android:textSize="@dimen/text_14"
+            android:visibility="gone"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/hint_text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_add_staff" />
+
+        <EditText
+            android:id="@+id/et_staff_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@drawable/rounded_border_edittext_background_100"
+            android:hint="@string/mobile_number"
+            android:padding="@dimen/margin_10"
+            android:textSize="@dimen/text_14"
+            android:inputType="phone"
+            android:visibility="gone"
+            android:textColorHint="@color/hint_text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_staff_name" />
+
+        <!-- Category chip selector -->
+        <HorizontalScrollView
+            android:id="@+id/hsv_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_8"
+            android:scrollbars="none"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_staff_mobile_number">
+
+            <LinearLayout
+                android:id="@+id/ll_category_chips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="@dimen/margin_4">
+
+                <!-- Chips are added programmatically -->
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <com.boilerplate.uikit.views.buttons.PrimaryButton
+            android:id="@+id/btn_add_staff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_12"
+            android:layout_marginVertical="@dimen/margin_16"
+            android:text="@string/add_labour"
+            android:visibility="gone"
+            android:padding="@dimen/margin_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hsv_category" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add_staff_tool_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="@dimen/margin_36"
+        android:layout_marginTop="@dimen/margin_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/cl_add_staff">
+
+        <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number_not_saved_add_here"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_curved_arrow"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_search_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_12"
+        android:background="@drawable/rounded_border_edittext_background_100"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/margin_8"
+        android:hint="@string/search_by_name_or_mobile_number"
+        android:padding="@dimen/margin_12"
+        android:textSize="@dimen/text_14"
+        android:visibility="gone"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/hint_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_add_staff" />
+
+    <LinearLayout
+        android:id="@+id/ll_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:layout_marginVertical="@dimen/margin_12"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_search_contacts"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+            android:id="@+id/tv_staffs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_saved_contacts"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:background="@drawable/rounded_edittext_background_16"
+            android:layout_marginTop="@dimen/margin_12"
+            tools:listitem="@layout/item_contact_list"
+            tools:itemCount="10" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_search_contacts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+        android:id="@+id/et_no_result_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_result_found"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_search_contacts"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:layout_marginVertical="@dimen/margin_8"
+        android:background="@drawable/circle_bg_white"
+        android:contentDescription="@string/close"
+        android:padding="@dimen/margin_8"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toTopOf="@+id/cl_container"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_top_edittext_background_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+            android:id="@+id/tv_header_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_edit"
+            tools:text="1 Monday, April 2024"/>
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            android:background="@drawable/transparent_border_button_4"
+            android:drawableStart="@drawable/ic_edit"
+            android:drawablePadding="@dimen/margin_4"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_6"
+            android:paddingVertical="@dimen/margin_2"
+            android:text="@string/edit"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            android:id="@+id/tv_title_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/transaction_type"
+            app:layout_constraintTop_toBottomOf="@+id/tv_header_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_title"/>
+
+        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16"
+            tools:text="Cash Out"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_title_label"/>
+
+        <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            android:id="@+id/tv_amount_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/amount"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fl_amount_container"/>
+
+        <FrameLayout
+            android:id="@+id/fl_amount_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16"
+            app:layout_constraintTop_toTopOf="@+id/tv_amount_label"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_amount_label"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="₹ 500" />
+
+            <ImageView
+                android:id="@+id/iv_secret_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_secret_amount"
+                android:visibility="gone"
+                android:contentDescription="@string/amount" />
+        </FrameLayout>
+
+        <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            android:id="@+id/tv_payment_method_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/payment_method"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/tv_amount_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_payment_method_value"/>
+
+        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+            android:id="@+id/tv_payment_method_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:visibility="gone"
+            tools:text="Cash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_payment_method_label"/>
+
+        <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            android:id="@+id/tv_notes_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginVertical="@dimen/margin_20"
+            android:text="@string/notes"
+            app:layout_constraintBottom_toTopOf="@+id/btn_ok"
+            app:layout_constraintTop_toBottomOf="@+id/tv_payment_method_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_notes"/>
+
+        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+            android:id="@+id/tv_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16"
+            tools:text="Bus ticket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_notes_label"/>
+
+        <com.boilerplate.uikit.views.buttons.PrimaryButton
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginVertical="@dimen/margin_20"
+            android:text="@string/ok"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

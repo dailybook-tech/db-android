@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/background</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+        <item name="postSplashScreenTheme">@style/Theme.Laborbook</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Laborbook" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="backgroundColor">@color/background</item>
+
+        <!--    Buttons    -->
+        <item name="buttonEnabledBgColor">@color/button_enabled_bg_color</item>
+        <item name="buttonDisabledBgColor">@color/button_disabled_bg_color</item>
+        <item name="buttonTextColor">@color/button_enabled_text_color</item>
+        <item name="buttonEnabledTextColor">@color/button_enabled_text_color</item>
+        <item name="buttonDisabledTextColor">@color/button_enabled_text_color</item>
+        <item name="buttonProgressColor">@color/progress_bar_color</item>
+        <item name="buttonRedColor">@color/button_red_color</item>
+        <item name="buttonGreenColor">@color/button_green_color</item>
+
+        <!--    TextViews    -->
+        <item name="text20Color">@color/text_20_color</item>
+        <item name="text22Color">@color/text_22_color</item>
+        <item name="text18Color">@color/text_18_color</item>
+        <item name="text16Color">@color/text_16_color</item>
+        <item name="text14Color">@color/text_14_color</item>
+        <item name="text12Color">@color/text_12_color</item>
+        <item name="text10Color">@color/text_10_color</item>
+        <item name="otpTextColor">@color/otp_text_color</item>
+        <item name="hintTextColor">@color/hint_text_color</item>
+        <item name="errorTextColor">@color/error_state_color</item>
+
+        <item name="bottomSheetDialogTheme">@style/TransparentBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="Theme.Laborbook" parent="Base.Theme.Laborbook" />
+</resources>

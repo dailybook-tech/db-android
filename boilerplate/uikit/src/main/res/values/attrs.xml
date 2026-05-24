@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ActionButton">
+        <attr name="buttonEnabledTextColor" format="color"/>
+        <attr name="buttonDisabledTextColor" format="color"/>
+        <attr name="buttonTextColor" format="color"/>
+        <attr name="buttonEnabledBgColor" format="color"/>
+        <attr name="buttonDisabledBgColor" format="color"/>
+        <attr name="buttonProgressColor" format="color"/>
+        <attr name="buttonRedColor" format="color"/>
+        <attr name="buttonGreenColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="colorPrimary" format="color"/>
+
+        <attr name="text20Color" format="color"/>
+        <attr name="text22Color" format="color"/>
+        <attr name="text18Color" format="color"/>
+        <attr name="text16Color" format="color"/>
+        <attr name="text14Color" format="color"/>
+        <attr name="text12Color" format="color"/>
+        <attr name="text10Color" format="color"/>
+        <attr name="errorTextColor" format="color"/>
+        <attr name="otpTextColor" format="color"/>
+        <attr name="hintTextColor" format="color"/>
+
+        <attr name="isMukta" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="H7">
+        <attr name="isErrorText" format="boolean"/>
+        <attr name="isTextColorPrimary" format="boolean"/>
+        <attr name="isMukta" />
+    </declare-styleable>
+
+    <attr name="isHeaderText" format="boolean"/>
+
+    <declare-styleable name="H6">
+        <attr name="isHeaderText" />
+        <attr name="isMukta" />
+        <attr name="timerText"/>
+        <attr name="timerErrorText"/>
+    </declare-styleable>
+
+    <declare-styleable name="H2">
+        <attr name="timerText" format="boolean"/>
+        <attr name="timerErrorText" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="Subheading">
+        <attr name="isHeaderText"/>
+        <attr name="greyText" format="boolean"/>
+        <attr name="isMukta" />
+    </declare-styleable>
+
+    <declare-styleable name="SubtitleOne">
+        <attr name="isMukta" />
+    </declare-styleable>
+
+    <declare-styleable name="Caption">
+        <attr name="isHeaderText"/>
+        <attr name="isDarkGrey" format="boolean"/>
+        <attr name="isDarkBlack" format="boolean"/>
+        <attr name="isDarkSilver" format="boolean"/>
+        <attr name="isMukta" />
+    </declare-styleable>
+
+    <declare-styleable name="H8">
+        <attr name="isHeaderText"/>
+        <attr name="isDarkGrey"/>
+        <attr name="isSemiBold" format="boolean"/>
+        <attr name="isMukta" />
+    </declare-styleable>
+
+    <declare-styleable name="Title">
+        <attr name="isHeaderText"/>
+    </declare-styleable>
+</resources>

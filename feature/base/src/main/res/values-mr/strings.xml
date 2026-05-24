@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="close" translatable="false">Close</string>
+    <string name="which_language_do_you_prefer">आपण कोणती भाषा पसंत करता?</string>
+    <string name="english" translatable="false">English</string>
+    <string name="hindi" translatable="false">हिन्दी</string>
+    <string name="marathi" translatable="false">मराठी</string>
+    <string name="kannada" translatable="false">ಕನ್ನಡ</string>
+    <string name="tamil" translatable="false">தமிழ்</string>
+    <string name="telugu" translatable="false">తెలుగు</string>
+    <string name="bengali" translatable="false">বাংলা</string>
+    <string name="share_content">काय तुम्ही कागदावर उपस्थिती नोंदवून थकला आहात? काळजी करू नका. Laborbook अ‍ॅप प्ले स्टोअर लिंकवरून डाउनलोड करा आणि उपस्थिती जलद नोंदवा.\n\n        आत्ता Google Play वर डाउनलोड करा: https://play.google.com/store/apps/details?id=com.laborbook</string>
+
+    <string name="name">नाव</string>
+    <string name="phone_number_label">फोन नंबर:</string>
+    <string name="attendance_summary">हजेरी सारांश</string>
+    <string name="present_label">हजर</string>
+    <string name="absent_label">गैरहजर</string>
+    <string name="overtime_label">अतिरिक्त वेळ</string>
+    <string name="half_day_label">अर्धा दिवस</string>
+    <string name="p_plus_half_label">हजर + 1/2</string>
+    <string name="p_plus_p_label">हजर + हजर</string>
+    <string name="payment_summary">पेमेंटचा सारांश</string>
+    <string name="advance_amount_label">अग्रिम रक्कम</string>
+    <string name="total_earnings_label">एकूण कमाई</string>
+    <string name="report_generated_by_laborbook">ही अहवाल Laborbook ने तयार केली आहे</string>
+    <string name="download_app_for_free_newline">अ‍ॅप विनामूल्य डाउनलोड करा\nGoogle Play वर मिळवा</string>
+    <string name="refer_friend_whatsapp_message">मी दैनंदिन काम सहजपणे व्यवस्थापित करण्यासाठी Laborbook वापरतो. आता 5 लाख+ लोक याचा वापर करत आहेत! येथे वापरून पहा 👉 https://play.google.com/store/apps/details?id=com.laborbook</string>
+</resources>

@@ -1,0 +1,35 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        maven { url "https://jitpack.io" }
+    }
+}
+
+rootProject.name = "DailyBook"
+include ':app'
+include ':feature:auth'
+include ':feature:base'
+include ':feature:keep'
+include ':feature:expense'
+include ':feature:income'
+include ':app:baselineprofile'
+include ':boilerplate:uikit'
+include ':boilerplate:network'
+include ':boilerplate:navigator'
+include ':boilerplate:analytics'

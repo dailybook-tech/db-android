@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:layout_marginVertical="@dimen/margin_8"
+        android:background="@drawable/circle_bg_white"
+        android:contentDescription="@string/close"
+        android:padding="@dimen/margin_8"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toTopOf="@+id/cl_attendance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_top_edittext_background_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_close"
+        tools:context=".screen.attendance.AttendanceMarkBottomsheetFragment">
+
+        <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+            android:id="@+id/tv_staff_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tv_mark_attendance"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+            android:id="@+id/tv_mark_attendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_attendance"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/rg_attendance"/>
+
+        <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            app:layout_constraintTop_toTopOf="@+id/tv_staff_name"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_staff_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"/>
+
+        <RadioGroup
+            android:id="@+id/rg_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:gravity="start|center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mark_attendance">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start|center">
+
+                <RadioButton
+                    android:id="@+id/absent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/margin_4"
+                    android:background="@drawable/custom_radio_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/margin_12"
+                    android:paddingVertical="@dimen/margin_4"
+                    android:tag="A"
+                    android:text="@string/a"
+                    android:textColor="@color/custom_radio_text_color" />
+
+                <RadioButton
+                    android:id="@+id/half_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/margin_4"
+                    android:background="@drawable/custom_radio_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/margin_12"
+                    android:paddingVertical="@dimen/margin_4"
+                    android:tag="H"
+                    android:text="@string/_1_2"
+                    android:textColor="@color/custom_radio_text_color" />
+
+                <RadioButton
+                    android:id="@+id/present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/margin_4"
+                    android:background="@drawable/custom_radio_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/margin_12"
+                    android:paddingVertical="@dimen/margin_4"
+                    android:tag="P"
+                    android:text="@string/p"
+                    android:textColor="@color/custom_radio_text_color" />
+
+                <RadioButton
+                    android:id="@+id/present_half"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/margin_4"
+                    android:background="@drawable/custom_radio_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/margin_12"
+                    android:paddingVertical="@dimen/margin_4"
+                    android:tag="P+H"
+                    android:text="@string/p_1_2"
+                    android:textColor="@color/custom_radio_text_color" />
+
+                <RadioButton
+                    android:id="@+id/double_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/margin_4"
+                    android:background="@drawable/custom_radio_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/margin_12"
+                    android:paddingVertical="@dimen/margin_4"
+                    android:tag="P+P"
+                    android:text="@string/p_p"
+                    android:textColor="@color/custom_radio_text_color" />
+
+                <ImageView
+                    android:id="@+id/iv_ot_pill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_4"
+                    android:src="@drawable/ic_ot_pill_unfilled"
+                    android:padding="@dimen/margin_8"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start|center"
+                android:layout_marginTop="@dimen/margin_4">
+
+                <RadioButton
+                    android:id="@+id/paid_leave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_radio_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/margin_12"
+                    android:paddingVertical="@dimen/margin_4"
+                    android:tag="PA"
+                    android:text="@string/pa"
+                    android:textColor="@color/custom_radio_text_color" />
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+        <!-- Shift type toggle: Day / Night -->
+        <LinearLayout
+            android:id="@+id/ll_shift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg_attendance">
+
+            <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/shift" />
+
+            <TextView
+                android:id="@+id/btn_shift_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shift_day"
+                android:paddingHorizontal="@dimen/margin_16"
+                android:paddingVertical="@dimen/margin_6"
+                android:background="@drawable/custom_radio_button_bg_selected"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_12"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btn_shift_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shift_night"
+                android:paddingHorizontal="@dimen/margin_16"
+                android:paddingVertical="@dimen/margin_6"
+                android:layout_marginStart="@dimen/margin_4"
+                android:background="@drawable/custom_radio_button_bg"
+                android:textColor="@color/custom_radio_text_color"
+                android:textSize="@dimen/text_12"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+        <!-- Clock In / Clock Out (visible only for present statuses) -->
+        <LinearLayout
+            android:id="@+id/ll_clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_shift">
+
+            <TextView
+                android:id="@+id/btn_clock_in"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/clock_in"
+                android:paddingVertical="@dimen/margin_8"
+                android:background="@drawable/rounded_border_button_color_primary_100"
+                android:textColor="@color/color_primary"
+                android:textSize="@dimen/text_12"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/btn_clock_out"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/clock_out"
+                android:layout_marginStart="@dimen/margin_8"
+                android:paddingVertical="@dimen/margin_8"
+                android:background="@drawable/rounded_border_button_color_primary_100"
+                android:textColor="@color/color_primary"
+                android:textSize="@dimen/text_12"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+        <!-- Remarks field -->
+        <EditText
+            android:id="@+id/et_remarks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:background="@drawable/rounded_border_edittext_background_100"
+            android:hint="@string/remarks_hint"
+            android:padding="@dimen/margin_10"
+            android:textSize="@dimen/text_12"
+            android:inputType="text"
+            android:textColorHint="@color/hint_text_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_clock" />
+
+        <LinearLayout
+            android:id="@+id/ll_meaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff9f4"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/margin_12"
+            android:paddingVertical="@dimen/margin_8"
+            app:layout_constraintTop_toBottomOf="@+id/et_remarks"
+            app:layout_constraintBottom_toTopOf="@+id/divider_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meaning" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="@dimen/margin_8">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a" />
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - Absent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="@dimen/margin_18">
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1/2" />
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - Half day" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p" />
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - Present" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="@dimen/margin_18">
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ot" />
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - Overtime" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="@dimen/margin_8">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="P + 1/2" />
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - 1.5 day" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="@dimen/margin_18">
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="P+P" />
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - Double" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="@dimen/margin_18">
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PA" />
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - Paid Leave" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:background="@color/divider_color"
+            app:layout_constraintBottom_toTopOf="@+id/btn_mark_attendance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/btn_remove_attendance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/margin_13"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            android:text="@string/remove_marked"
+            android:textColor="@color/color_primary"
+            android:background="@drawable/rounded_border_button_color_primary_100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_mark_attendance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"/>
+
+        <com.boilerplate.uikit.views.buttons.PrimaryButton
+            android:id="@+id/btn_mark_attendance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:text="@string/ok"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_remove_attendance"
+            app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

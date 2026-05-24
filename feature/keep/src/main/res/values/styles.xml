@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Custom style for NumberPicker to maintain consistent text styling -->
+    <style name="NumberPickerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_20_color</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <!-- Full Screen Dialog Style -->
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <!-- Razorpay Checkout Theme (Edge-to-Edge Support) -->
+    <style name="RazorpayCheckoutTheme" parent="Theme.Laborbook">
+        <!-- Enable edge-to-edge by drawing behind system bars -->
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="p">shortEdges</item>
+        
+        <!-- Transparent status bar for edge-to-edge -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        
+        <!-- Light status bar icons (adjust based on your Razorpay theme) -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        
+        <!-- Keep navigation bar color consistent -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        
+        <!-- Ensure Razorpay content doesn't go under system bars -->
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+</resources> 

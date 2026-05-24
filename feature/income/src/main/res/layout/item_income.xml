@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_middle_square">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Date Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingVertical="@dimen/margin_4">
+            
+            <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                android:id="@+id/tv_income_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+            
+            <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                android:id="@+id/tv_income_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <!-- Notes Column -->
+        <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+            android:id="@+id/tv_income_reason"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/margin_8"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <!-- Amount Column with Arrow -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="end|center_vertical"
+            android:paddingHorizontal="@dimen/margin_8">
+
+            <LinearLayout
+                android:id="@+id/ll_amount_with_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:gravity="end|center_vertical">
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewBoldGreen14
+                    android:id="@+id/tv_cash_in_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="start" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4"
+                    android:src="@drawable/ic_chevron_right"
+                    android:contentDescription="@string/arrow"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_secret_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:src="@drawable/ic_secret_amount"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/divider_color" />
+</LinearLayout>

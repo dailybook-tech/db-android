@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Laborbook</string>
+    <string name="your_daily_attendance_app">Your Daily Attendance App</string>
+    <string name="secure_made_in_india">100% Secure data ∙ Made in India 🇮🇳</string>
+    <string name="truecaller_client_id" translatable="false">30xn92jvwyvm7avw8rkdfhgdlxxo8phijj4n-0w-znq</string>
+    <string name="attendance_reminder_title">Be the Leader Your Team Needs! 💪</string>
+    <string name="attendance_reminder_content">Mark Labor attendance now</string>
+    <string name="facebook_app_id" translatable="false">858502416704999</string>
+    <string name="facebook_secret" translatable="false">9b1bce3fe263bb61d746d27f6535c519</string>
+    <string name="facebook_client_token" translatable="false">ec8738047f80434550257a829eced173</string>
+</resources>

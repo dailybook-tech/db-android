@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true">
+
+    <!-- Full-screen background image -->
+    <ImageView
+        android:id="@+id/iv_paywall_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/paywall_bg"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Bottom Section (Fixed at Bottom) - top rounded corners -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_bottom_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_box_top_corner_black"
+        android:paddingTop="@dimen/margin_12"
+        android:paddingBottom="@dimen/margin_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- UPI Selection -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_upi_selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_box_black"
+            android:paddingTop="@dimen/margin_12"
+            android:paddingBottom="@dimen/margin_12"
+            android:paddingStart="@dimen/margin_16"
+            android:paddingEnd="@dimen/margin_16"
+            android:layout_marginHorizontal="@dimen/margin_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_select_upi_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_upi_app"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <LinearLayout
+                android:id="@+id/ll_selected_upi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_selected_upi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phonepe"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="@dimen/margin_8"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chevron_down"
+                    app:tint="@android:color/white"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Start Trial Button Container -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_button_container"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_48"
+            android:layout_marginHorizontal="@dimen/margin_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_upi_selector"
+            android:layout_marginTop="@dimen/margin_16">
+
+            <com.boilerplate.uikit.views.buttons.RoundedPrimaryButton
+                android:id="@+id/btn_start_trial"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_48"
+                android:text="Start"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <!-- Button Loading Spinner -->
+            <ProgressBar
+                android:id="@+id/pb_button_loading"
+                android:layout_width="@dimen/margin_24"
+                android:layout_height="@dimen/margin_24"
+                android:indeterminateTint="@android:color/white"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="@dimen/margin_16"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_trial_refund_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="@string/instant_refund_note"
+            android:textColor="@color/hint_text_color"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_button_container" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cl_bottom_section">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/margin_24"
+            android:paddingBottom="@dimen/margin_24"
+            android:paddingHorizontal="@dimen/margin_24"
+            android:background="@android:color/transparent">
+
+            <!-- Limited-time offer banner (controlled via Remote Config) -->
+            <LinearLayout
+                android:id="@+id/ll_offer_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_offer_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/premium_offer_label"
+                    android:textColor="@color/paywall_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="@dimen/margin_8" />
+
+                <TextView
+                    android:id="@+id/tv_offer_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_offer_timer_pill"
+                    android:paddingHorizontal="@dimen/margin_16"
+                    android:paddingVertical="@dimen/margin_4"
+                    android:text="48:00"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Headline: "X day" + green "Free" pill + " Trial" -->
+            <LinearLayout
+                android:id="@+id/ll_trial_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/margin_24">
+
+                <TextView
+                    android:id="@+id/tv_trial_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/paywall_text_color"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="@dimen/margin_8"/>
+
+                <TextView
+                    android:id="@+id/tv_free_pill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trial_headline_free"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:background="@drawable/bg_free_pill"
+                    android:paddingHorizontal="@dimen/margin_12"
+                    android:paddingVertical="@dimen/margin_4"
+                    android:layout_marginEnd="@dimen/margin_8"/>
+
+                <TextView
+                    android:id="@+id/tv_trial_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trial_headline_trial"
+                    android:textColor="@color/paywall_text_color"
+                    android:textSize="28sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Subscription explainer video: fixed height so reviews section is not cut -->
+            <VideoView
+                android:id="@+id/video_subscription_explainer"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_12"
+                android:background="@drawable/bg_video_rounded_16"/>
+
+            <!-- Price: selected price + (optional) strikethrough original price + interval -->
+            <LinearLayout
+                android:id="@+id/ll_price_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/margin_24">
+
+                <TextView
+                    android:id="@+id/tv_selected_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#A1A1A1"
+                    android:textSize="@dimen/text_14"/>
+
+                <TextView
+                    android:id="@+id/tv_original_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#A1A1A1"
+                    android:textSize="@dimen/text_14"
+                    android:layout_marginStart="@dimen/margin_2"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_per_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#A1A1A1"
+                    android:textSize="@dimen/text_14"
+                    android:layout_marginStart="@dimen/margin_2"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/iv_downloads_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_social_proof"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginBottom="@dimen/margin_12"/>
+
+            <LinearLayout
+                android:id="@+id/ll_features"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginBottom="@dimen/margin_12"/>
+
+            <!-- Subscription Plans selector (non-scrolling list) -->
+            <LinearLayout
+                android:id="@+id/ll_plans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_24"
+                android:layout_marginBottom="@dimen/margin_24"
+                android:visibility="gone"/>
+
+            <!-- Happy customers -->
+            <TextView
+                android:id="@+id/tv_happy_customers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/happy_customers"
+                android:textColor="@color/paywall_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginBottom="@dimen/margin_24"/>
+
+            <!-- Reviews horizontal carousel -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:clipToPadding="false"
+                android:layout_marginBottom="@dimen/margin_24"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Close Button (Above Image, Left Corner) -->
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_grey"
+        android:padding="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Loading Overlay for Error/Unavailable Data -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_loading_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Spinner for Unavailable Data/Error State -->
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="@dimen/margin_48"
+            android:layout_height="@dimen/margin_48"
+            android:indeterminateTint="@color/color_primary"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Razorpay Custom UI WebView (hidden until payment submitted; shows UPI/bank pages) -->
+    <WebView
+        android:id="@+id/payment_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Payment Verification Overlay -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_verification_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ProgressBar
+                android:id="@+id/pb_verification"
+                android:layout_width="@dimen/margin_48"
+                android:layout_height="@dimen/margin_48"
+                android:indeterminateTint="@color/color_primary"/>
+
+            <TextView
+                android:id="@+id/tv_verification_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verifying_payment"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_primary"
+                android:layout_marginTop="@dimen/margin_16"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/please_wait_confirm_subscription"
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginHorizontal="@dimen/margin_24"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

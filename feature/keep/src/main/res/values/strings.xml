@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="staff">Labor</string>
+    <string name="staffs">Labors</string>
+    <string name="my_staffs">My Labors</string>
+    <string name="settings">Settings</string>
+    <string name="laborbook" translatable="false">Laborbook</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="add_staff">Add Labor</string>
+    <string name="add_labor">ADD LABOR</string>
+    <string name="add">Add</string>
+    <string name="upload">Upload</string>
+    <string name="tap_here_to_add_staff">Tap here to Add Labor</string>
+    <string name="back">Back</string>
+    <string name="search_by_name_or_mobile_number">Search by Name or Mobile number</string>
+    <string name="add_advance">₹</string>
+    <string name="add_advance_full_text">Add Advance</string>
+    <string name="date">Date</string>
+    <string name="attendance">Attendance</string>
+    <string name="advance">₹ / Notes</string>
+    <string name="successfully_marked_attendance">Successfully Marked attendance!</string>
+    <string name="advance_amount">Advance amount</string>
+    <string name="added">added</string>
+    <string name="p" translatable="false">P</string>
+    <string name="p_1_2" translatable="false">P + ½</string>
+    <string name="p_p" translatable="false">P + P</string>
+    <string name="pa" translatable="false">PA</string>
+    <string name="_1_2" translatable="false">½</string>
+    <string name="a" translatable="false">A</string>
+    <string name="ot" translatable="false">OT</string>
+    <string name="mark_attendance">Mark Attendance</string>
+    <string name="close">Close</string>
+    <string name="rupee">₹</string>
+    <string name="enter_staff_name">Enter Labor Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="balance">Balance</string>
+    <string name="shift">Shift</string>
+    <string name="shift_day">Day</string>
+    <string name="shift_night">Night</string>
+    <string name="clock_in">Clock In</string>
+    <string name="clock_out">Clock Out</string>
+    <string name="remarks_hint">Remarks (optional)</string>
+    <string name="category">Category</string>
+    <string name="category_hint">Select category (optional)</string>
+    <string name="eg_food_petrol_rent">Eg.(Food, petrol, rent)</string>
+    <string name="ok">Ok</string>
+    <string name="refer_a_friend">Refer a friend</string>
+    <string name="refer_friend_message">Share Laborbook with your friends and help them manage their daily work easily!</string>
+    <string name="refer_friend_whatsapp_message">I use Laborbook to manage daily work easily. Now 5 lakh+ people are using it! Try it here 👉 https://play.google.com/store/apps/details?id=com.laborbook</string>
+    <string name="share_on_whatsapp">Share on WhatsApp</string>
+    <string name="thank_you_refer_message">Thank you for being part of our journey ❤️</string>
+    <string name="profile_info">Profile Info</string>
+    <string name="general">General</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="pricing">Pricing</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="made_in_india">Made in India 🇮🇳</string>
+    <string name="present">Present</string>
+    <string name="absent">Absent</string>
+    <string name="day">day</string>
+    <string name="days">days</string>
+    <string name="upload_staff">Create Labor</string>
+    <string name="user_name_updated_successfully">User name updated successfully</string>
+    <string name="staff_added_successfully">Labor Added Successfully</string>
+    <string name="on">on</string>
+    <string name="to">to</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="add_staff_manually">Add Staff</string>
+    <string name="non_contact_staff_info">Non-contact staff info</string>
+    <string name="add_labour">Add Labour</string>
+    <string name="your_saved_contacts">Your saved contacts</string>
+    <string name="no_result_found">No result found</string>
+    <string name="save">Save</string>
+    <string name="meaning">MEANING:</string>
+    <string name="number_not_saved_add_here">Number not saved? Add here</string>
+    <string name="delete">DELETE</string>
+    <string name="_100_secure_data_made_in_india">100% Secure data ∙ Made in India 🇮🇳</string>
+    <string name="remove_marked">Remove Marked</string>
+    <string name="remove_overtime">Remove Overtime</string>
+    <string name="share_to">Share to</string>
+    <string name="swipe_to_delete_labor">Swipe to Delete Labor</string>
+    <string name="delete_advace">Delete Advance</string>
+    <string name="removed">removed</string>
+    <string name="adv">Adv</string>
+    <string name="language">Lang</string>
+    <string name="refer_laborbook_app_to_your_friends">Refer Laborbook app to your friends</string>
+    <string name="total_present">Total Present</string>
+    <string name="total_absent">Total Absent</string>
+    <string name="total_advance">Total Advance</string>
+    <string name="expense">CASH OUT</string>
+    <string name="cashbook">Cash book</string>
+    <string name="total_out">Total Cash Out</string>
+    <string name="total_in">Total Cash In</string>
+    <string name="request_a_feature">Request a Feature</string>
+    <string name="give_us_rating_amp_feedback"><![CDATA[Give us Rating & Feedback]]></string>
+    <string name="update_now">Update now</string>
+    <string name="app_update_is_available">App update is available</string>
+    <string name="submit">Submit</string>
+    <string name="ask_us_any_feature_you_want_in_laborbook_app">Ask us any feature you want in Laborbook app...</string>
+    <string name="request_sent_successfully">Request sent successfully</string>
+    <string name="income">CASH IN</string>
+    <string name="select_month_amp_year">Select Month &amp; Year</string>
+    <string name="select_year">Select year</string>
+    <string name="select_month">Select month</string>
+    <string name="attendance_summary">📊 Attendance Summary</string>
+    <string name="present_label">Present</string>
+    <string name="absent_label">Absent</string>
+    <string name="overtime_label">Overtime</string>
+    <string name="half_day_label">Half Day</string>
+    <string name="p_plus_half_label">P + 1/2</string>
+    <string name="p_plus_p_label">P+P</string>
+    <string name="payment_summary">💰 Payment Summary</string>
+    <string name="advance_amount_label">Advance Amount</string>
+    <string name="total_earnings_label">Total Earnings</string>
+    <string name="edit_staff_details">Edit Staff Details</string>
+    <string name="edit_button_coach_mark_description">Tap the edit button to update daily wage and staff name. This helps you manage your team efficiently.</string>
+    <string name="skip">Skip</string>
+    <string name="got_it">Got it!</string>
+    <string name="phone_number_label">Phone number:</string>
+    <string name="report_generated_by_laborbook">Report generated by Laborbook</string>
+    <string name="download_app_for_free_newline">Download app for FREE\nGet it on Google Play</string>
+    <string name="overtime">Overtime</string>
+    <string name="overtime_hours">Overtime Hours</string>
+    <string name="overtime_rate">Overtime Rate (Hourly)</string>
+    <string name="total_amount">Total Overtime Amount: %s</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="overtime_done">OT</string>
+    <string name="total_overtime_amount">Total Overtime Amount</string>
+    <string name="_00_00_hrs">00:00 hrs</string>
+    <string name="enter_overtime_rate">₹ Enter Overtime rate</string>
+    <string name="hrs">Hrs</string>
+    <string name="colon">:</string>
+    <string name="mins">Mins</string>
+    <string name="hours">Hours</string>
+    <string name="edit">Edit</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="staff_name">Staff name</string>
+    <string name="salary_type">Salary type</string>
+    <string name="daily">Daily</string>
+    <string name="monthly">Monthly</string>
+    <string name="enter_salary_amount">Enter salary amount</string>
+    <string name="enter_daily_salary_amount">₹ Enter daily salary amount</string>
+    <string name="refresh">Refresh</string>
+    <string name="loading">Loading...</string>
+    <string name="open_report">Open Report</string>
+    <string name="report">Report</string>
+
+    <!-- Report Page Strings -->
+    <string name="monthly_attendance_payment_report">Monthly Attendance &amp; Payment Report</string>
+    <string name="staff_information">Staff Information</string>
+    <string name="name_label">👤 Name:</string>
+    <string name="phone_label">📞 Phone:</string>
+    <string name="total_ot">Total OT</string>
+    <string name="over_time">Over time</string>
+    <string name="overview">Overview</string>
+    <string name="half_day">Half day</string>
+    <string name="total_pp">Total P+P</string>
+    <string name="total_ph">Total P+1/2</string>
+    <string name="add_amount">+Add</string>
+    <string name="amount_to_pay">Amount to pay</string>
+    <string name="overtime_added">Overtime added</string>
+    <string name="share_pdf_report">📄 Share PDF Report</string>
+    <string name="generating_pdf">Generating PDF...</string>
+    <string name="share_pdf">Share PDF</string>
+    <string name="failed_to_generate_pdf">Failed to generate PDF: %s</string>
+    <string name="failed_to_share_pdf">Failed to share PDF: %s</string>
+    <string name="share_pdf_report_title">Share PDF Report</string>
+    <string name="staff_report_subject">Staff Report - %s - %s</string>
+    <string name="staff_report_message">Please find attached the attendance report for %s for %s.</string>
+    <string name="export_csv">Export CSV</string>
+    <string name="exporting_csv">Exporting…</string>
+    <string name="failed_to_export_csv">Failed to export CSV: %s</string>
+    <string name="whatsapp_report_summary">*%s — %s Report*\nPresent: %d days\nNet Payable: %s</string>
+    <string name="download_app_for_free">Download app for FREE</string>
+    <string name="get_it_on_google_play">Get it on Google Play</string>
+    <string name="notes">Notes</string>
+    <string name="online" translatable="false">Online</string>
+    <string name="cash" translatable="false">Cash</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="app_lock">App Lock</string>
+    <string name="app_backup">App Backup</string>
+    <string name="unlock_app_to_continue">Unlock app to continue</string>
+    <string name="touch_sensor_to_unlock">Touch sensor to unlock</string>
+    <string name="authentication_failed">Authentication failed. Please try again.</string>
+    <string name="no_biometric_hardware">No biometric hardware available</string>
+    <string name="biometric_unavailable">Biometric authentication is unavailable</string>
+    <string name="no_biometric_enrolled">No biometric credentials enrolled. Please set up fingerprint or face unlock in device settings.</string>
+    <string name="cancel">Cancel</string>
+    <string name="your_data_backup_is_up_to_date">Your data backup is up-to date</string>
+    <string name="last_updated">Last updated: %s</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="_5_lakh_family">5 Lakh+ Family!</string>
+    <string name="sponsored" translatable="false">Ad</string>
+    <string name="exit_app">Exit App</string>
+    <string name="are_you_sure_you_want_to_exit">Are you sure you want to exit?</string>
+    
+    <!-- Premium Settings Strings -->
+    <string name="premium_settings">Premium settings</string>
+    <string name="premium_info">Premium Info</string>
+    <string name="purchase_date">Purchase date</string>
+    <string name="next_bill">Next Bill</string>
+    <string name="amount_paid">Amount Paid</string>
+    <string name="faq">FAQ</string>
+    <string name="faq_what_is_laborbook_premium">What is Laborbook Pro?</string>
+    <string name="faq_what_is_laborbook_premium_answer">Laborbook Pro unlocks extra features like ad-free experience, automatic monthly reports, data backup, and priority support. It helps you manage staff faster and more securely.</string>
+    <string name="faq_how_does_autopay_work">How does Autopay work?</string>
+    <string name="faq_how_does_autopay_work_answer">Autopay allows you to automatically renew your Pro plan every month or year using your UPI, debit card, or credit card. You don\'t have to pay manually each time — renewal happens safely and instantly.</string>
+    <string name="faq_can_i_cancel_autopay">Can I cancel Autopay anytime?</string>
+    <string name="faq_can_i_cancel_autopay_answer">Absolutely. You can cancel Autopay anytime from your UPI app (like PhonePe, Google Pay, Paytm, etc.) or directly from the Laborbook Pro settings. No hidden charges.</string>
+    <string name="faq_what_happens_if_autopay_fails">What happens if my Autopay fails or I have low balance?</string>
+    <string name="faq_what_happens_if_autopay_fails_answer">If your Autopay fails, we\'ll notify you instantly and give you the option to retry manually. Your Pro features will stay active for a short grace period so your data and access remain safe.</string>
+    
+    <!-- Premium Offer Dialog Strings -->
+    <string name="special">Special</string>
+    <string name="offer_with_space"> Offer </string>
+    <string name="for_you">for you</string>
+    <string name="trial_price">5</string>
+    <string name="original_price">₹49</string>
+    <string name="trial_info">3 days free trial then ₹49/month</string>
+    <string name="app_used_by_owners">App used by 5 Lakh+ Owners</string>
+    <string name="paywall_downloads_count">500,000+</string>
+    <string name="paywall_downloads">Downloads</string>
+    <string name="paywall_reviews_count">20,000+</string>
+    <string name="paywall_reviews">Reviews</string>
+    <string name="paywall_5_lakh_downloads">5 Lakh+ downloads</string>
+    <string name="paywall_rating_reviews">4.5 (20,000+ reviews)</string>
+    <string name="happy_customers">Happy customers</string>
+    <string name="features">Features</string>
+    <string name="trial_headline_trial">Trial</string>
+    <string name="trial_headline_free">Free</string>
+    <string name="trial_headline_day">%d day</string>
+    <string name="trial_headline_days">%d days</string>
+    
+    <!-- Subscription Steps (not features - these are the steps to become Pro) -->
+    <string name="step_start_trial_title">Start your FREE %1$d-day trial today</string>
+    <string name="step_start_trial_subtitle">₹5 verify amount, refund instantly</string>
+    <string name="step_unlimited_access_title">Enjoy Unlimited access</string>
+    <string name="step_unlimited_access_subtitle">Premium access to all features for %1$d day</string>
+    <string name="step_unlimited_access_subtitle_plural">Premium access to all features for %1$d days</string>
+    <string name="step_become_pro_title">Become Pro member 💪</string>
+    <string name="step_become_pro_subtitle">₹%1$d/month unless cancelled</string>
+    
+    <!-- Trial Expired & No Trial Steps (both use same text) -->
+    <string name="step_trial_expired_1_title">Enjoy Unlimited access</string>
+    <string name="step_trial_expired_1_subtitle">Get instant access to all premium features</string>
+    <string name="step_trial_expired_2_title">Become Pro member 💪</string>
+    <string name="step_trial_expired_2_subtitle">₹%1$d/month unless cancelled</string>
+    
+    <!-- Old feature strings - keeping for backward compatibility with dynamic features list -->
+    <string name="feature_trial_title">Start your FREE %1$d-day trial today</string>
+    <string name="feature_trial_subtitle">₹5 to verify payment, refund instantly</string>
+    <string name="feature_unlimited_access_title">Enjoy Unlimited access</string>
+    <string name="feature_unlimited_access_subtitle">Unlimited access to all features for %1$d day</string>
+    <string name="feature_unlimited_access_subtitle_plural">Unlimited access to all features for %1$d days</string>
+    <string name="feature_become_pro_title">Become Pro member 💪</string>
+    <string name="feature_become_pro_subtitle">₹%1$d/month unless cancelled</string>
+    <string name="start_free">START FREE</string>
+    <string name="try_now">Try now</string>
+    <string name="feature_unlimited_labors">Add Unlimited labors/staff</string>
+    <string name="feature_generate_reports">Generate Reports</string>
+    <string name="feature_share_whatsapp">Share via Whatsapp</string>
+    <string name="feature_unlimited_income_expense">Unlimited Income/Expense Entries</string>
+    <string name="select_upi_app">Select UPI app</string>
+    <string name="please_select_upi_app">Please select a UPI app to pay</string>
+    <string name="phonepe" translatable="false">PhonePe</string>
+    <string name="start_trial_button">Start Trial</string>
+    <string name="refund_info">Start your 7 day free trial</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="subscription_activated">Subscription Activated!</string>
+    <string name="you_now_have_access_to_all_premium_features">You now have access to all Pro features</string>
+    
+    <!-- Subscription Flow Strings -->
+    <string name="please_wait_verifying_payment">Please wait while we verify your payment…</string>
+    <string name="user_id_not_found">User ID not found. Please login again.</string>
+    <string name="no_active_subscription_plans">No active subscription plans available</string>
+    <string name="no_subscription_plans">No subscription plans available</string>
+    <string name="day_free_trial">%1$d Day Free Trial</string>
+    <string name="trial_then_monthly">%1$d days free trial then ₹%2$s/month</string>
+    <string name="trial_then_interval">%1$d days free trial then ₹%2$s/%3$s</string>
+    <string name="trial_refund_then_interval">Refund instantly, then ₹%1$s/%2$s</string>
+    <string name="start_trial">Start Trial</string>
+    <string name="start_trial_with_price">Start Trial ₹%1$s</string>
+    <string name="premium_offer_label">🎁 Offer valid till:</string>
+    <plurals name="start_x_day_free_trial">
+        <item quantity="one">START %d DAY FREE TRIAL</item>
+        <item quantity="other">START %d DAYS FREE TRIAL</item>
+    </plurals>
+    <!-- Price interval text shown below price, e.g. "/month unless cancelled" -->
+    <string name="price_per_month_unless_cancelled">/month unless cancelled</string>
+    <string name="price_per_quarter_unless_cancelled">/quarter unless cancelled</string>
+    <string name="price_per_year_unless_cancelled">/year unless cancelled</string>
+    <!-- Fallback for custom intervals: "/interval unless cancelled" -->
+    <string name="price_per_interval_unless_cancelled">/%1$s unless cancelled</string>
+    <string name="start_pro">START PRO</string>
+    <string name="start">Start</string>
+    <string name="no_upi_apps_found">No UPI apps found. Please install a UPI supported app (e.g. PhonePe, Google Pay, Paytm).</string>
+    <string name="please_select_subscription_plan">Please select a subscription plan</string>
+    <string name="laborbook_pro">Laborbook Pro</string>
+    <string name="special_offer_for_you">Special Offer for you 🎁</string>
+    <string name="pro_subscription">Pro Subscription</string>
+    <string name="failed_to_initiate_payment">Failed to initiate payment: %1$s</string>
+    <string name="verifying_payment">Verifying payment…</string>
+    <string name="payment_failed_try_again">Payment failed, please try again</string>
+    <string name="payment_failed_title">Payment failed</string>
+    <string name="try_again">Try Again</string>
+    <string name="checking_payment_status">Checking payment status…</string>
+    <string name="checking_subscription_status">Checking subscription status…</string>
+    <string name="processing">Processing…</string>
+    <string name="rs_5_refunded_after_upi_mandate">₹5 will be refunded after UPI mandate</string>
+    <string name="instant_refund_note">₹5 instant refund</string>
+    <string name="rs_1_refunded_after_upi_mandate">₹1 will be refunded after UPI mandate verification</string>
+    <string name="member_since">Member since %1$s 👑</string>
+    <string name="no_active_subscription">No active subscription</string>
+    <string name="subscription_cancelled">Subscription Cancelled</string>
+    <string name="cancel_subscription">Cancel Subscription</string>
+    <string name="cancel_subscription_confirmation">Are you sure you want to cancel your subscription? You\'ll continue to have access to Pro features until %1$s.</string>
+    <string name="end_of_billing_period">the end of your billing period</string>
+    <string name="yes_cancel">Yes, Cancel</string>
+    <string name="no_keep_subscription">No, Keep Subscription</string>
+    <string name="unable_to_cancel_subscription">Unable to cancel subscription. Please try again later.</string>
+    <string name="failed_to_load_subscription_details">Failed to load subscription details</string>
+    <string name="please_wait_confirm_subscription">Please wait while we confirm your subscription</string>
+    <string name="opening_upi_app">Opening %1$s…</string>
+    <string name="bonus_this_month">Bonus (this month)</string>
+    <string name="bonus_hint">Enter bonus amount (optional)</string>
+    <string name="generate_payslip">Generate Payslip</string>
+    <string name="payslip">Payslip</string>
+    <string name="manage_teams">Manage Teams</string>
+    <string name="add_team">Add Team</string>
+    <string name="no_teams_yet">No teams added yet</string>
+    <string name="team_name_hint">Enter team name (e.g. Site A Crew)</string>
+    <string name="all_workers">All Workers</string>
+</resources>

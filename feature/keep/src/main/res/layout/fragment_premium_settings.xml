@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_secondary"
+    tools:context=".screen.premium.PremiumSettingsFragment">
+
+    <!-- Toolbar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:padding="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+            android:id="@+id/tv_toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingVertical="@dimen/margin_16"
+            android:text="@string/premium_settings"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Loading Indicator -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/color_primary"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_16">
+
+            <!-- Premium Info Label -->
+            <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                android:id="@+id/tv_premium_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/premium_info"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"/>
+
+            <!-- Premium User Info Card -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_premium_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_box_top_corner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_premium_info"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_8"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_12">
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_profile"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_user_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toEndOf="@+id/iv_profile"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_expand"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginHorizontal="@dimen/margin_12">
+
+                    <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                        android:id="@+id/tv_member_since"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_2"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chevron_up"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Premium Details (Expandable) -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_premium_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_box_bottom_corner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_premium_user_info"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_1"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_12"
+                android:visibility="visible">
+
+                <!-- Purchase Date -->
+                <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                    android:id="@+id/tv_purchase_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/purchase_date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                    android:id="@+id/tv_purchase_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_purchase_date_label"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_purchase_date_label"/>
+
+                <!-- Next Bill -->
+                <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                    android:id="@+id/tv_next_bill_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next_bill"
+                    android:layout_marginTop="@dimen/margin_12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_purchase_date_label"/>
+
+                <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                    android:id="@+id/tv_next_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_next_bill_label"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_next_bill_label"/>
+
+                <!-- Amount Paid -->
+                <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                    android:id="@+id/tv_amount_paid_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount"
+                    android:layout_marginTop="@dimen/margin_12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_next_bill_label"/>
+
+                <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                    android:id="@+id/tv_amount_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_amount_paid_label"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_amount_paid_label"/>
+
+                <!-- Cancel Button -->
+                <com.boilerplate.uikit.views.textviews.text14.TextViewBoldError14
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:visibility="gone"
+                    android:textColor="@color/hint_text_color"
+                    android:layout_marginTop="@dimen/margin_16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_amount_paid_label"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- FAQ Label -->
+            <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                android:id="@+id/tv_faq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_premium_details"
+                android:text="@string/faq"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"/>
+
+            <!-- FAQ 1: What is Laborbook Premium? -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_faq_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_box_top_corner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_faq"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_8"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_12">
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                    android:id="@+id/tv_faq_1_question"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_what_is_laborbook_premium"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_faq_1_expand"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginEnd="@dimen/margin_12"/>
+
+                <ImageView
+                    android:id="@+id/iv_faq_1_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chevron_down"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                    android:id="@+id/tv_faq_1_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_what_is_laborbook_premium_answer"
+                    android:textColor="@color/hint_text_color"
+                    android:layout_marginTop="@dimen/margin_8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_faq_1_question"
+                    android:visibility="gone"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- FAQ 2: How does Autopay work? -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_faq_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_faq_1"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_1"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_12">
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                    android:id="@+id/tv_faq_2_question"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_how_does_autopay_work"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_faq_2_expand"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginEnd="@dimen/margin_12"/>
+
+                <ImageView
+                    android:id="@+id/iv_faq_2_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chevron_down"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                    android:id="@+id/tv_faq_2_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_how_does_autopay_work_answer"
+                    android:textColor="@color/hint_text_color"
+                    android:layout_marginTop="@dimen/margin_8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_faq_2_question"
+                    android:visibility="gone"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- FAQ 3: Can I cancel Autopay anytime? -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_faq_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_faq_2"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_1"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_12">
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                    android:id="@+id/tv_faq_3_question"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_can_i_cancel_autopay"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_faq_3_expand"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginEnd="@dimen/margin_12"/>
+
+                <ImageView
+                    android:id="@+id/iv_faq_3_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chevron_down"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                    android:id="@+id/tv_faq_3_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_can_i_cancel_autopay_answer"
+                    android:textColor="@color/hint_text_color"
+                    android:layout_marginTop="@dimen/margin_8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_faq_3_question"
+                    android:visibility="gone"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- FAQ 4: What happens if my Autopay fails or I have low balance? -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_faq_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_box_bottom_corner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_faq_3"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_1"
+                android:paddingHorizontal="@dimen/margin_12"
+                android:paddingVertical="@dimen/margin_12">
+
+                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                    android:id="@+id/tv_faq_4_question"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_what_happens_if_autopay_fails"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_faq_4_expand"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginEnd="@dimen/margin_12"/>
+
+                <ImageView
+                    android:id="@+id/iv_faq_4_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chevron_down"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                    android:id="@+id/tv_faq_4_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faq_what_happens_if_autopay_fails_answer"
+                    android:textColor="@color/hint_text_color"
+                    android:layout_marginTop="@dimen/margin_8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_faq_4_question"
+                    android:visibility="gone"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
