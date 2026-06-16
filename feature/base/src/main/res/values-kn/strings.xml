@@ -9,7 +9,7 @@
     <string name="tamil" translatable="false">தமிழ்</string>
     <string name="telugu" translatable="false">తెలుగు</string>
     <string name="bengali" translatable="false">বাংলা</string>
-    <string name="share_content">ನೀವು ಕಾಗದದಲ್ಲಿ ಹಾಜರಿ ಗುರುತಿಸಲು ತೊಂದರೆಯಾದರೆ, ಚಿಂತೆ ಬೇಡ. Laborbook ಆಪ್ ಅನ್ನು ಪ್ಲೇ ಸ್ಟೋರ್ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ಹಾಜರಿಯನ್ನು ತ್ವರಿತವಾಗಿ ಗುರುತಿಸಲು ಪ್ರಾರಂಭಿಸಿ.\n\n        ಈಗಲೇ Google Play ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ: https://play.google.com/store/apps/details?id=com.laborbook</string>
+    <string name="share_content">ನೀವು ಕಾಗದದಲ್ಲಿ ಹಾಜರಿ ಗುರುತಿಸಲು ತೊಂದರೆಯಾದರೆ, ಚಿಂತೆ ಬೇಡ. DailyBook ಆಪ್ ಅನ್ನು ಪ್ಲೇ ಸ್ಟೋರ್ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ಹಾಜರಿಯನ್ನು ತ್ವರಿತವಾಗಿ ಗುರುತಿಸಲು ಪ್ರಾರಂಭಿಸಿ.\n\n        ಈಗಲೇ Google Play ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ: https://play.google.com/store/apps/details?id=com.dailybook</string>
 
     <string name="name">ಹೆಸರು</string>
     <string name="phone_number_label">ದೂರವಾಣಿ ಸಂಖ್ಯೆ:</string>
@@ -23,7 +23,7 @@
     <string name="payment_summary">ಪಾವತಿ ಸಾರಾಂಶ</string>
     <string name="advance_amount_label">ಮುಂಗಡ ಮೊತ್ತ</string>
     <string name="total_earnings_label">ಒಟ್ಟು ಆದಾಯ</string>
-    <string name="report_generated_by_laborbook">ಈ ವರದಿ Laborbook ಮೂಲಕ ರಚಿಸಲಾಗಿದೆ</string>
+    <string name="report_generated_by_dailybook">ಈ ವರದಿ DailyBook ಮೂಲಕ ರಚಿಸಲಾಗಿದೆ</string>
     <string name="download_app_for_free_newline">ಅಪ್ಲಿಕೇಶನ್ ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\nGoogle Play ನಲ್ಲಿ ಪಡೆಯಿರಿ</string>
-    <string name="refer_friend_whatsapp_message">ನಾನು ದೈನಂದಿನ ಕೆಲಸವನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಲು Laborbook ಬಳಸುತ್ತೇನೆ. ಈಗ 5 ಲಕ್ಷ+ ಜನರು ಇದನ್ನು ಬಳಸುತ್ತಿದ್ದಾರೆ! ಇಲ್ಲಿ ಪ್ರಯತ್ನಿಸಿ 👉 https://play.google.com/store/apps/details?id=com.laborbook</string>
+    <string name="refer_friend_whatsapp_message">ನಾನು ದೈನಂದಿನ ಕೆಲಸವನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಲು DailyBook ಬಳಸುತ್ತೇನೆ. ಈಗ 5 ಲಕ್ಷ+ ಜನರು ಇದನ್ನು ಬಳಸುತ್ತಿದ್ದಾರೆ! ಇಲ್ಲಿ ಪ್ರಯತ್ನಿಸಿ 👉 https://play.google.com/store/apps/details?id=com.dailybook</string>
 </resources>

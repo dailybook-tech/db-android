@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Laborbook</string>
+    <string name="app_name" translatable="false">DailyBook</string>
     <string name="your_daily_attendance_app">మీ దైనందిన హాజరు యాప్</string>
     <string name="secure_made_in_india">100% భద్రమైన డేటా ∙ భారతదేశంలో తయారు చేయబడింది 🇮🇳</string>
-    <string name="truecaller_client_id" translatable="false">30xn92jvwyvm7avw8rkdfhgdlxxo8phijj4n-0w-znq</string>
+    <string name="truecaller_client_id" translatable="false">6tjrnz50zrypljwxt_o2qz54tcmtxrwhld7nl1y8xfo</string>
     <string name="attendance_reminder_title">మీ టీమ్‌కి కావాల్సిన నాయకుడు అవ్వండి! 💪</string>
     <string name="attendance_reminder_content">ఇప్పుడే కూలీల హాజరు నమోదు చేయండి.</string>
 </resources>

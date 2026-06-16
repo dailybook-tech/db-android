@@ -4,7 +4,7 @@
     <string name="staffs">कामगार</string>
     <string name="my_staffs">माझे कामगार</string>
     <string name="settings">सेटिंग्ज</string>
-    <string name="laborbook" translatable="false">Laborbook</string>
+    <string name="dailybook" translatable="false">DailyBook</string>
     <string name="good_morning">शुभ प्रभात</string>
     <string name="add_staff">कामगार जोडा</string>
     <string name="add_labor">कामगार जोडा</string>
@@ -35,8 +35,8 @@
     <string name="eg_food_petrol_rent">उदा.(अन्न, पेट्रोल, भाडे)</string>
     <string name="ok">ठीक</string>
     <string name="refer_a_friend">मित्राला शिफारस करा</string>
-    <string name="refer_friend_message">तुमच्या मित्रांसोबत Laborbook शेअर करा आणि त्यांना त्यांचे दैनंदिन काम सहजपणे व्यवस्थापित करण्यात मदत करा!</string>
-    <string name="refer_friend_whatsapp_message">मी दैनंदिन काम सहजपणे व्यवस्थापित करण्यासाठी Laborbook वापरतो. आता 5 लाख+ लोक याचा वापर करत आहेत! येथे वापरून पहा 👉 https://play.google.com/store/apps/details?id=com.laborbook</string>
+    <string name="refer_friend_message">तुमच्या मित्रांसोबत DailyBook शेअर करा आणि त्यांना त्यांचे दैनंदिन काम सहजपणे व्यवस्थापित करण्यात मदत करा!</string>
+    <string name="refer_friend_whatsapp_message">मी दैनंदिन काम सहजपणे व्यवस्थापित करण्यासाठी DailyBook वापरतो. आता 5 लाख+ लोक याचा वापर करत आहेत! येथे वापरून पहा 👉 https://play.google.com/store/apps/details?id=com.dailybook</string>
     <string name="share_on_whatsapp">WhatsApp वर शेअर करा</string>
     <string name="thank_you_refer_message">आमच्या प्रवासाचा भाग असल्याबद्दल धन्यवाद ❤️</string>
     <string name="profile_info">प्रोफाइल माहिती</string>
@@ -60,7 +60,7 @@
     <string name="_0" translatable="false">0</string>
     <string name="add_staff_manually">कामगार जोडा</string>
     <string name="non_contact_staff_info">नॉन-कॉन्टॅक्ट कामगार माहिती</string>
-    <string name="add_labour">कामगार जोडा</string>
+    <string name="add_entry">कामगार जोडा</string>
     <string name="your_saved_contacts">तुमचे जतन केलेले संपर्क</string>
     <string name="no_result_found">कोणतेही निकाल सापडले नाहीत</string>
     <string name="save">जतन करा</string>
@@ -76,7 +76,7 @@
     <string name="removed">हटवले</string>
     <string name="adv">आगाऊ</string>
     <string name="language">भाषा</string>
-    <string name="refer_laborbook_app_to_your_friends">तुमच्या मित्रांना Laborbook अॅपची शिफारस करा</string>
+    <string name="refer_dailybook_app_to_your_friends">तुमच्या मित्रांना DailyBook अॅपची शिफारस करा</string>
     <string name="total_present">एकूण उपस्थित</string>
     <string name="total_absent">एकूण अनुपस्थित</string>
     <string name="total_advance">एकूण आगाऊ</string>
@@ -89,7 +89,7 @@
     <string name="update_now">आता अपडेट करा</string>
     <string name="app_update_is_available">अ‍ॅप अपडेट उपलब्ध आहे</string>
     <string name="submit">सबमिट करा</string>
-    <string name="ask_us_any_feature_you_want_in_laborbook_app">Laborbook अ‍ॅपमध्ये तुम्हाला हवे असलेले फिचर विचारा...</string>
+    <string name="ask_us_any_feature_you_want_in_dailybook_app">DailyBook अ‍ॅपमध्ये तुम्हाला हवे असलेले फिचर विचारा...</string>
     <string name="request_sent_successfully">विनंती यशस्वीरित्या पाठवली गेली</string>
     <string name="income">उत्पन्न</string>
     <string name="select_month_amp_year">महिना &amp; वर्ष निवडा</string>
@@ -110,7 +110,7 @@
     <string name="skip">वगळा</string>
     <string name="got_it">समजले!</string>
     <string name="phone_number_label">फोन नंबर:</string>
-    <string name="report_generated_by_laborbook">ही अहवाल Laborbook ने तयार केली आहे</string>
+    <string name="report_generated_by_dailybook">ही अहवाल DailyBook ने तयार केली आहे</string>
     <string name="download_app_for_free_newline">अ‍ॅप विनामूल्य डाउनलोड करा\nGoogle Play वर मिळवा</string>
     <string name="overtime">अतिरिक्त वेळ</string>
     <string name="overtime_hours">अतिरिक्त तास</string>
@@ -192,12 +192,12 @@
     <string name="next_bill">पुढील बिल</string>
     <string name="amount_paid">दिलेली रक्कम</string>
     <string name="faq">सामान्य प्रश्न</string>
-    <string name="faq_what_is_laborbook_premium">Laborbook Pro म्हणजे काय?</string>
-    <string name="faq_what_is_laborbook_premium_answer">Laborbook Pro जाहिरात-मुक्त अनुभव, स्वयंचलित मासिक अहवाल, डेटा बॅकअप आणि प्राधान्य समर्थन देते।</string>
+    <string name="faq_what_is_dailybook_premium">DailyBook Pro म्हणजे काय?</string>
+    <string name="faq_what_is_dailybook_premium_answer">DailyBook Pro जाहिरात-मुक्त अनुभव, स्वयंचलित मासिक अहवाल, डेटा बॅकअप आणि प्राधान्य समर्थन देते।</string>
     <string name="faq_how_does_autopay_work">ऑटोपे कसे काम करते?</string>
     <string name="faq_how_does_autopay_work_answer">ऑटोपे UPI, डेबिट किंवा क्रेडिट कार्डद्वारे Pro योजना दर महिन्यात किंवा वर्षाला स्वयंचलित नूतनीकरण करते।</string>
     <string name="faq_can_i_cancel_autopay">मी ऑटोपे कधीही रद्द करू शकतो?</string>
-    <string name="faq_can_i_cancel_autopay_answer">होय. तुम्ही UPI अ‍ॅप (PhonePe, Google Pay, Paytm) किंवा Laborbook Pro सेटिंग्जमधून कधीही रद्द करू शकता।</string>
+    <string name="faq_can_i_cancel_autopay_answer">होय. तुम्ही UPI अ‍ॅप (PhonePe, Google Pay, Paytm) किंवा DailyBook Pro सेटिंग्जमधून कधीही रद्द करू शकता।</string>
     <string name="faq_what_happens_if_autopay_fails">ऑटोपे अयशस्वी झाल्यास किंवा बॅलन्स कमी असेल तर काय?</string>
     <string name="faq_what_happens_if_autopay_fails_answer">ऑटोपे अयशस्वी झाल्यास आम्ही त्वरित सूचित करू; हाताने पुन्हा प्रयत्न करण्याचा पर्याय असतो।</string>
 
@@ -250,7 +250,7 @@
     <string name="start">सुरू करा</string>
     <string name="no_upi_apps_found">कोणतेही UPI अ‍ॅप सापडले नाहीत. कृपया UPI समर्थित अ‍ॅप (उदा. PhonePe, Google Pay, Paytm) स्थापित करा।</string>
     <string name="please_select_subscription_plan">कृपया एक सदस्यता योजना निवडा</string>
-    <string name="laborbook_pro">Laborbook Pro</string>
+    <string name="dailybook_pro">DailyBook Pro</string>
     <string name="pro_subscription">प्रो सदस्यता</string>
     <string name="failed_to_initiate_payment">पेमेंट सुरू करण्यात अयशस्वी: %1$s</string>
     <string name="verifying_payment">पेमेंट सत्यापित केले जात आहे…</string>

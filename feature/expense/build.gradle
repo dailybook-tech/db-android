@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace 'com.laborbook.expense'
+    namespace 'com.dailybook.expense'
     compileSdk 35
 
     defaultConfig {

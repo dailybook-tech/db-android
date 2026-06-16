@@ -172,7 +172,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/margin_12"
             android:layout_marginVertical="@dimen/margin_16"
-            android:text="@string/add_labour"
+            android:text="@string/add_entry"
             android:visibility="gone"
             android:padding="@dimen/margin_10"
             app:layout_constraintBottom_toBottomOf="parent"

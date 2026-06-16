@@ -19,9 +19,9 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--keep class com.laborbook.base.* {
+-keep class com.dailybook.base.* {
     *;
 }
--keepclassmembers class com.laborbook.base.** {*;}
+-keepclassmembers class com.dailybook.base.** {*;}
 -keep class com.boilerplate.** {*;}
 -keepclassmembers class com.boilerplate.** {*;}

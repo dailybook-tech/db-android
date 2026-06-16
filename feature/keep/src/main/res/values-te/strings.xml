@@ -4,7 +4,7 @@
     <string name="staffs">కార్మికులు</string>
     <string name="my_staffs">నా కార్మికులు</string>
     <string name="settings">సెట్టింగులు</string>
-    <string name="laborbook" translatable="false">Laborbook</string>
+    <string name="dailybook" translatable="false">DailyBook</string>
     <string name="good_morning">శుభోదయం</string>
     <string name="add_staff">కార్మికుడిని జోడించండి</string>
     <string name="add_labor">కార్మికుడిని జోడించండి</string>
@@ -35,8 +35,8 @@
     <string name="eg_food_petrol_rent">ఉదా. (ఆహారం, పెట్రోల్, అద్దె)</string>
     <string name="ok">అలాగే</string>
     <string name="refer_a_friend">మిత్రుడికి సూచించండి</string>
-    <string name="refer_friend_message">మీ స్నేహితులతో Laborbook ని షేర్ చేసి, వారికి రోజువారీ పనిని సులభంగా నిర్వహించడంలో సహాయపడండి!</string>
-    <string name="refer_friend_whatsapp_message">నేను రోజువారీ పనిని సులభంగా నిర్వహించడానికి Laborbook ని ఉపయోగిస్తున్నాను. ఇప్పుడు 5 లక్షల+ మంది దీన్ని ఉపయోగిస్తున్నారు! ఇక్కడ ప్రయత్నించండి 👉 https://play.google.com/store/apps/details?id=com.laborbook</string>
+    <string name="refer_friend_message">మీ స్నేహితులతో DailyBook ని షేర్ చేసి, వారికి రోజువారీ పనిని సులభంగా నిర్వహించడంలో సహాయపడండి!</string>
+    <string name="refer_friend_whatsapp_message">నేను రోజువారీ పనిని సులభంగా నిర్వహించడానికి DailyBook ని ఉపయోగిస్తున్నాను. ఇప్పుడు 5 లక్షల+ మంది దీన్ని ఉపయోగిస్తున్నారు! ఇక్కడ ప్రయత్నించండి 👉 https://play.google.com/store/apps/details?id=com.dailybook</string>
     <string name="share_on_whatsapp">WhatsApp లో షేర్ చేయండి</string>
     <string name="thank_you_refer_message">మా ప్రయాణంలో భాగమైనందుకు ధన్యవాదాలు ❤️</string>
     <string name="profile_info">ప్రొఫైల్ వివరాలు</string>
@@ -60,7 +60,7 @@
     <string name="_0" translatable="false">0</string>
     <string name="add_staff_manually">కార్మికుడిని చేతివిధానంలో జోడించండి</string>
     <string name="non_contact_staff_info">కాంటాక్ట్ లేని కార్మికుని వివరాలు</string>
-    <string name="add_labour">కార్మికుడిని జోడించండి</string>
+    <string name="add_entry">కార్మికుడిని జోడించండి</string>
     <string name="your_saved_contacts">మీ సేవ్ చేసిన కాంటాక్ట్లు</string>
     <string name="no_result_found">ఫలితాలు కనపడలేదు</string>
     <string name="save">సేవ్ చేయండి</string>
@@ -76,7 +76,7 @@
     <string name="removed">తొలగించబడింది</string>
     <string name="adv">అడ్వాన్స్</string>
     <string name="language">భాష</string>
-    <string name="refer_laborbook_app_to_your_friends">మీ స్నేహితులకు Laborbook యాప్‌ను సూచించండి</string>
+    <string name="refer_dailybook_app_to_your_friends">మీ స్నేహితులకు DailyBook యాప్‌ను సూచించండి</string>
     <string name="total_present">మొత్తం హాజరు</string>
     <string name="total_absent">మొత్తం గైర్హాజరు</string>
     <string name="total_advance">మొత్తం ముందస్తు</string>
@@ -89,7 +89,7 @@
     <string name="update_now">ఇప్పుడు నవీకరించండి</string>
     <string name="app_update_is_available">యాప్ నవీకరణ అందుబాటులో ఉంది</string>
     <string name="submit">సమర్పించండి</string>
-    <string name="ask_us_any_feature_you_want_in_laborbook_app">Laborbook యాప్‌లో మీరు కావాలనుకుంటున్న ఫీచర్‌ను అడగండి...</string>
+    <string name="ask_us_any_feature_you_want_in_dailybook_app">DailyBook యాప్‌లో మీరు కావాలనుకుంటున్న ఫీచర్‌ను అడగండి...</string>
     <string name="request_sent_successfully">అభ్యర్థన విజయవంతంగా పంపబడింది</string>
     <string name="income">ఆదాయం</string>
     <string name="select_month_amp_year">నెల &amp; సంవత్సరం ఎంచుకోండి</string>
@@ -110,7 +110,7 @@
     <string name="skip">దాటవేయి</string>
     <string name="got_it">అర్థమైంది!</string>
     <string name="phone_number_label">ఫోన్ నంబర్:</string>
-    <string name="report_generated_by_laborbook">ఈ నివేదిక Laborbook ద్వారా రూపొందించబడింది</string>
+    <string name="report_generated_by_dailybook">ఈ నివేదిక DailyBook ద్వారా రూపొందించబడింది</string>
     <string name="download_app_for_free_newline">యాప్‌ను ఉచితంగా డౌన్‌లోడ్ చేయండి\nGoogle Play లో పొందండి</string>
     <string name="overtime">ఓవర్‌టైమ్</string>
     <string name="overtime_hours">ఓవర్‌టైమ్ గంటలు</string>
@@ -192,12 +192,12 @@
     <string name="next_bill">తదుపరి బిల్లు</string>
     <string name="amount_paid">చెల్లించిన మొత్తం</string>
     <string name="faq">తరచుగా అడిగే ప్రశ్నలు</string>
-    <string name="faq_what_is_laborbook_premium">Laborbook Pro అంటే ఏమిటి?</string>
-    <string name="faq_what_is_laborbook_premium_answer">Laborbook Pro యాడ్-ఫ్రీ అనుభవం, ఆటోమేటిక్ నెలవారీ నివేదికలు, డేటా బ్యాకప్ మరియు ప్రాధాన్యత మద్దతు వంటి అదనపు ఫీచర్‌లను అందిస్తుంది.</string>
+    <string name="faq_what_is_dailybook_premium">DailyBook Pro అంటే ఏమిటి?</string>
+    <string name="faq_what_is_dailybook_premium_answer">DailyBook Pro యాడ్-ఫ్రీ అనుభవం, ఆటోమేటిక్ నెలవారీ నివేదికలు, డేటా బ్యాకప్ మరియు ప్రాధాన్యత మద్దతు వంటి అదనపు ఫీచర్‌లను అందిస్తుంది.</string>
     <string name="faq_how_does_autopay_work">ఆటోపే ఎలా పనిచేస్తుంది?</string>
     <string name="faq_how_does_autopay_work_answer">ఆటోపే UPI, డెబిట్ లేదా క్రెడిట్ కార్డ్ తో Pro ప్లాన్‌ను నెల లేదా సంవత్సరానికి స్వయంచాలకంగా పునరుద్ధరించడానికి అనుమతిస్తుంది.</string>
     <string name="faq_can_i_cancel_autopay">నేను ఎప్పుడైనా ఆటోపే రద్దు చేయవచ్చా?</string>
-    <string name="faq_can_i_cancel_autopay_answer">అవును. మీరు UPI యాప్ (PhonePe, Google Pay, Paytm) లేదా Laborbook Pro సెట్టింగ్‌ల నుండి ఎప్పుడైనా రద్దు చేయవచ్చు.</string>
+    <string name="faq_can_i_cancel_autopay_answer">అవును. మీరు UPI యాప్ (PhonePe, Google Pay, Paytm) లేదా DailyBook Pro సెట్టింగ్‌ల నుండి ఎప్పుడైనా రద్దు చేయవచ్చు.</string>
     <string name="faq_what_happens_if_autopay_fails">ఆటోపే విఫలమైతే లేదా బ్యాలెన్స్ తక్కువగా ఉంటే ఏమవుతుంది?</string>
     <string name="faq_what_happens_if_autopay_fails_answer">ఆటోపే విఫలమైతే మేము వెంటనే తెలియజేస్తాము; మాన్యువల్‌గా మళ్లీ ప్రయత్నించే ఎంపిక ఉంటుంది.</string>
 
@@ -250,7 +250,7 @@
     <string name="start">ప్రారంభించండి</string>
     <string name="no_upi_apps_found">UPI యాప్‌లు కనుగొనబడలేదు. దయచేసి UPI మద్దతు ఉన్న యాప్ (ఉదా. PhonePe, Google Pay, Paytm) ఇన్‌స్టాల్ చేయండి।</string>
     <string name="please_select_subscription_plan">దయచేసి ఒక సభ్యత్వ ప్రణాళికను ఎంచుకోండి</string>
-    <string name="laborbook_pro">Laborbook Pro</string>
+    <string name="dailybook_pro">DailyBook Pro</string>
     <string name="pro_subscription">ప్రో సభ్యత్వం</string>
     <string name="failed_to_initiate_payment">చెల్లింపును ప్రారంభించడంలో విఫలమైంది: %1$s</string>
     <string name="verifying_payment">చెల్లింపును ధృవీకరిస్తున్నాము…</string>

@@ -4,7 +4,7 @@
     <string name="staffs">தொழிலாளர்கள்</string>
     <string name="my_staffs">என் தொழிலாளர்கள்</string>
     <string name="settings">அமைப்புகள்</string>
-    <string name="laborbook" translatable="false">Laborbook</string>
+    <string name="dailybook" translatable="false">DailyBook</string>
     <string name="good_morning">காலை வணக்கம்</string>
     <string name="add_staff">தொழிலாளி சேர்க்கவும்</string>
     <string name="add_labor">தொழிலாளி சேர்க்கவும்</string>
@@ -35,8 +35,8 @@
     <string name="eg_food_petrol_rent">எ.கா.(உணவு, பெட்ரோல், வாடகை)</string>
     <string name="ok">சரி</string>
     <string name="refer_a_friend">பரிந்துரை</string>
-    <string name="refer_friend_message">உங்கள் நண்பர்களுடன் Laborbook ஐ பகிர்ந்து, தினசரி வேலையை எளிதாக நிர்வகிக்க உதவுங்கள்!</string>
-    <string name="refer_friend_whatsapp_message">நான் தினசரி வேலையை எளிதாக நிர்வகிக்க Laborbook பயன்படுத்துகிறேன். இப்போது 5 லட்சம்+ பேர் இதைப் பயன்படுத்துகிறார்கள்! இங்கே முயற்சிக்கவும் 👉 https://play.google.com/store/apps/details?id=com.laborbook</string>
+    <string name="refer_friend_message">உங்கள் நண்பர்களுடன் DailyBook ஐ பகிர்ந்து, தினசரி வேலையை எளிதாக நிர்வகிக்க உதவுங்கள்!</string>
+    <string name="refer_friend_whatsapp_message">நான் தினசரி வேலையை எளிதாக நிர்வகிக்க DailyBook பயன்படுத்துகிறேன். இப்போது 5 லட்சம்+ பேர் இதைப் பயன்படுத்துகிறார்கள்! இங்கே முயற்சிக்கவும் 👉 https://play.google.com/store/apps/details?id=com.dailybook</string>
     <string name="share_on_whatsapp">WhatsApp இல் பகிரவும்</string>
     <string name="thank_you_refer_message">எங்கள் பயணத்தின் ஒரு பகுதியாக இருந்ததற்கு நன்றி ❤️</string>
     <string name="profile_info">சுயவிவர தகவல்</string>
@@ -60,7 +60,7 @@
     <string name="_0" translatable="false">0</string>
     <string name="add_staff_manually">தொழிலாளி சேர்க்கவும்</string>
     <string name="non_contact_staff_info">தொடர்பு கொள்ள முடியாத தொழிலாளி விவரம்</string>
-    <string name="add_labour">தொழிலாளி சேர்க்கவும்</string>
+    <string name="add_entry">தொழிலாளி சேர்க்கவும்</string>
     <string name="your_saved_contacts">உங்கள் சேமிக்கப்பட்ட தொடர்புகள்</string>
     <string name="no_result_found">முடிவுகள் இல்லை</string>
     <string name="save">சேமிக்கவும்</string>
@@ -76,7 +76,7 @@
     <string name="removed">அகற்றப்பட்டது</string>
     <string name="adv">முன்தொகை</string>
     <string name="language">மொழி</string>
-    <string name="refer_laborbook_app_to_your_friends">உங்கள் நண்பர்களுக்கு Laborbook செயலியை பரிந்துரை செய்யுங்கள்</string>
+    <string name="refer_dailybook_app_to_your_friends">உங்கள் நண்பர்களுக்கு DailyBook செயலியை பரிந்துரை செய்யுங்கள்</string>
     <string name="total_present">மொத்த வருகை</string>
     <string name="total_absent">மொத்த வரவில்லை</string>
     <string name="total_advance">மொத்த முன்தொகை</string>
@@ -89,7 +89,7 @@
     <string name="update_now">இப்போதே புதுப்பிக்கவும்</string>
     <string name="app_update_is_available">ஆப்பைப் புதுப்பிப்பு கிடைக்கிறது</string>
     <string name="submit">சமர்ப்பிக்கவும்</string>
-    <string name="ask_us_any_feature_you_want_in_laborbook_app">தேவையான அம்சத்தை கேட்கவும்...</string>
+    <string name="ask_us_any_feature_you_want_in_dailybook_app">தேவையான அம்சத்தை கேட்கவும்...</string>
     <string name="request_sent_successfully">விண்ணப்பம் வெற்றிகரமாக அனுப்பப்பட்டது</string>
     <string name="income">வரவு</string>
     <string name="select_month_amp_year">மாதம் &amp; ஆண்டு தேர்வுசெய்க</string>
@@ -110,7 +110,7 @@
     <string name="skip">தவிர்க்க</string>
     <string name="got_it">புரிந்தது!</string>
     <string name="phone_number_label">தொலைபேசி எண்:</string>
-    <string name="report_generated_by_laborbook">இந்த அறிக்கையை லேபர்புக் உருவாக்கியது</string>
+    <string name="report_generated_by_dailybook">இந்த அறிக்கையை லேபர்புக் உருவாக்கியது</string>
     <string name="download_app_for_free_newline">இணையத்தில் இலவசமாக பதிவிறக்கவும்\nGoogle Play இல் பெறுங்கள்</string>
     <string name="overtime">அதிக நேரம்</string>
     <string name="overtime_hours">அதிக நேர மணிநேரங்கள்</string>
@@ -192,12 +192,12 @@
     <string name="next_bill">அடுத்த பில்</string>
     <string name="amount_paid">செலுத்திய தொகை</string>
     <string name="faq">அடிக்கடி கேட்கும் கேள்விகள்</string>
-    <string name="faq_what_is_laborbook_premium">Laborbook Pro என்றால் என்ன?</string>
-    <string name="faq_what_is_laborbook_premium_answer">Laborbook Pro விளம்பரமில்லா அனுபவம், தானியங்கி மாத அறிக்கைகள், தரவு காப்பு மற்றும் முன்னுரிமை ஆதரவு போன்ற கூடுதல் அம்சங்களை வழங்குகிறது. ஊழியர்களை வேகமாகவும் பாதுகாப்பாகவும் நிர்வகிக்க உதவுகிறது.</string>
+    <string name="faq_what_is_dailybook_premium">DailyBook Pro என்றால் என்ன?</string>
+    <string name="faq_what_is_dailybook_premium_answer">DailyBook Pro விளம்பரமில்லா அனுபவம், தானியங்கி மாத அறிக்கைகள், தரவு காப்பு மற்றும் முன்னுரிமை ஆதரவு போன்ற கூடுதல் அம்சங்களை வழங்குகிறது. ஊழியர்களை வேகமாகவும் பாதுகாப்பாகவும் நிர்வகிக்க உதவுகிறது.</string>
     <string name="faq_how_does_autopay_work">ஆட்டோபே எவ்வாறு செயல்படுகிறது?</string>
     <string name="faq_how_does_autopay_work_answer">ஆட்டோபே UPI, டெபிட் அல்லது கிரெடிட் கார்டு மூலம் Pro திட்டத்தை மாதம் அல்லது ஆண்டு தானாக புதுப்பிக்க உதவுகிறது. ஒவ்வொரு முறையும் கைமுறையாக செலுத்த தேவையில்லை.</string>
     <string name="faq_can_i_cancel_autopay">ஆட்டோபேயை எப்போது வேண்டுமானாலும் ரத்து செய்யலாமா?</string>
-    <string name="faq_can_i_cancel_autopay_answer">ஆம். உங்கள் UPI ஆப் (PhonePe, Google Pay, Paytm) அல்லது Laborbook Pro அமைப்புகளிலிருந்து எப்போது வேண்டுமானாலும் ரத்து செய்யலாம்.</string>
+    <string name="faq_can_i_cancel_autopay_answer">ஆம். உங்கள் UPI ஆப் (PhonePe, Google Pay, Paytm) அல்லது DailyBook Pro அமைப்புகளிலிருந்து எப்போது வேண்டுமானாலும் ரத்து செய்யலாம்.</string>
     <string name="faq_what_happens_if_autopay_fails">ஆட்டோபே தோல்வியடைந்தால் அல்லது பாலன்ஸ் குறைவாக இருந்தால் என்ன?</string>
     <string name="faq_what_happens_if_autopay_fails_answer">ஆட்டோபே தோல்வியடைந்தால் உடனே அறிவிப்போம்; கைமுறையாக மீண்டும் முயற்சிக்கும் விருப்பம் உள்ளது. குறுகிய காலம் Pro அம்சங்கள் செயலில் இருக்கும்.</string>
 
@@ -250,7 +250,7 @@
     <string name="start">தொடங்க</string>
     <string name="no_upi_apps_found">UPI ஆப்ஸ் எதுவும் கிடைக்கவில்லை। தயவுசெய்து UPI ஆதரவு உள்ள ஆப் (எ.கா. PhonePe, Google Pay, Paytm) நிறுவவும்।</string>
     <string name="please_select_subscription_plan">தயவுசெய்து ஒரு சந்தா திட்டத்தைத் தேர்ந்தெடுக்கவும்</string>
-    <string name="laborbook_pro">Laborbook Pro</string>
+    <string name="dailybook_pro">DailyBook Pro</string>
     <string name="pro_subscription">ப்ரோ சந்தா</string>
     <string name="failed_to_initiate_payment">கட்டணத்தைத் தொடங்க முடியவில்லை: %1$s</string>
     <string name="verifying_payment">கட்டணத்தை சரிபார்க்கிறது…</string>

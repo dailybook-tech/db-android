@@ -54,8 +54,6 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_attendance_marked_success" />
     </LinearLayout>
 
-    <!--  Test ad ID : ca-app-pub-3940256099942544/6300978111
-      Actual id : ca-app-pub-4991346658410627/4760367156-->
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"
@@ -67,10 +65,10 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_ok"
         android:layout_margin="@dimen/margin_16"
         ads:adSize="MEDIUM_RECTANGLE"
-        ads:adUnitId="ca-app-pub-4991346658410627/4760367156"/>
+        ads:adUnitId="ca-app-pub-3940256099942544/9214589741"/>
 
     <!-- Custom Ad Fallback -->
-    <com.laborbook.base.ads.CustomAdView
+    <com.dailybook.base.ads.CustomAdView
         android:id="@+id/customAdView"
         android:layout_width="320dp"
         android:layout_height="50dp"

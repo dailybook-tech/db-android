@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="laborbook" translatable="false">Laborbook</string>
+    <string name="app_name" translatable="false">DailyBook</string>
+    <string name="dailybook" translatable="false">DailyBook</string>
     <string name="made_in_india">Made in India 🇮🇳</string>
     <string name="enter_mobile_number">Enter your Mobile number</string>
     <string name="login_number_hint">Mobile Number</string>
@@ -15,5 +16,5 @@
     <string name="invalid_otp">Invalid OTP</string>
     <string name="resend_otp">Haven’t received OTP? <font color="#3270D2"><u>Resend</u></font></string>
     <string name="_100_secure_data">100% Secure data</string>
-    <string name="daily_labour_attendance">Daily labour attendance</string>
+    <string name="daily_attendance">Daily attendance</string>
 </resources>

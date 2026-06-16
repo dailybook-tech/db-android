@@ -505,12 +505,12 @@
                 android:layout_weight="1"
                 android:layout_marginStart="@dimen/margin_8"
                 android:text="@string/export_csv"
-                android:textColor="@color/primary_color"
+                android:textColor="@color/color_primary"
                 android:textStyle="bold"
                 android:textSize="@dimen/text_14"
                 app:cornerRadius="@dimen/corner_radius_12"
                 app:backgroundTint="@color/background"
-                app:strokeColor="@color/primary_color"
+                app:strokeColor="@color/color_primary"
                 app:strokeWidth="@dimen/border_width_1" />
         </LinearLayout>
     </LinearLayout>

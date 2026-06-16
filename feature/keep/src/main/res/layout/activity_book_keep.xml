@@ -73,10 +73,10 @@
             android:layout_height="wrap_content"
             android:visibility="gone"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-4991346658410627/7843571317" />
+            ads:adUnitId="ca-app-pub-3940256099942544/9214589741" />
 
         <!-- Custom Ad Fallback -->
-        <com.laborbook.base.ads.CustomAdView
+        <com.dailybook.base.ads.CustomAdView
             android:id="@+id/customAdView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

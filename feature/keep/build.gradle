@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.laborbook.keep'
+    namespace 'com.dailybook.keep'
     compileSdk 35
 
     defaultConfig {
@@ -15,9 +15,7 @@ android {
         consumerProguardFiles "consumer-rules.pro"
         resourceConfigurations += ['en', 'hi', 'ta', 'te', 'kn', 'mr', 'bn']
         
-        // Enable BuildConfig generation for Razorpay SDK
         buildConfigField "boolean", "DEBUG", "true"
-        buildConfigField "String", "RAZORPAY_KEY_ID", "\"rzp_live_RzMg0FZRdK4zwk\""
     }
 
     buildTypes {
@@ -94,8 +92,6 @@ dependencies {
     implementation libs.firebase.common.ktx
     implementation 'com.google.firebase:firebase-config'
     
-    // Razorpay Custom UI SDK for UPI subscriptions (opens direct UPI apps via WebView)
-    implementation 'com.razorpay:customui:3.9.22'
 
     kapt libs.androidx.room.compiler
     testImplementation libs.junit

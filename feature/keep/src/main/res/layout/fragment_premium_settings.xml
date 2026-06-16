@@ -229,7 +229,7 @@
                 android:layout_marginHorizontal="@dimen/margin_16"
                 android:layout_marginTop="@dimen/margin_16"/>
 
-            <!-- FAQ 1: What is Laborbook Premium? -->
+            <!-- FAQ 1: What is DailyBook Premium? -->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_faq_1"
                 android:layout_width="match_parent"
@@ -247,7 +247,7 @@
                     android:id="@+id/tv_faq_1_question"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/faq_what_is_laborbook_premium"
+                    android:text="@string/faq_what_is_dailybook_premium"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/iv_faq_1_expand"
                     app:layout_constraintTop_toTopOf="parent"
@@ -265,7 +265,7 @@
                     android:id="@+id/tv_faq_1_answer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/faq_what_is_laborbook_premium_answer"
+                    android:text="@string/faq_what_is_dailybook_premium_answer"
                     android:textColor="@color/hint_text_color"
                     android:layout_marginTop="@dimen/margin_8"
                     app:layout_constraintStart_toStartOf="parent"

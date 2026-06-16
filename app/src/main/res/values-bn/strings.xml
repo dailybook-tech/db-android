@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">লেবারবুক</string>
+    <string name="app_name" translatable="false">DailyBook</string>
     <string name="your_daily_attendance_app">আপনার দৈনিক উপস্থিতি অ্যাপ</string>
     <string name="secure_made_in_india">১০০% সুরক্ষিত ডেটা ∙ ভারতে তৈরি 🇮🇳</string>
-    <string name="truecaller_client_id" translatable="false">30xn92jvwyvm7avw8rkdfhgdlxxo8phijj4n-0w-znq</string>
+    <string name="truecaller_client_id" translatable="false">6tjrnz50zrypljwxt_o2qz54tcmtxrwhld7nl1y8xfo</string>
     <string name="attendance_reminder_title">আপনার দলের প্রয়োজনীয় নেতা হন! 💪</string>
     <string name="attendance_reminder_content">এখনই শ্রমিকদের উপস্থিতি চিহ্নিত করুন</string>
 </resources>

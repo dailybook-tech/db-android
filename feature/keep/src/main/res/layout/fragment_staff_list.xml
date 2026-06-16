@@ -18,11 +18,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <com.boilerplate.uikit.views.textviews.text24.TextViewBoldPrimaryColor24
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_laborbook_logo_primary"/>
+            android:text="@string/app_name"/>
 
     </LinearLayout>
 

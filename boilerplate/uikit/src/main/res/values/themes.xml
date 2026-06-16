@@ -4,11 +4,11 @@
         <item name="windowSplashScreenBackground">@color/background</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
         <item name="windowSplashScreenAnimationDuration">2000</item>
-        <item name="postSplashScreenTheme">@style/Theme.Laborbook</item>
+        <item name="postSplashScreenTheme">@style/Theme.Dailybook</item>
     </style>
 
     <!-- Base application theme. -->
-    <style name="Base.Theme.Laborbook" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Dailybook" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/color_primary</item>
         <item name="backgroundColor">@color/background</item>
 
@@ -34,7 +34,7 @@
         <item name="bottomSheetDialogTheme">@style/TransparentBottomSheetDialogTheme</item>
     </style>
 
-    <style name="Theme.Laborbook" parent="Base.Theme.Laborbook" />
+    <style name="Theme.Dailybook" parent="Base.Theme.Dailybook" />
 
     <!--  Top Corner Cardview  -->
     <style name="TopCornersCurved" parent="ShapeAppearance.MaterialComponents.MediumComponent">

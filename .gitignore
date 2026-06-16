@@ -118,6 +118,10 @@ proguard/
 # Google Services JSON file
 app/google-services.json
 
+# Keystore files (signing credentials)
+*.jks
+*.keystore
+
 # Miscellaneous
 *.lock
 *.log

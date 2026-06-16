@@ -1,6 +1,6 @@
-# LaborBook UI Automation Tests
+# DailyBook UI Automation Tests
 
-This directory contains comprehensive UI automation tests for the LaborBook Android application. The tests cover the complete app flow from login to using all features.
+This directory contains comprehensive UI automation tests for the DailyBook Android application. The tests cover the complete app flow from login to using all features.
 
 ## Test Credentials
 
@@ -43,7 +43,7 @@ Tests reports and PDF generation including:
 - Navigation between reports
 - Empty report handling
 
-### 5. LaborBookUITest.kt
+### 5. DailyBookUITest.kt
 Comprehensive end-to-end test covering all features in sequence:
 - Complete login flow
 - Language selection
@@ -61,7 +61,7 @@ Comprehensive end-to-end test covering all features in sequence:
 
 1. **Android Device/Emulator**: A physical device or emulator running Android API level 24 or higher
 2. **ADB Access**: Ensure the device is connected and accessible via ADB
-3. **App Installation**: The LaborBook app should be installed on the test device
+3. **App Installation**: The DailyBook app should be installed on the test device
 
 ## Running the Tests
 
@@ -74,37 +74,37 @@ Comprehensive end-to-end test covering all features in sequence:
 ### Option 2: Run Specific Test Class
 ```bash
 # Run only login tests
-./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.laborbook.LoginTest
+./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.dailybook.LoginTest
 
 # Run only staff management tests
-./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.laborbook.StaffManagementTest
+./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.dailybook.StaffManagementTest
 
 # Run only attendance tests
-./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.laborbook.AttendanceTest
+./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.dailybook.AttendanceTest
 
 # Run only reports tests
-./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.laborbook.ReportsTest
+./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.dailybook.ReportsTest
 
 # Run complete end-to-end test
-./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.laborbook.LaborBookUITest
+./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.dailybook.DailyBookUITest
 ```
 
 ### Option 3: Run Specific Test Method
 ```bash
 # Run a specific test method
-./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.laborbook.LoginTest#testSuccessfulLogin
+./gradlew connectedAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.dailybook.LoginTest#testSuccessfulLogin
 ```
 
 ### Option 4: Run from Android Studio
 1. Open the project in Android Studio
-2. Navigate to the test files in `app/src/androidTest/java/com/laborbook/`
+2. Navigate to the test files in `app/src/androidTest/java/com/dailybook/`
 3. Right-click on any test class or method
 4. Select "Run" or "Debug"
 
 ## Test Configuration
 
 ### Test Runner
-The tests use a custom test runner (`LaborBookTestRunner.kt`) that:
+The tests use a custom test runner (`DailyBookTestRunner.kt`) that:
 - Initializes the app with proper configuration
 - Sets up Koin dependency injection for testing
 - Handles app launch and cleanup

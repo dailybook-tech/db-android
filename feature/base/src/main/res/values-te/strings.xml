@@ -9,7 +9,7 @@
     <string name="tamil" translatable="false">தமிழ்</string>
     <string name="telugu" translatable="false">తెలుగు</string>
     <string name="bengali" translatable="false">বাংলা</string>
-    <string name="share_content">మీరు కాగితంపై హాజరు నమోదు చేయడం వల్ల అలసిపోయారా? చింతించకండి. Laborbook యాప్‌ను ప్లే స్టోర్ లింక్ నుండి డౌన్‌లోడ్ చేసి, హాజరు వేగంగా నమోదు చేయడం ప్రారంభించండి.\n\n        ఇప్పుడే Google Play నుండి డౌన్‌లోడ్ చేయండి: https://play.google.com/store/apps/details?id=com.laborbook</string>
+    <string name="share_content">మీరు కాగితంపై హాజరు నమోదు చేయడం వల్ల అలసిపోయారా? చింతించకండి. DailyBook యాప్‌ను ప్లే స్టోర్ లింక్ నుండి డౌన్‌లోడ్ చేసి, హాజరు వేగంగా నమోదు చేయడం ప్రారంభించండి.\n\n        ఇప్పుడే Google Play నుండి డౌన్‌లోడ్ చేయండి: https://play.google.com/store/apps/details?id=com.dailybook</string>
 
     <string name="name">పేరు</string>
     <string name="phone_number_label">ఫోన్ నంబర్:</string>
@@ -23,7 +23,7 @@
     <string name="payment_summary">చెల్లింపు సంగ్రహం</string>
     <string name="advance_amount_label">ముందస్తు మొత్తం</string>
     <string name="total_earnings_label">మొత్తం ఆదాయం</string>
-    <string name="report_generated_by_laborbook">ఈ నివేదిక Laborbook ద్వారా రూపొందించబడింది</string>
+    <string name="report_generated_by_dailybook">ఈ నివేదిక DailyBook ద్వారా రూపొందించబడింది</string>
     <string name="download_app_for_free_newline">యాప్‌ను ఉచితంగా డౌన్‌లోడ్ చేయండి\nGoogle Play లో పొందండి</string>
-    <string name="refer_friend_whatsapp_message">నేను రోజువారీ పనిని సులభంగా నిర్వహించడానికి Laborbook ని ఉపయోగిస్తున్నాను. ఇప్పుడు 5 లక్షల+ మంది దీన్ని ఉపయోగిస్తున్నారు! ఇక్కడ ప్రయత్నించండి 👉 https://play.google.com/store/apps/details?id=com.laborbook</string>
+    <string name="refer_friend_whatsapp_message">నేను రోజువారీ పనిని సులభంగా నిర్వహించడానికి DailyBook ని ఉపయోగిస్తున్నాను. ఇప్పుడు 5 లక్షల+ మంది దీన్ని ఉపయోగిస్తున్నారు! ఇక్కడ ప్రయత్నించండి 👉 https://play.google.com/store/apps/details?id=com.dailybook</string>
 </resources>

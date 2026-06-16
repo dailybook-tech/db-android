@@ -75,11 +75,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-4991346658410627~4911306740"/>
-
-        <meta-data
-            android:name="com.inmobi.account.id"
-            android:value="c5554ec7671548e49b8fb4a624c315b9" />
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

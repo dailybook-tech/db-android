@@ -50,7 +50,7 @@
             android:layout_marginHorizontal="@dimen/margin_16"
             android:layout_marginBottom="@dimen/margin_16"
             android:background="@drawable/request_feature_bg"
-            android:hint="@string/ask_us_any_feature_you_want_in_laborbook_app"
+            android:hint="@string/ask_us_any_feature_you_want_in_dailybook_app"
             android:gravity="top"
             android:padding="@dimen/margin_10"
             android:textSize="@dimen/text_14"

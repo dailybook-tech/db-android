@@ -1,14 +1,14 @@
-# Laborbook Android
+# DailyBook Android
 
-Android app for managing worker attendance, staff tracking, and payroll for businesses.
+Android app for tracking daily activities, attendance, income, and expenses.
 
 ## Features
 
-- **Auth** — OTP login, Truecaller one-tap, Google Sign-In, biometric unlock
-- **Attendance** — Mark and track daily worker attendance
-- **Income** — Manage worker wages and income records
-- **Expense** — Track business expenses
-- **Keep** — Notes and reminders
+- **Auth** — OTP login, Truecaller one-tap, biometric unlock
+- **Attendance** — Mark and track daily attendance
+- **Income** — Manage income records
+- **Expense** — Track expenses
+- **Keep** — Core bookkeeping module
 - **Subscriptions** — Razorpay-powered subscription plans (FREE / PRO tiers)
 - **In-app Updates** — Google Play in-app update flow
 
@@ -38,27 +38,21 @@ feature/
   ├── base/           # Shared feature utilities
   ├── expense/        # Expense tracking
   ├── income/         # Income management
-  └── keep/           # Notes
+  └── keep/           # Core bookkeeping
 ```
 
-Shared libraries are consumed from [boilerplate-android](https://github.com/Labourbook/boilerplate-android) via GitHub Packages.
+Shared libraries are included locally under `boilerplate/`.
 
 ## Setup
 
 1. Clone the repo:
    ```bash
-   git clone git@github.com:Labourbook/laborbook-android.git
+   git clone git@github.com:DailyBook/dailybook-android.git
    ```
 
-2. Add GitHub Packages credentials to `~/.gradle/gradle.properties`:
-   ```
-   gpr.user=YOUR_GITHUB_USERNAME
-   gpr.key=YOUR_GITHUB_TOKEN
-   ```
+2. Add `google-services.json` to the `app/` directory.
 
-3. Add `google-services.json` to the `app/` directory.
-
-4. Open in Android Studio and sync Gradle.
+3. Open in Android Studio and sync Gradle.
 
 ## Build & Run
 

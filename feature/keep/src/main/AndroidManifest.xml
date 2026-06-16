@@ -35,30 +35,22 @@
     <application>
         <activity
             android:name=".screen.BookKeepActivity"
-            android:theme="@style/Theme.Laborbook"
+            android:theme="@style/Theme.Dailybook"
             android:exported="false"
             android:windowSoftInputMode="adjustNothing"/>
 
         <activity
             android:name=".screen.AppLockActivity"
-            android:theme="@style/Theme.Laborbook"
+            android:theme="@style/Theme.Dailybook"
             android:exported="false"
             android:launchMode="singleTask"
             android:excludeFromRecents="true"
             android:taskAffinity=""
             android:noHistory="true"/>
 
-        <!-- Razorpay CheckoutActivity with custom theme for edge-to-edge -->
-        <activity
-            android:name="com.razorpay.CheckoutActivity"
-            android:theme="@style/RazorpayCheckoutTheme"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            tools:node="merge"
-            tools:replace="android:theme"/>
-
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.laborbook.provider"
+            android:authorities="com.dailybook.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

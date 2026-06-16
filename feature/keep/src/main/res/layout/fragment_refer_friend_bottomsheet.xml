@@ -6,7 +6,7 @@
     android:background="@drawable/rounded_box_top_corner_white">
 
     <!-- Confetti Animation View - positioned absolutely to cover content -->
-    <com.laborbook.keep.screen.home.fragment.ConfettiView
+    <com.dailybook.keep.screen.home.fragment.ConfettiView
         android:id="@+id/confetti_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,15 +19,15 @@
         android:orientation="vertical"
         android:padding="@dimen/margin_24">
 
-        <!-- Laborbook Title -->
-        <ImageView
+        <!-- DailyBook Title -->
+        <com.boilerplate.uikit.views.textviews.text24.TextViewBoldPrimaryColor24
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/margin_16"
             android:layout_marginBottom="@dimen/margin_16"
-            android:src="@drawable/ic_laborbook_logo_primary" />
+            android:text="@string/app_name" />
 
         <!-- 5 Lakh+ Family! -->
         <TextView

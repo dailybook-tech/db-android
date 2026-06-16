@@ -7,27 +7,33 @@ plugins {
     alias(libs.plugins.baselineprofile)
 }
 
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('local.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
 android {
-    namespace 'com.laborbook'
+    namespace 'com.dailybook'
     compileSdk 35
 
     signingConfigs {
         release {
-            storeFile file('keystore')
-            storePassword 'laborbook@123'
-            keyAlias = 'laborbook'
-            keyPassword 'laborbook@123'
+            storeFile file(keystoreProperties['KEYSTORE_FILE'] ?: 'dailybook-keystore.jks')
+            storePassword keystoreProperties['KEYSTORE_PASSWORD'] ?: ''
+            keyAlias keystoreProperties['KEY_ALIAS'] ?: ''
+            keyPassword keystoreProperties['KEY_PASSWORD'] ?: ''
         }
     }
 
     defaultConfig {
-        applicationId "com.laborbook"
+        applicationId "com.dailybook"
         minSdk 24
         targetSdk 35
         versionCode 56
         versionName "1.5.2"
 
-        testInstrumentationRunner "com.laborbook.LaborBookTestRunner"
+        testInstrumentationRunner "com.dailybook.DailyBookTestRunner"
         resourceConfigurations += ['en', 'hi', 'ta', 'te', 'kn', 'mr', 'bn']
     }
 
@@ -101,8 +107,6 @@ dependencies {
     implementation project(':feature:expense')
     implementation project(':feature:income')
     implementation libs.androidx.profileinstaller
-    implementation libs.inmobi.ads.kotlin
-    implementation libs.inmobi
     implementation libs.facebook.android.sdk
     implementation libs.install.referrer
     testImplementation libs.junit

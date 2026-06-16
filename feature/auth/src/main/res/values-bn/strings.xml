@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="laborbook" translatable="false">লেবারবুক</string>
+    <string name="dailybook" translatable="false">লেবারবুক</string>
     <string name="made_in_india">ভারতে তৈরি 🇮🇳</string>
     <string name="enter_mobile_number">আপনার মোবাইল নম্বর লিখুন</string>
     <string name="login_number_hint">মোবাইল নম্বর</string>
@@ -15,5 +15,5 @@
     <string name="invalid_otp">অবৈধ ওটিপি</string>
     <string name="resend_otp">ওটিপি পাওয়া যায়নি? <font color="#3270D2"><u>পুনরায় পাঠান</u></font></string>
     <string name="_100_secure_data">100% সুরক্ষিত ডেটা</string>
-    <string name="daily_labour_attendance">দৈনিক শ্রমিক উপস্থিতি</string>
+    <string name="daily_attendance">দৈনিক শ্রমিক উপস্থিতি</string>
 </resources>
