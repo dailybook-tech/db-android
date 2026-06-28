@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:id="@+id/item_root">
 
-    <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+    <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
         android:id="@+id/tv_initial"
         android:layout_width="@dimen/margin_48"
         android:layout_height="@dimen/margin_48"
@@ -31,12 +31,12 @@
         app:layout_constraintTop_toTopOf="@+id/tv_initial"
         app:layout_constraintEnd_toStartOf="@+id/iv_lock">
 
-        <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+        <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+        <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
             android:id="@+id/tv_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

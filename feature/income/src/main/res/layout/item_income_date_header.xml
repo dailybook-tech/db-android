@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_date_header" />
 
-    <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+    <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
         android:id="@+id/tv_date_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_date_header">
 
         <!-- Date Column Header -->
-        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.8"
@@ -62,7 +62,7 @@
             android:text="@string/date" />
 
         <!-- Notes Column Header -->
-        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
@@ -71,7 +71,7 @@
             android:text="@string/notes" />
 
         <!-- Amount Column Header -->
-        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
             android:id="@+id/tvCashInAmount"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

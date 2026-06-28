@@ -19,9 +19,9 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--keep class com.dailybook.auth.** {
+-keep class co.dailybook.auth.** {
     *;
 }
--keepclassmembers class com.dailybook.auth.** {*;}
--keep class com.boilerplate.** {*;}
--keepclassmembers class com.boilerplate.** {*;}
+-keepclassmembers class co.dailybook.auth.** {*;}
+-keep class co.dailybook.boilerplate.** {*;}
+-keepclassmembers class co.dailybook.boilerplate.** {*;}

@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
-        <com.boilerplate.uikit.views.textviews.text18.TextViewBold18
+        <co.dailybook.boilerplate.uikit.views.textviews.text18.TextViewBold18
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
         android:background="@color/background_secondary"
         app:layout_constraintTop_toBottomOf="@id/header">
 
-        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
             android:id="@+id/tv_from_date"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
             android:layout_width="@dimen/margin_12"
             android:layout_height="1dp" />
 
-        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
             android:id="@+id/tv_to_date"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
         android:background="@color/white"
         app:layout_constraintTop_toBottomOf="@id/ll_date_range">
 
-        <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+        <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.6"
@@ -109,7 +109,7 @@
             android:layout_height="match_parent"
             android:background="@color/divider_color" />
 
-        <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+        <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
@@ -123,7 +123,7 @@
             android:layout_height="match_parent"
             android:background="@color/divider_color" />
 
-        <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+        <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.2"
@@ -177,7 +177,7 @@
             android:textColor="@color/white"
             android:textAllCaps="false" />
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewBoldWhite16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBoldWhite16
             android:id="@+id/btn_share_whatsapp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

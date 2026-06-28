@@ -19,5 +19,5 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--keep public class com.boilerplate.analytics.** { public *;}
--keepclassmembers class com.boilerplate.analytics.** {*;}
+-keep public class co.dailybook.boilerplate.analytics.** { public *;}
+-keepclassmembers class co.dailybook.boilerplate.analytics.** {*;}

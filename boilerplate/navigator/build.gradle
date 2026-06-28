@@ -5,7 +5,7 @@ plugins {
 apply plugin: 'kotlin-parcelize'
 
 android {
-    namespace 'com.boilerplate.navigator'
+    namespace 'co.dailybook.boilerplate.navigator'
     compileSdk 35
 
     defaultConfig {

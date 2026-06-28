@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+    <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
         android:id="@+id/tv_toolbar_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

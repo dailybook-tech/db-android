@@ -7,7 +7,7 @@
     android:paddingBottom="@dimen/margin_16">
 
     <!-- Title -->
-    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+    <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

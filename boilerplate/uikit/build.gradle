@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.boilerplate.uikit'
+    namespace 'co.dailybook.boilerplate.uikit'
     compileSdk 35
 
     defaultConfig {

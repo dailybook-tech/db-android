@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-    <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+    <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
         android:id="@+id/tv_team_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

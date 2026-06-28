@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:context=".screen.attendance.AttendanceMarkBottomsheetFragment">
 
-        <com.boilerplate.uikit.views.textviews.text18.TextViewBold18
+        <co.dailybook.boilerplate.uikit.views.textviews.text18.TextViewBold18
             android:id="@+id/tv_advance_hint"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <com.boilerplate.uikit.views.buttons.PrimaryButton
+        <co.dailybook.boilerplate.uikit.views.buttons.PrimaryButton
             android:id="@+id/btn_submit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

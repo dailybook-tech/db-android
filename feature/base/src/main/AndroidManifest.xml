@@ -8,7 +8,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.dailybook.provider"
+            android:authorities="co.dailybook.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

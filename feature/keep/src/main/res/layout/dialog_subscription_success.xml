@@ -37,14 +37,14 @@
             android:layout_marginBottom="@dimen/margin_24"/>
 
         <!-- Success Title -->
-        <com.boilerplate.uikit.views.textviews.text22.TextViewBold22
+        <co.dailybook.boilerplate.uikit.views.textviews.text22.TextViewBold22
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/subscription_activated"
             android:layout_marginBottom="@dimen/margin_12"/>
 
         <!-- Success Message -->
-        <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/you_now_have_access_to_all_premium_features"
@@ -54,7 +54,7 @@
     </LinearLayout>
 
     <!-- Continue Button -->
-    <com.boilerplate.uikit.views.buttons.RoundedPrimaryButton
+    <co.dailybook.boilerplate.uikit.views.buttons.RoundedPrimaryButton
         android:id="@+id/btn_continue"
         android:layout_width="0dp"
         android:layout_height="@dimen/margin_48"

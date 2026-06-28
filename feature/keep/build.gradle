@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.dailybook.keep'
+    namespace 'co.dailybook.keep'
     compileSdk 35
 
     defaultConfig {

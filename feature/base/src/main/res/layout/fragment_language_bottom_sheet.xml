@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+        <co.dailybook.boilerplate.uikit.views.textviews.text20.TextViewBold20
             android:id="@+id/tvLanguageTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:rowCount="4">
 
             <!-- Language Item Buttons -->
-            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
                 android:id="@+id/btnEnglish"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                 android:paddingVertical="@dimen/margin_8"
                 android:text="@string/english" />
 
-            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
                 android:id="@+id/btnHindi"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                 android:paddingVertical="@dimen/margin_8"
                 android:text="@string/hindi" />
 
-            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
                 android:id="@+id/btnMarathi"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                 android:paddingVertical="@dimen/margin_8"
                 android:text="@string/marathi" />
 
-            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
                 android:id="@+id/btnBengali"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
                 android:paddingVertical="@dimen/margin_8"
                 android:text="@string/bengali" />
 
-            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
                 android:id="@+id/btnKannada"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -119,7 +119,7 @@
                 android:paddingVertical="@dimen/margin_8"
                 android:text="@string/kannada" />
 
-            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
                 android:id="@+id/btnTamil"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
                 android:paddingVertical="@dimen/margin_8"
                 android:text="@string/tamil" />
 
-            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
                 android:id="@+id/btnTelugu"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

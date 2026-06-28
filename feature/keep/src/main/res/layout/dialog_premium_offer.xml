@@ -98,7 +98,7 @@
             app:layout_constraintTop_toBottomOf="@+id/cl_upi_selector"
             android:layout_marginTop="@dimen/margin_16">
 
-            <com.boilerplate.uikit.views.buttons.RoundedPrimaryButton
+            <co.dailybook.boilerplate.uikit.views.buttons.RoundedPrimaryButton
                 android:id="@+id/btn_start_trial"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/margin_48"

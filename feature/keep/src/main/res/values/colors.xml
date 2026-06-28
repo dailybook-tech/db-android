@@ -4,20 +4,21 @@
     <color name="white">#FFFFFF</color>
     <!--  Colors set for light theme  -->
     <color name="background">#ffffff</color>
-    <color name="background_secondary">#f7f7f7</color>
+    <color name="background_secondary">#f5f5f5</color>
     <color name="ripple">#80ffffff</color>
-    <color name="color_primary">#185cc3</color>
+    <color name="color_primary">#1B2B4D</color>
+    <color name="color_secondary">#D4952B</color>
     <color name="border_color">#dbdbdb</color>
     <color name="divider_color">#ededed</color>
     <color name="initial_bg_color">#ffe8d3</color>
     <color name="transparent_black_66">#66000000</color>
-    <color name="yellow">#faff13</color>
+    <color name="yellow">#D4952B</color>
 
     <color name="present">#38A775</color>
     <color name="green">#38A775</color>
     <color name="absent">#EA2323</color>
 
-    <color name="hyperlink_text">#3270D2</color>
+    <color name="hyperlink_text">#D4952B</color>
     <color name="truecaller">#0087ff</color>
     <color name="sub_text_color">#545454</color>
     <color name="body_text_color">#000000</color>
@@ -25,7 +26,7 @@
     <color name="text_color">#000000</color>
     <color name="error">#DE1836</color>
 
-    <color name="button_enabled_bg_color">#D21A3F</color>
+    <color name="button_enabled_bg_color">#1B2B4D</color>
     <color name="button_disabled_bg_color">#b8b8b8</color>
 
     <color name="button_enabled_text_color">#ffffff</color>
@@ -46,11 +47,11 @@
     <color name="delete">#850c0c</color>
     <color name="app_update_bg">#fdf3da</color>
     <color name="tab_unselected_text_color">#909192</color>
-    <color name="primary_light">#FFEBEE</color>
+    <color name="primary_light">#E8EDF5</color>
     <!-- Paywall plan list: dark gray card, white border when selected -->
-    <color name="paywall_plan_card_bg">#424248</color>
+    <color name="paywall_plan_card_bg">#1B2B4D</color>
     <!-- Paywall (dark background): text color for design system -->
     <color name="paywall_text_color">#FFFFFF</color>
     <!-- Paywall feature icon circle (slightly lighter than background) -->
-    <color name="paywall_feature_icon_circle">#424248</color>
+    <color name="paywall_feature_icon_circle">#2A3D63</color>
 </resources>

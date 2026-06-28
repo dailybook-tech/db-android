@@ -43,7 +43,7 @@
             android:layout_marginTop="@dimen/margin_18"
             android:layout_marginBottom="@dimen/margin_8"/>
 
-        <com.boilerplate.uikit.views.textviews.text18.TextViewBold18
+        <co.dailybook.boilerplate.uikit.views.textviews.text18.TextViewBold18
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

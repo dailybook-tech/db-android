@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <!-- Title -->
-        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_calendar_black" />
 
-            <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+            <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                 android:id="@+id/tv_month"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
             app:layout_constraintStart_toEndOf="@+id/ll_month"
             app:layout_constraintBottom_toTopOf="@+id/divider_2">
 
-            <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+            <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                 android:id="@+id/tv_year"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <!-- OK Button -->
-        <com.boilerplate.uikit.views.buttons.PrimaryButton
+        <co.dailybook.boilerplate.uikit.views.buttons.PrimaryButton
             android:id="@+id/btn_ok"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

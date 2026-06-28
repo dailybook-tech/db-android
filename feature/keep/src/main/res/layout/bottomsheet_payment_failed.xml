@@ -79,7 +79,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <com.boilerplate.uikit.views.buttons.PrimaryButton
+        <co.dailybook.boilerplate.uikit.views.buttons.PrimaryButton
             android:id="@+id/btn_try_again"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -14,7 +14,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace 'com.dailybook'
+    namespace 'co.dailybook'
     compileSdk 35
 
     signingConfigs {
@@ -27,13 +27,13 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.dailybook"
+        applicationId "co.in.dailybook"
         minSdk 24
         targetSdk 35
-        versionCode 56
-        versionName "1.5.2"
+        versionCode 1
+        versionName "1.0.0"
 
-        testInstrumentationRunner "com.dailybook.DailyBookTestRunner"
+        testInstrumentationRunner "co.dailybook.DailyBookTestRunner"
         resourceConfigurations += ['en', 'hi', 'ta', 'te', 'kn', 'mr', 'bn']
     }
 
@@ -50,7 +50,8 @@ android {
     buildTypes {
         release {
             debuggable false
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }

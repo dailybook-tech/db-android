@@ -17,26 +17,26 @@
             android:orientation="vertical"
             android:paddingVertical="@dimen/margin_4">
 
-            <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+            <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                 android:id="@+id/tv_date"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:gravity="center" />
 
-            <com.boilerplate.uikit.views.textviews.text14.TextViewBoldPrimaryColor14
+            <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBoldPrimaryColor14
                 android:id="@+id/tv_current_date"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:visibility="gone"/>
 
-            <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+            <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                 android:id="@+id/tv_day"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:gravity="center" />
 
-            <com.boilerplate.uikit.views.textviews.text14.TextViewRegularPrimaryColor14
+            <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegularPrimaryColor14
                 android:id="@+id/tv_current_day"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
             android:layout_height="match_parent"
             android:background="@color/divider_color" />
 
-        <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
             android:id="@+id/tv_add_advance"
             android:layout_width="0dp"
             android:layout_height="match_parent"

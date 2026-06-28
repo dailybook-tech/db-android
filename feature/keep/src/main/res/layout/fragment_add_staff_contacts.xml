@@ -26,7 +26,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
             android:id="@+id/tv_toolbar_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,14 +85,14 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegularPrimaryColor14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegularPrimaryColor14
                     android:id="@+id/tv_add_staff_manually"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/add_staff_manually"
                     android:textColor="@color/color_primary"/>
 
-                <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/non_contact_staff_info"
@@ -166,7 +166,7 @@
             </LinearLayout>
         </HorizontalScrollView>
 
-        <com.boilerplate.uikit.views.buttons.PrimaryButton
+        <co.dailybook.boilerplate.uikit.views.buttons.PrimaryButton
             android:id="@+id/btn_add_staff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -192,7 +192,7 @@
         android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@+id/cl_add_staff">
 
-        <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+        <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/number_not_saved_add_here"/>
@@ -233,7 +233,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_search_contacts"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
             android:id="@+id/tv_staffs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -260,7 +260,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:visibility="gone"/>
 
-    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+    <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
         android:id="@+id/et_no_result_found"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

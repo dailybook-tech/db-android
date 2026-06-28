@@ -35,7 +35,7 @@
     </FrameLayout>
 
     <!-- UPI App Name -->
-    <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+    <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
         android:id="@+id/tv_upi_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

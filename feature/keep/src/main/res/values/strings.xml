@@ -48,7 +48,7 @@
     <string name="ok">Ok</string>
     <string name="refer_a_friend">Refer a friend</string>
     <string name="refer_friend_message">Share DailyBook with your friends and help them manage their daily work easily!</string>
-    <string name="refer_friend_whatsapp_message">I use DailyBook to manage daily work easily. Now 5 lakh+ people are using it! Try it here 👉 https://play.google.com/store/apps/details?id=com.dailybook</string>
+    <string name="refer_friend_whatsapp_message">I use DailyBook to manage daily work easily. Now 5 lakh+ people are using it! Try it here 👉 https://play.google.com/store/apps/details?id=co.dailybook</string>
     <string name="share_on_whatsapp">Share on WhatsApp</string>
     <string name="thank_you_refer_message">Thank you for being part of our journey ❤️</string>
     <string name="profile_info">Profile Info</string>
@@ -198,6 +198,7 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="_5_lakh_family">5 Lakh+ Family!</string>
+    <string name="refer_headline">Spread the Word!</string>
     <string name="sponsored" translatable="false">Ad</string>
     <string name="exit_app">Exit App</string>
     <string name="are_you_sure_you_want_to_exit">Are you sure you want to exit?</string>

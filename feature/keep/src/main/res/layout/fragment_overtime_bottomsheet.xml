@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_close">
 
-        <com.boilerplate.uikit.views.textviews.text18.TextViewBold18
+        <co.dailybook.boilerplate.uikit.views.textviews.text18.TextViewBold18
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+        <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
             android:id="@+id/tv_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             app:layout_constraintTop_toTopOf="@id/tv_title" />
 
         <!-- Hours label -->
-        <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
             android:id="@+id/tv_hours_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
             app:layout_constraintTop_toBottomOf="@id/tv_hours_label"/>
 
         <!-- Rate label -->
-        <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
             android:id="@+id/tv_rate_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -114,14 +114,14 @@
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/et_rate">
 
-            <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+            <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
                 android:id="@+id/tv_total_label"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/total_overtime_amount"/>
 
-            <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+            <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
                 android:id="@+id/tv_total_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_chainStyle="packed"/>
 
-        <com.boilerplate.uikit.views.buttons.PrimaryButton
+        <co.dailybook.boilerplate.uikit.views.buttons.PrimaryButton
             android:id="@+id/btn_ok"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

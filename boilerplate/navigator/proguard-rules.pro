@@ -19,5 +19,5 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--keep public class com.boilerplate.navigator.** { public *;}
--keepclassmembers class com.boilerplate.navigator.** {*;}
+-keep public class co.dailybook.boilerplate.navigator.** { public *;}
+-keepclassmembers class co.dailybook.boilerplate.navigator.** {*;}

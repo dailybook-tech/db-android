@@ -27,7 +27,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.boilerplate.uikit.views.textviews.text18.TextViewBold18
+        <co.dailybook.boilerplate.uikit.views.textviews.text18.TextViewBold18
             android:id="@+id/tv_toolbar_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/iv_back"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
             android:id="@+id/tv_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider_4">
 
-        <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -98,7 +98,7 @@
             android:textSize="@dimen/text_12"
             android:textColor="@color/text_16_color" />
 
-        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
             android:id="@+id/tv_month_year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -159,14 +159,14 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <com.boilerplate.uikit.views.textviews.text16.TextViewBoldGreen16
+                    <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBoldGreen16
                         android:id="@+id/tv_total_present"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center" />
 
-                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                    <co.dailybook.boilerplate.uikit.views.textviews.text10.TextViewRegular10
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -181,14 +181,14 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <com.boilerplate.uikit.views.textviews.text16.TextViewBoldError16
+                    <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBoldError16
                         android:id="@+id/tv_total_absent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center" />
 
-                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                    <co.dailybook.boilerplate.uikit.views.textviews.text10.TextViewRegular10
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -203,7 +203,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                    <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
                         android:id="@+id/tv_total_ot"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -211,7 +211,7 @@
                         android:layout_gravity="center"
                         android:textColor="@color/text_16_color"/>
 
-                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                    <co.dailybook.boilerplate.uikit.views.textviews.text10.TextViewRegular10
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -226,14 +226,14 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                    <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
                         android:id="@+id/tv_total_advance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center"/>
 
-                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                    <co.dailybook.boilerplate.uikit.views.textviews.text10.TextViewRegular10
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -273,14 +273,14 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                    <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
                         android:id="@+id/tv_total_half_day"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center" />
 
-                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                    <co.dailybook.boilerplate.uikit.views.textviews.text10.TextViewRegular10
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -295,14 +295,14 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                    <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
                         android:id="@+id/tv_total_pp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_gravity="center" />
 
-                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                    <co.dailybook.boilerplate.uikit.views.textviews.text10.TextViewRegular10
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -317,7 +317,7 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                    <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
                         android:id="@+id/tv_total_ph"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -325,7 +325,7 @@
                         android:layout_gravity="center"
                         android:textColor="@color/text_16_color"/>
 
-                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                    <co.dailybook.boilerplate.uikit.views.textviews.text10.TextViewRegular10
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -346,7 +346,7 @@
                         android:orientation="horizontal"
                         android:gravity="center">
 
-                        <com.boilerplate.uikit.views.textviews.text14.TextViewBoldPrimaryColor14
+                        <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBoldPrimaryColor14
                             android:id="@+id/tv_add_amount"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -363,7 +363,7 @@
                             android:contentDescription="@string/refresh"/>
                     </LinearLayout>
 
-                    <com.boilerplate.uikit.views.textviews.text10.TextViewRegular10
+                    <co.dailybook.boilerplate.uikit.views.textviews.text10.TextViewRegular10
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -392,7 +392,7 @@
                     android:layout_marginEnd="@dimen/margin_8"
                     android:contentDescription="@string/open_report" />
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewBoldPrimaryColor14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBoldPrimaryColor14
                     android:id="@+id/btn_open_report"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -407,7 +407,7 @@
                     android:background="@color/divider_color"
                     android:layout_marginHorizontal="@dimen/margin_12" />
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewBoldPrimaryColor14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBoldPrimaryColor14
                     android:id="@+id/btn_generate_payslip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -426,7 +426,7 @@
                 android:background="@color/background"
                 android:layout_marginTop="@dimen/margin_4">
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -440,7 +440,7 @@
                     android:layout_height="match_parent"
                     android:background="@color/divider_color" />
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
@@ -464,7 +464,7 @@
                     android:layout_height="match_parent"
                     android:background="@color/divider_color" />
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -517,7 +517,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <com.boilerplate.uikit.views.buttons.PrimaryButton
+        <co.dailybook.boilerplate.uikit.views.buttons.PrimaryButton
             android:id="@+id/btn_mark_attendance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

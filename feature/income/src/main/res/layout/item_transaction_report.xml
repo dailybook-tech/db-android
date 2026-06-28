@@ -20,13 +20,13 @@
             android:gravity="center"
             android:paddingVertical="@dimen/margin_4">
 
-            <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+            <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                 android:id="@+id/tv_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center" />
 
-            <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+            <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                 android:id="@+id/tv_day"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
             android:layout_height="match_parent"
             android:background="@color/divider_color" />
 
-        <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+        <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
             android:id="@+id/tv_notes"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
             android:layout_height="match_parent"
             android:background="@color/divider_color" />
 
-        <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+        <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
             android:id="@+id/tv_amount"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

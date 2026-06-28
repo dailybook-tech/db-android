@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+        <co.dailybook.boilerplate.uikit.views.textviews.text20.TextViewBold20
             android:id="@+id/tv_header_date"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
             app:layout_constraintEnd_toStartOf="@+id/tv_edit"
             tools:text="1 Monday, April 2024"/>
 
-        <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
             android:id="@+id/tv_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
             android:id="@+id/tv_attendance_label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             app:layout_constraintTop_toTopOf="@+id/tv_attendance_label"
             app:layout_constraintBottom_toBottomOf="@+id/tv_attendance_label"/>
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
             android:id="@+id/tv_advance_label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tv_advance_amount"/>
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
             android:id="@+id/tv_ot_label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tv_ot_value"/>
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
             android:id="@+id/tv_ot_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -117,7 +117,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBaseline_toBaselineOf="@+id/tv_ot_label"/>
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewBoldError16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBoldError16
             android:id="@+id/tv_advance_amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -126,7 +126,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBaseline_toBaselineOf="@+id/tv_advance_label"/>
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
             android:id="@+id/tv_payment_method_label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -138,7 +138,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tv_payment_method_value"/>
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
             android:id="@+id/tv_payment_method_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBaseline_toBaselineOf="@+id/tv_payment_method_label"/>
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
             android:id="@+id/tv_notes_label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tv_notes"/>
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
             android:id="@+id/tv_notes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -169,7 +169,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBaseline_toBaselineOf="@+id/tv_notes_label"/>
 
-        <com.boilerplate.uikit.views.buttons.PrimaryButton
+        <co.dailybook.boilerplate.uikit.views.buttons.PrimaryButton
             android:id="@+id/btn_ok"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

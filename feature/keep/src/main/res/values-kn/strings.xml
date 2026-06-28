@@ -36,7 +36,7 @@
     <string name="ok">ಸರಿ</string>
     <string name="refer_a_friend">ಮಿತ್ರನಿಗೆ ತಿಳಿಸಿ</string>
     <string name="refer_friend_message">ನಿಮ್ಮ ಸ್ನೇಹಿತರೊಂದಿಗೆ DailyBook ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಿ ಮತ್ತು ಅವರಿಗೆ ದೈನಂದಿನ ಕೆಲಸವನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಲು ಸಹಾಯ ಮಾಡಿ!</string>
-    <string name="refer_friend_whatsapp_message">ನಾನು ದೈನಂದಿನ ಕೆಲಸವನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಲು DailyBook ಬಳಸುತ್ತೇನೆ. ಈಗ 5 ಲಕ್ಷ+ ಜನರು ಇದನ್ನು ಬಳಸುತ್ತಿದ್ದಾರೆ! ಇಲ್ಲಿ ಪ್ರಯತ್ನಿಸಿ 👉 https://play.google.com/store/apps/details?id=com.dailybook</string>
+    <string name="refer_friend_whatsapp_message">ನಾನು ದೈನಂದಿನ ಕೆಲಸವನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಲು DailyBook ಬಳಸುತ್ತೇನೆ. ಈಗ 5 ಲಕ್ಷ+ ಜನರು ಇದನ್ನು ಬಳಸುತ್ತಿದ್ದಾರೆ! ಇಲ್ಲಿ ಪ್ರಯತ್ನಿಸಿ 👉 https://play.google.com/store/apps/details?id=co.dailybook</string>
     <string name="share_on_whatsapp">WhatsApp ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ</string>
     <string name="thank_you_refer_message">ನಮ್ಮ ಪ್ರಯಾಣದ ಭಾಗವಾಗಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು ❤️</string>
     <string name="profile_info">ಪ್ರೊಫೈಲ್ ಮಾಹಿತಿ</string>
@@ -178,6 +178,7 @@
     <string name="yes">ಹೌದು</string>
     <string name="no">ಇಲ್ಲ</string>
     <string name="_5_lakh_family">5 ಲಕ್ಷ+ ಕುಟುಂಬ!</string>
+    <string name="refer_headline">Spread the Word!</string>
     <string name="exit_app">ಆಪ್ ನಿಂದ ನಿರ್ಗಮಿಸಿ</string>
     <string name="are_you_sure_you_want_to_exit">ನೀವು ನಿಜವಾಗಿಯೂ ನಿರ್ಗಮಿಸಲು ಬಯಸುವಿರಾ?</string>
     <string name="pa" translatable="false">PA</string>

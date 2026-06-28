@@ -3,26 +3,30 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
 
-    <!--  Colors set for light theme  -->
-    <color name="background">#262626</color>
-    <color name="background_secondary">#262626</color>
+    <!--  Colors set for dark theme  -->
+    <color name="background">#1A1A2E</color>
+    <color name="background_secondary">#262640</color>
     <color name="ripple">#80ffffff</color>
-    <color name="color_primary">#C81035</color>
-    <color name="border_color">#dbdbdb</color>
-    <color name="divider_color">#ededed</color>
-    <color name="initial_bg_color">#ffe8d3</color>
+    <color name="color_primary">#1B2B4D</color>
+    <color name="color_secondary">#E5A526</color>
+    <color name="border_color">#3A3A4A</color>
+    <color name="divider_color">#2E2E42</color>
+    <color name="initial_bg_color">#3D2E1A</color>
     <color name="transparent_black_66">#66000000</color>
-    <color name="yellow">#faff13</color>
+    <color name="yellow">#E5A526</color>
 
     <color name="present">#38A775</color>
     <color name="absent">#D60F0F</color>
 
-    <color name="hyperlink_text">#1E5CBE</color>
+    <color name="hyperlink_text">#E5A526</color>
     <color name="truecaller">#0087ff</color>
     <color name="sub_text_color">#D0D0D6</color>
     <color name="body_text_color">#F5F5F5</color>
     <color name="error_state_color">#DE1836</color>
     <color name="text_color">#ffffff</color>
+
+    <color name="button_enabled_bg_color">#1B2B4D</color>
+    <color name="button_disabled_bg_color">#4A4A5A</color>
 
     <color name="button_enabled_text_color">#ffffff</color>
     <color name="button_disabled_text_color">#b8b8b8</color>

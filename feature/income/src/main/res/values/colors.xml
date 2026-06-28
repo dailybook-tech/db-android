@@ -2,7 +2,7 @@
 <resources>
     <color name="gray">#f8f9fa</color>
     <color name="date_bg">#e5e5e5</color>
-    <color name="color_primary">#185cc3</color>
+    <color name="color_primary">#1B2B4D</color>
     <color name="error_state_color">#DE1836</color>
     <color name="button_green_color">#008548</color>
 </resources>

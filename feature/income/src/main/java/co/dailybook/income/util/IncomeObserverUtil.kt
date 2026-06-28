@@ -1,0 +1,10 @@
+package co.dailybook.income.util
+
+import co.dailybook.income.model.DeleteTransactionResponseModel
+import co.dailybook.income.model.Transaction
+
+class IncomeObserverUtil {
+    var onIncomeAddedOrUpdated: ((Transaction, Boolean) -> Unit)? = null
+    var onIncomeDeleted: ((DeleteTransactionResponseModel) -> Unit)? = null
+    var clearIncomeSearchText : ((shouldClear: Boolean) -> Unit)? = null
+}

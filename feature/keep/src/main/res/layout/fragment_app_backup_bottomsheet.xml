@@ -42,7 +42,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_backup_title"
             android:layout_marginBottom="@dimen/margin_12" />
 
-        <com.boilerplate.uikit.views.textviews.text18.TextViewBold18
+        <co.dailybook.boilerplate.uikit.views.textviews.text18.TextViewBold18
             android:id="@+id/tv_backup_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_backup_message"
             android:layout_marginBottom="@dimen/margin_12" />
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
             android:id="@+id/tv_backup_message"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_last_updated"
             android:layout_marginBottom="@dimen/margin_8" />
 
-        <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
             android:id="@+id/tv_last_updated"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <com.boilerplate.uikit.views.buttons.PrimaryButton
+        <co.dailybook.boilerplate.uikit.views.buttons.PrimaryButton
             android:id="@+id/btn_ok"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

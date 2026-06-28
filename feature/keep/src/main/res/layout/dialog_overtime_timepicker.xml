@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <com.boilerplate.uikit.views.textviews.text18.TextViewBold18
+        <co.dailybook.boilerplate.uikit.views.textviews.text18.TextViewBold18
             android:id="@+id/tv_picker_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="@dimen/margin_24">
 
-            <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+            <co.dailybook.boilerplate.uikit.views.textviews.text20.TextViewBold20
                 android:id="@+id/tv_hrs_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:theme="@style/NumberPickerStyle" />
 
-                <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+                <co.dailybook.boilerplate.uikit.views.textviews.text20.TextViewBold20
                     android:id="@+id/tv_colon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                     android:theme="@style/NumberPickerStyle" />
             </LinearLayout>
 
-            <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+            <co.dailybook.boilerplate.uikit.views.textviews.text20.TextViewBold20
                 android:id="@+id/tv_mins_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                 app:layout_constraintEnd_toEndOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.boilerplate.uikit.views.buttons.PrimaryButton
+        <co.dailybook.boilerplate.uikit.views.buttons.PrimaryButton
             android:id="@+id/btn_picker_ok"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

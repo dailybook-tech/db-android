@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
             android:id="@+id/tv_toolbar_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
             android:paddingBottom="@dimen/margin_16">
 
             <!-- Premium Info Label -->
-            <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+            <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                 android:id="@+id/tv_premium_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -112,12 +112,12 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:layout_marginHorizontal="@dimen/margin_12">
 
-                    <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                    <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                         android:id="@+id/tv_user_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                         android:id="@+id/tv_member_since"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
                 android:visibility="visible">
 
                 <!-- Purchase Date -->
-                <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                     android:id="@+id/tv_purchase_date_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
                     android:id="@+id/tv_purchase_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -169,7 +169,7 @@
                     app:layout_constraintBottom_toBottomOf="@+id/tv_purchase_date_label"/>
 
                 <!-- Next Bill -->
-                <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                     android:id="@+id/tv_next_bill_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_purchase_date_label"/>
 
-                <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
                     android:id="@+id/tv_next_bill"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -187,7 +187,7 @@
                     app:layout_constraintBottom_toBottomOf="@+id/tv_next_bill_label"/>
 
                 <!-- Amount Paid -->
-                <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                     android:id="@+id/tv_amount_paid_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -196,7 +196,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_next_bill_label"/>
 
-                <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
                     android:id="@+id/tv_amount_paid"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -205,7 +205,7 @@
                     app:layout_constraintBottom_toBottomOf="@+id/tv_amount_paid_label"/>
 
                 <!-- Cancel Button -->
-                <com.boilerplate.uikit.views.textviews.text14.TextViewBoldError14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBoldError14
                     android:id="@+id/tv_cancel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -219,7 +219,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <!-- FAQ Label -->
-            <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+            <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                 android:id="@+id/tv_faq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -243,7 +243,7 @@
                 android:paddingHorizontal="@dimen/margin_12"
                 android:paddingVertical="@dimen/margin_12">
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_faq_1_question"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -261,7 +261,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                     android:id="@+id/tv_faq_1_answer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -288,7 +288,7 @@
                 android:paddingHorizontal="@dimen/margin_12"
                 android:paddingVertical="@dimen/margin_12">
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_faq_2_question"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -306,7 +306,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                     android:id="@+id/tv_faq_2_answer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -333,7 +333,7 @@
                 android:paddingHorizontal="@dimen/margin_12"
                 android:paddingVertical="@dimen/margin_12">
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_faq_3_question"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -351,7 +351,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                     android:id="@+id/tv_faq_3_answer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -378,7 +378,7 @@
                 android:paddingHorizontal="@dimen/margin_12"
                 android:paddingVertical="@dimen/margin_12">
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_faq_4_question"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -396,7 +396,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                     android:id="@+id/tv_faq_4_answer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

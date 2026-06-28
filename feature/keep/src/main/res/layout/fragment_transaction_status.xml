@@ -31,7 +31,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <com.boilerplate.uikit.views.textviews.text20.TextViewRegular20
+        <co.dailybook.boilerplate.uikit.views.textviews.text20.TextViewRegular20
             android:id="@+id/tv_attendance_marked_success"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+        <co.dailybook.boilerplate.uikit.views.textviews.text20.TextViewBold20
             android:id="@+id/tv_staff_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
         ads:adUnitId="ca-app-pub-3940256099942544/9214589741"/>
 
     <!-- Custom Ad Fallback -->
-    <com.dailybook.base.ads.CustomAdView
+    <co.dailybook.base.ads.CustomAdView
         android:id="@+id/customAdView"
         android:layout_width="320dp"
         android:layout_height="50dp"
@@ -79,7 +79,7 @@
         android:layout_margin="@dimen/margin_16"
         android:visibility="gone" />
 
-    <com.boilerplate.uikit.views.buttons.PrimaryButton
+    <co.dailybook.boilerplate.uikit.views.buttons.PrimaryButton
         android:id="@+id/btn_ok"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

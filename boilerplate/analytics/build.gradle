@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.boilerplate.analytics'
+    namespace 'co.dailybook.boilerplate.analytics'
     compileSdk 35
 
     defaultConfig {

@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.dailybook.auth'
+    namespace 'co.dailybook.auth'
     compileSdk 35
 
     defaultConfig {

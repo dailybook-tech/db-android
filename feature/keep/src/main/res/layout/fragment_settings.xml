@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
             android:id="@+id/tv_toolbar_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,18 +47,19 @@
         app:layout_constraintEnd_toStartOf="parent"
         android:background="@drawable/gradient_background"/>
 
-    <com.boilerplate.uikit.views.textviews.text24.TextViewBoldPrimaryColor24
-        android:id="@+id/tv_lb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="@dimen/margin_8"
-        android:text="@string/app_name"
+        android:src="@drawable/ic_dailybook_logo"
+        android:contentDescription="@string/app_name"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tv_version"
         app:layout_constraintBottom_toTopOf="@+id/tv_made_in_india"/>
 
-    <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+    <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
         android:id="@+id/tv_version"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,7 +71,7 @@
         app:layout_constraintTop_toTopOf="@+id/tv_lb"
         app:layout_constraintBottom_toBottomOf="@+id/tv_lb"/>
 
-    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
         android:id="@+id/tv_made_in_india"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -125,7 +126,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                     android:id="@+id/tv_app_update"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -137,7 +138,7 @@
                     app:layout_constraintHorizontal_bias="0"
                     android:layout_marginHorizontal="@dimen/margin_12"/>
 
-                <com.boilerplate.uikit.views.buttons.RoundedPrimaryButton
+                <co.dailybook.boilerplate.uikit.views.buttons.RoundedPrimaryButton
                     android:id="@+id/btn_app_update"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/margin_40"
@@ -148,7 +149,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+            <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                 android:id="@+id/tv_profile_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -192,12 +193,12 @@
                     app:layout_constraintHorizontal_bias="0"
                     android:layout_marginHorizontal="@dimen/margin_12">
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/name"/>
 
-                    <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                    <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                         android:id="@+id/tv_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -249,12 +250,12 @@
                     app:layout_constraintHorizontal_bias="0"
                     android:layout_marginHorizontal="@dimen/margin_12">
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/mobile"/>
 
-                    <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                    <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                         android:id="@+id/tv_mobile_number"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -295,7 +296,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_app_lock"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -344,7 +345,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0">
 
-                    <com.boilerplate.uikit.views.textviews.text16.TextViewBold16
+                    <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBold16
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/dailybook"/>
@@ -370,7 +371,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+            <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                 android:id="@+id/tv_general"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -402,7 +403,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_app_backup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -447,7 +448,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_manage_teams"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -492,7 +493,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_pricing"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -537,7 +538,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_pp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -582,7 +583,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_terms"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -627,7 +628,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_request_feature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -672,7 +673,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_ratings"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -717,7 +718,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_logout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -741,7 +742,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <!-- Debug Section (Only visible in debug builds) -->
-            <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+            <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                 android:id="@+id/tv_debug"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -775,7 +776,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                     android:id="@+id/tv_reset_coach"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -814,7 +815,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <com.boilerplate.uikit.views.textviews.text16.TextViewBoldWhite16
+        <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewBoldWhite16
             android:id="@+id/tv_invite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -825,7 +826,7 @@
             app:layout_constraintHorizontal_bias="0"
             android:layout_marginHorizontal="@dimen/margin_12"/>
 
-        <com.boilerplate.uikit.views.textviews.text12.TextViewWhiteRegular12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewWhiteRegular12
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toEndOf="@+id/iv_invite"

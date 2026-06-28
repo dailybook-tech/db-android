@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_close"
         tools:context=".screen.attendance.AttendanceMarkBottomsheetFragment">
 
-        <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+        <co.dailybook.boilerplate.uikit.views.textviews.text20.TextViewBold20
             android:id="@+id/tv_staff_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+        <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
             android:id="@+id/tv_mark_attendance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/rg_attendance"/>
 
-        <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+        <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
             android:id="@+id/tv_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -208,7 +208,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rg_attendance">
 
-            <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+            <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -318,7 +318,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <com.boilerplate.uikit.views.textviews.text16.TextViewRegular16
+            <co.dailybook.boilerplate.uikit.views.textviews.text16.TextViewRegular16
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/meaning" />
@@ -334,12 +334,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/a" />
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" - Absent" />
@@ -351,12 +351,12 @@
                     android:orientation="horizontal"
                     android:layout_marginHorizontal="@dimen/margin_18">
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1/2" />
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" - Half day" />
@@ -367,12 +367,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/p" />
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" - Present" />
@@ -384,12 +384,12 @@
                     android:orientation="horizontal"
                     android:layout_marginHorizontal="@dimen/margin_18">
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/ot" />
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" - Overtime" />
@@ -407,12 +407,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="P + 1/2" />
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" - 1.5 day" />
@@ -424,12 +424,12 @@
                     android:orientation="horizontal"
                     android:layout_marginHorizontal="@dimen/margin_18">
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="P+P" />
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" - Double" />
@@ -441,12 +441,12 @@
                     android:orientation="horizontal"
                     android:layout_marginHorizontal="@dimen/margin_18">
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="PA" />
 
-                    <com.boilerplate.uikit.views.textviews.text12.TextViewRegular12
+                    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewRegular12
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" - Paid Leave" />
@@ -484,7 +484,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_chainStyle="packed"/>
 
-        <com.boilerplate.uikit.views.buttons.PrimaryButton
+        <co.dailybook.boilerplate.uikit.views.buttons.PrimaryButton
             android:id="@+id/btn_mark_attendance"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

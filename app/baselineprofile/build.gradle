@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.dailybook.baselineprofile'
+    namespace 'co.dailybook.baselineprofile'
     compileSdk 35
 
     compileOptions {

@@ -20,13 +20,13 @@
             android:gravity="center"
             android:paddingVertical="@dimen/margin_4">
             
-            <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+            <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                 android:id="@+id/tv_income_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center" />
             
-            <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+            <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
                 android:id="@+id/tv_income_day"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             android:background="@color/divider_color" />
 
         <!-- Notes Column -->
-        <com.boilerplate.uikit.views.textviews.text14.TextViewRegular14
+        <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewRegular14
             android:id="@+id/tv_income_reason"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
                 android:orientation="horizontal"
                 android:gravity="end|center_vertical">
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewBoldGreen14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBoldGreen14
                     android:id="@+id/tv_cash_in_amount"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

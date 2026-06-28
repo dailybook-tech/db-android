@@ -7,7 +7,7 @@
     android:background="@color/background_secondary"
     tools:context=".screen.home.fragment.CashbookFragment">
 
-    <com.boilerplate.uikit.views.textviews.text20.TextViewBold20
+    <co.dailybook.boilerplate.uikit.views.textviews.text20.TextViewBold20
         android:id="@+id/tv_cashbook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.boilerplate.uikit.views.textviews.text12.TextViewBold12
+    <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
         android:id="@+id/tv_month_year"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+            <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                 android:id="@+id/btn_expense_tab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/margin_16">
 
-            <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+            <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                 android:id="@+id/btn_income_tab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -127,12 +127,12 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/cash_in"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                     android:id="@+id/tv_total_cash_in"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -153,12 +153,12 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/cash_out"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                     android:id="@+id/tv_total_cash_out_summary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -179,12 +179,12 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <com.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
+                <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewHintRegular12
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/balance"/>
 
-                <com.boilerplate.uikit.views.textviews.text14.TextViewBold14
+                <co.dailybook.boilerplate.uikit.views.textviews.text14.TextViewBold14
                     android:id="@+id/tv_balance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
