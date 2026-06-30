@@ -1,4 +1,4 @@
-# Laborbook Android
+# Dailybook Android
 
 Android app for managing worker attendance, staff tracking, and payroll for businesses.
 
@@ -47,7 +47,7 @@ Shared libraries are consumed from [boilerplate-android](https://github.com/Labo
 
 1. Clone the repo:
    ```bash
-   git clone git@github.com:Labourbook/laborbook-android.git
+   git clone git@github.com:Labourbook/dailybook-android.git
    ```
 
 2. Add GitHub Packages credentials to `~/.gradle/gradle.properties`:
