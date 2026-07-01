@@ -9,6 +9,8 @@ data class AuthRequestBody(
     val mobileNumber: String? = null,
     @SerializedName("otp")
     val otp: String? = null,
+    @SerializedName("firebase_id_token")
+    val firebaseIdToken: String? = null,
     @SerializedName("install_source")
     val installSource: String? = null, // "meta_ads" or "organic", set from Meta Install Referrer
     @SerializedName("install_referrer_payload")

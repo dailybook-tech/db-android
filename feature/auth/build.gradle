@@ -64,6 +64,7 @@ dependencies {
     implementation libs.play.service.auth.api.phone
     implementation libs.play.services.base
     implementation libs.play.services.identity
+    implementation 'com.google.firebase:firebase-auth'
     implementation libs.gson
     implementation libs.splashscreen
     implementation libs.androidx.datastore

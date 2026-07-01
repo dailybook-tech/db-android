@@ -25,6 +25,11 @@ import com.google.android.gms.auth.api.credentials.Credentials
 import com.google.android.gms.auth.api.credentials.HintRequest
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
+import com.google.firebase.FirebaseException
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.PhoneAuthCredential
+import com.google.firebase.auth.PhoneAuthOptions
+import com.google.firebase.auth.PhoneAuthProvider
 import com.laborbook.auth.databinding.FragmentLoginBinding
 import com.laborbook.auth.model.request.AuthRequestBody
 import com.laborbook.auth.model.request.AuthResponse
@@ -38,10 +43,7 @@ import com.laborbook.base.Headers
 import com.laborbook.base.Logger
 import com.laborbook.base.analytics.ConstantEventAttributes
 import com.laborbook.base.analytics.ConstantEventNames
-import com.laborbook.base.datastore.DataStoreManager
 import com.laborbook.base.navigator.ActivitiesNameEnum.BookKeepActivityEnum
-import com.laborbook.base.navigator.FragmentNavigator
-import com.laborbook.base.navigator.ModuleNavigator
 import com.laborbook.base.toggleKeyboard
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -52,19 +54,18 @@ import com.truecaller.android.sdk.oAuth.TcOAuthData
 import com.truecaller.android.sdk.oAuth.TcOAuthError
 import com.truecaller.android.sdk.oAuth.TcSdk
 import com.truecaller.android.sdk.oAuth.TcSdkOptions
-import kotlinx.coroutines.flow.first
-import kotlinx.coroutines.launch
-import org.koin.android.ext.android.inject
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 import java.math.BigInteger
 import java.security.SecureRandom
+import java.util.concurrent.TimeUnit
 
+private const val TEST_MOBILE_NUMBER = "9090909090"
 
 class LoginFragment : BaseFragment<FragmentLoginBinding>(), TcOAuthCallback {
 
     private var codeVerifier: String? = null
     private var mobileNumber: String = ""
-    private val viewModel : AuthViewModel by viewModel()
+    private val viewModel : AuthViewModel by sharedViewModel()
 
     override val screenName: String
         get() = ConstantEventNames.LOGIN
@@ -164,7 +165,12 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>(), TcOAuthCallback {
             btnLogin.setOnClickListener {
                 binding?.etNumber?.toggleKeyboard(requireActivity())
                 mobileNumber = etNumber.text.toString()
-                viewModel.generateOtp(AuthRequestBody(countryCode = BaseConstants.COUNTRY_CODE, mobileNumber = mobileNumber))
+                if (mobileNumber == TEST_MOBILE_NUMBER) {
+                    viewModel.setOtpProvider(useFirebase = false)
+                    viewModel.generateOtp(AuthRequestBody(countryCode = BaseConstants.COUNTRY_CODE, mobileNumber = mobileNumber))
+                } else {
+                    startFirebasePhoneVerification(mobileNumber)
+                }
                 recordClickEvent(ConstantEventNames.REQUEST_OTP, hashMapOf(Pair("mobile_number", mobileNumber)))
             }
 
@@ -184,6 +190,9 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>(), TcOAuthCallback {
 
     private fun viewModelObserver() {
         viewModel.uiState().observe(viewLifecycleOwner){
+            if (!isVisible) {
+                return@observe
+            }
             when(it){
                 is UiState.Loading -> {
                     binding?.pb?.show()
@@ -224,6 +233,43 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>(), TcOAuthCallback {
         binding?.btnLogin?.apply {
             isEnabled = enable
         }
+    }
+
+    private fun startFirebasePhoneVerification(phoneNumber: String) {
+        viewModel.setOtpProvider(useFirebase = true)
+        FirebaseAuth.getInstance().signOut()
+
+        val options = PhoneAuthOptions.newBuilder(FirebaseAuth.getInstance())
+            .setPhoneNumber("+${BaseConstants.COUNTRY_CODE}$phoneNumber")
+            .setTimeout(60L, TimeUnit.SECONDS)
+            .setActivity(requireActivity())
+            .setCallbacks(object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+                override fun onVerificationCompleted(credential: PhoneAuthCredential) {
+                    val smsCode = credential.smsCode
+                    if (smsCode != null && !viewModel.getFirebaseVerificationId().isNullOrBlank()) {
+                        viewModel.setFirebaseOtpSession(
+                            verificationId = viewModel.getFirebaseVerificationId().orEmpty(),
+                            resendToken = viewModel.getFirebaseResendToken(),
+                            otpCode = smsCode
+                        )
+                    }
+                }
+
+                override fun onVerificationFailed(e: FirebaseException) {
+                    viewModel.showError(e.localizedMessage ?: "Failed to send OTP")
+                }
+
+                override fun onCodeSent(
+                    verificationId: String,
+                    token: PhoneAuthProvider.ForceResendingToken,
+                ) {
+                    viewModel.setFirebaseOtpSession(verificationId, token)
+                    viewModel.showOtpSent("Otp Sent")
+                }
+            })
+            .build()
+
+        PhoneAuthProvider.verifyPhoneNumber(options)
     }
 
     private fun showPhoneNumberHint() {

@@ -13,11 +13,15 @@ class AuthUseCaseImplementation(val authRepository: AuthRepository) : AuthUseCas
     }
 
     override suspend fun resendOtp(authRequestBody: AuthRequestBody): Flow<NetworkResult<Unit?>> {
-        return authRepository.generateOtp(authRequestBody)
+        return authRepository.resendOtp(authRequestBody)
     }
 
     override suspend fun verifyOtp(authRequestBody: AuthRequestBody): Flow<NetworkResult<AuthResponse?>> {
         return authRepository.verifyOtp(authRequestBody)
+    }
+
+    override suspend fun verifyFirebaseOtp(authRequestBody: AuthRequestBody): Flow<NetworkResult<AuthResponse?>> {
+        return authRepository.verifyFirebaseOtp(authRequestBody)
     }
 
     override suspend fun truecallerLogin(truecallerRequestBody: TruecallerRequestBody): Flow<NetworkResult<AuthResponse?>> {

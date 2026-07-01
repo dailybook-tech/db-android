@@ -14,6 +14,7 @@ interface AuthApi {
         const val GENERATE_OTP = "/create-otp"
         const val RESENT_OTP = "/resend-otp"
         const val VERIFY_OTP = "/verify-otp"
+        const val VERIFY_FIREBASE_OTP = "/verify-firebase-otp"
         const val TRUECALLER_LOGIN = "/login/truecaller"
     }
 
@@ -25,6 +26,9 @@ interface AuthApi {
 
     @POST(API_VERSION + VERIFY_OTP)
     suspend fun verifyOtp(@Body authRequestBody: AuthRequestBody): Response<DataResponse<AuthResponse>>
+
+    @POST(API_VERSION + VERIFY_FIREBASE_OTP)
+    suspend fun verifyFirebaseOtp(@Body authRequestBody: AuthRequestBody): Response<DataResponse<AuthResponse>>
 
     @POST(API_VERSION + TRUECALLER_LOGIN)
     suspend fun truecallerLogin(@Body truecallerRequestBody: TruecallerRequestBody): Response<DataResponse<AuthResponse>>

@@ -53,7 +53,7 @@
         android:inputType="number"
         android:textColor="?attr/otpTextColor"
         android:textSize="@dimen/text_size_24"
-        app:OtpItemCount="4"
+        app:OtpItemCount="6"
         app:OtpItemWidth="@dimen/margin_44"
         app:OtpItemHeight="@dimen/margin_44"
         app:OtpItemSpacing="@dimen/margin_12"
