@@ -33,6 +33,12 @@ open class AuthNetworkModule {
         }
     }
 
+    suspend fun verifyFirebaseOtp(authRequestBody: AuthRequestBody) : Flow<NetworkResult<AuthResponse?>> {
+        return networkHandler.getData {
+            api.verifyFirebaseOtp(authRequestBody)
+        }
+    }
+
     suspend fun truecallerLogin(truecallerRequestBody: TruecallerRequestBody) : Flow<NetworkResult<AuthResponse?>> {
         return networkHandler.getData {
             api.truecallerLogin(truecallerRequestBody)

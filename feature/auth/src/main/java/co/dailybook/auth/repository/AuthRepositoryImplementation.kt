@@ -13,11 +13,15 @@ class AuthRepositoryImplementation(val authNetworkModule: AuthNetworkModule) : A
     }
 
     override suspend fun resendOtp(authRequestBody: AuthRequestBody): Flow<NetworkResult<Unit?>> {
-        return authNetworkModule.generateOtp(authRequestBody)
+        return authNetworkModule.resendOtp(authRequestBody)
     }
 
     override suspend fun verifyOtp(authRequestBody: AuthRequestBody): Flow<NetworkResult<AuthResponse?>> {
         return authNetworkModule.verifyOtp(authRequestBody)
+    }
+
+    override suspend fun verifyFirebaseOtp(authRequestBody: AuthRequestBody): Flow<NetworkResult<AuthResponse?>> {
+        return authNetworkModule.verifyFirebaseOtp(authRequestBody)
     }
 
     override suspend fun truecallerLogin(truecallerRequestBody: TruecallerRequestBody): Flow<NetworkResult<AuthResponse?>> {

@@ -15,6 +15,11 @@ import co.dailybook.boilerplate.network.NetworkHandler
 import co.dailybook.boilerplate.uikit.views.hide
 import co.dailybook.boilerplate.uikit.views.show
 import com.google.android.gms.auth.api.phone.SmsRetriever
+import com.google.firebase.FirebaseException
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.PhoneAuthCredential
+import com.google.firebase.auth.PhoneAuthOptions
+import com.google.firebase.auth.PhoneAuthProvider
 import co.dailybook.auth.R
 import co.dailybook.auth.common.sms.AuthOTPBroadcastReceiver
 import co.dailybook.auth.common.sms.SMSListener
@@ -36,14 +41,14 @@ import co.dailybook.base.navigator.ModuleNavigator
 import com.mixpanel.android.mpmetrics.MixpanelAPI
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
-import org.koin.android.ext.android.inject
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
+import java.util.concurrent.TimeUnit
 
 private const val MOBILE_NUMBER = "MOBILE_NUMBER"
 
 class OtpFragment : BaseFragment<FragmentOtpBinding>() {
 
-    private val viewModel: AuthViewModel by viewModel()
+    private val viewModel: AuthViewModel by sharedViewModel()
     private var mobileNumber: String? = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -77,7 +82,9 @@ class OtpFragment : BaseFragment<FragmentOtpBinding>() {
         viewModelObserver()
         setupViews()
         registerOnClickListeners()
-        initSMSRetriever()
+        if (!viewModel.usesFirebaseOtp()) {
+            initSMSRetriever()
+        }
     }
 
     private fun setupViews() {
@@ -97,6 +104,9 @@ class OtpFragment : BaseFragment<FragmentOtpBinding>() {
 
         binding?.otpView?.let {
             viewModel.attachOtpTextWatcher(it)
+            viewModel.consumePrefilledOtpCode()?.let { otpCode ->
+                it.setText(otpCode)
+            }
         }
     }
 
@@ -106,15 +116,23 @@ class OtpFragment : BaseFragment<FragmentOtpBinding>() {
                 lifecycleScope.launch {
                     val installSource = dataStoreManager.read(DataStoreManager.INSTALL_SOURCE, "").first()
                     val installReferrerPayload = dataStoreManager.read(DataStoreManager.INSTALL_REFERRER_RAW, "").first()
-                    viewModel.verifyOtp(
-                        AuthRequestBody(
-                            countryCode = BaseConstants.COUNTRY_CODE,
-                            mobileNumber = mobileNumber,
+                    if (viewModel.usesFirebaseOtp()) {
+                        verifyFirebaseOtp(
                             otp = otpView.text.toString(),
                             installSource = installSource.ifBlank { null },
                             installReferrerPayload = installReferrerPayload.ifBlank { null }
                         )
-                    )
+                    } else {
+                        viewModel.verifyOtp(
+                            AuthRequestBody(
+                                countryCode = BaseConstants.COUNTRY_CODE,
+                                mobileNumber = mobileNumber,
+                                otp = otpView.text.toString(),
+                                installSource = installSource.ifBlank { null },
+                                installReferrerPayload = installReferrerPayload.ifBlank { null }
+                            )
+                        )
+                    }
                     recordClickEvent(ConstantEventNames.VERIFY_OTP, hashMapOf(Pair("mobile_number", mobileNumber?:"")))
                 }
             }
@@ -124,12 +142,16 @@ class OtpFragment : BaseFragment<FragmentOtpBinding>() {
             }
 
             ivResendOtp.setOnClickListener {
-                viewModel.resendOtp(
-                    AuthRequestBody(
-                        countryCode = BaseConstants.COUNTRY_CODE,
-                        mobileNumber = mobileNumber
+                if (viewModel.usesFirebaseOtp()) {
+                    resendFirebaseOtp()
+                } else {
+                    viewModel.resendOtp(
+                        AuthRequestBody(
+                            countryCode = BaseConstants.COUNTRY_CODE,
+                            mobileNumber = mobileNumber
+                        )
                     )
-                )
+                }
                 recordClickEvent(ConstantEventNames.RESEND_OTP, hashMapOf(Pair("mobile_number", mobileNumber?:"")))
             }
         }
@@ -263,6 +285,74 @@ class OtpFragment : BaseFragment<FragmentOtpBinding>() {
         }
 
         task.addOnFailureListener { e -> }
+    }
+
+    private fun resendFirebaseOtp() {
+        val resendToken = viewModel.getFirebaseResendToken() ?: run {
+            viewModel.showError("Unable to resend OTP right now")
+            return
+        }
+
+        val options = PhoneAuthOptions.newBuilder(FirebaseAuth.getInstance())
+            .setPhoneNumber("+${BaseConstants.COUNTRY_CODE}${mobileNumber.orEmpty()}")
+            .setTimeout(60L, TimeUnit.SECONDS)
+            .setActivity(requireActivity())
+            .setForceResendingToken(resendToken)
+            .setCallbacks(object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+                override fun onVerificationCompleted(credential: PhoneAuthCredential) {
+                    credential.smsCode?.let { binding?.otpView?.setText(it) }
+                }
+
+                override fun onVerificationFailed(e: FirebaseException) {
+                    viewModel.showError(e.localizedMessage ?: "Failed to resend OTP")
+                }
+
+                override fun onCodeSent(
+                    verificationId: String,
+                    token: PhoneAuthProvider.ForceResendingToken,
+                ) {
+                    viewModel.setFirebaseOtpSession(verificationId, token)
+                    viewModel.showOtpSent("Otp Re-Sent")
+                }
+            })
+            .build()
+
+        PhoneAuthProvider.verifyPhoneNumber(options)
+    }
+
+    private fun verifyFirebaseOtp(
+        otp: String,
+        installSource: String?,
+        installReferrerPayload: String?,
+    ) {
+        val verificationId = viewModel.getFirebaseVerificationId()
+        if (verificationId.isNullOrBlank()) {
+            viewModel.showError("OTP session expired. Please try again.")
+            return
+        }
+
+        val credential = PhoneAuthProvider.getCredential(verificationId, otp)
+        FirebaseAuth.getInstance().signInWithCredential(credential)
+            .addOnSuccessListener { authResult ->
+                authResult.user?.getIdToken(true)
+                    ?.addOnSuccessListener { tokenResult ->
+                        viewModel.verifyFirebaseOtp(
+                            AuthRequestBody(
+                                countryCode = BaseConstants.COUNTRY_CODE,
+                                mobileNumber = mobileNumber,
+                                firebaseIdToken = tokenResult.token,
+                                installSource = installSource,
+                                installReferrerPayload = installReferrerPayload
+                            )
+                        )
+                    }
+                    ?.addOnFailureListener { exception ->
+                        viewModel.showError(exception.localizedMessage ?: "Failed to verify Firebase OTP")
+                    }
+            }
+            .addOnFailureListener { exception ->
+                viewModel.showError(exception.localizedMessage ?: "Invalid OTP")
+            }
     }
 
     companion object {
