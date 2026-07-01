@@ -655,7 +655,7 @@ class PremiumOfferDialogFragment : DialogFragment() {
 
     private fun getStaticReviews(): List<PaywallReviewItem> = listOf(
         PaywallReviewItem("Sai Rawal", "Very nice app, great for attendance marking. Easy to use and accurate.", avatarResId = R.drawable.paywall_user1),
-        PaywallReviewItem("Sasc interior Contractor", "Best app for labor management. Saves a lot of time.", avatarResId = R.drawable.paywall_user2),
+        PaywallReviewItem("Sasc interior Contractor", "Best app for staff management. Saves a lot of time.", avatarResId = R.drawable.paywall_user2),
         PaywallReviewItem("Ankit", "Simple and effective. Attendance and payments in one place.", avatarResId = R.drawable.paywall_user3),
         PaywallReviewItem("SUNDER SINGH", "वेरी नाइस अप बहुत मस्त है हाजिरी चढ़ाने का", avatarResId = R.drawable.paywall_user4),
         PaywallReviewItem("Jagdish Dehury", "Happy with the app. Good for tracking staff and wages.", avatarResId = R.drawable.paywall_user5)

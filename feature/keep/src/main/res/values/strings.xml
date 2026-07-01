@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">DailyBook</string>
-    <string name="staff">Labor</string>
-    <string name="staffs">Labors</string>
-    <string name="my_staffs">My Labors</string>
+    <string name="staff">Staff</string>
+    <string name="staffs">Staff</string>
+    <string name="my_staffs">My Staff</string>
     <string name="settings">Settings</string>
     <string name="dailybook" translatable="false">DailyBook</string>
     <string name="good_morning">Good Morning</string>
-    <string name="add_staff">Add Labor</string>
-    <string name="add_labor">ADD LABOR</string>
+    <string name="add_staff">Add Staff</string>
     <string name="add">Add</string>
     <string name="upload">Upload</string>
-    <string name="tap_here_to_add_staff">Tap here to Add Labor</string>
+    <string name="tap_here_to_add_staff">Tap here to Add Staff</string>
     <string name="back">Back</string>
     <string name="search_by_name_or_mobile_number">Search by Name or Mobile number</string>
     <string name="add_advance">₹</string>
@@ -32,7 +31,7 @@
     <string name="mark_attendance">Mark Attendance</string>
     <string name="close">Close</string>
     <string name="rupee">₹</string>
-    <string name="enter_staff_name">Enter Labor Name</string>
+    <string name="enter_staff_name">Enter Staff Name</string>
     <string name="mobile_number">Mobile Number</string>
     <string name="enter_mobile_number">Enter Mobile Number</string>
     <string name="balance">Balance</string>
@@ -48,7 +47,7 @@
     <string name="ok">Ok</string>
     <string name="refer_a_friend">Refer a friend</string>
     <string name="refer_friend_message">Share DailyBook with your friends and help them manage their daily work easily!</string>
-    <string name="refer_friend_whatsapp_message">I use DailyBook to manage daily work easily. Now 5 lakh+ people are using it! Try it here 👉 https://play.google.com/store/apps/details?id=co.dailybook</string>
+    <string name="refer_friend_whatsapp_message">I use DailyBook to manage daily work easily. Now 5 lakh+ people are using it! Try it here 👉 https://play.google.com/store/apps/details?id=co.in.dailybook</string>
     <string name="share_on_whatsapp">Share on WhatsApp</string>
     <string name="thank_you_refer_message">Thank you for being part of our journey ❤️</string>
     <string name="profile_info">Profile Info</string>
@@ -64,9 +63,9 @@
     <string name="absent">Absent</string>
     <string name="day">day</string>
     <string name="days">days</string>
-    <string name="upload_staff">Create Labor</string>
+    <string name="upload_staff">Create Staff</string>
     <string name="user_name_updated_successfully">User name updated successfully</string>
-    <string name="staff_added_successfully">Labor Added Successfully</string>
+    <string name="staff_added_successfully">Staff Added Successfully</string>
     <string name="on">on</string>
     <string name="to">to</string>
     <string name="_0" translatable="false">0</string>
@@ -83,7 +82,7 @@
     <string name="remove_marked">Remove Marked</string>
     <string name="remove_overtime">Remove Overtime</string>
     <string name="share_to">Share to</string>
-    <string name="swipe_to_delete_labor">Swipe to Delete Labor</string>
+    <string name="swipe_to_delete_staff">Swipe to Delete Staff</string>
     <string name="delete_advace">Delete Advance</string>
     <string name="removed">removed</string>
     <string name="adv">Adv</string>
@@ -170,12 +169,12 @@
     <string name="failed_to_generate_pdf">Failed to generate PDF: %s</string>
     <string name="failed_to_share_pdf">Failed to share PDF: %s</string>
     <string name="share_pdf_report_title">Share PDF Report</string>
-    <string name="staff_report_subject">Staff Report - %s - %s</string>
-    <string name="staff_report_message">Please find attached the attendance report for %s for %s.</string>
+    <string name="staff_report_subject" formatted="false">Staff Report - %s - %s</string>
+    <string name="staff_report_message" formatted="false">Please find attached the attendance report for %s for %s.</string>
     <string name="export_csv">Export CSV</string>
     <string name="exporting_csv">Exporting…</string>
     <string name="failed_to_export_csv">Failed to export CSV: %s</string>
-    <string name="whatsapp_report_summary">*%s — %s Report*\nPresent: %d days\nNet Payable: %s</string>
+    <string name="whatsapp_report_summary" formatted="false">*%s — %s Report*\nPresent: %d days\nNet Payable: %s</string>
     <string name="download_app_for_free">Download app for FREE</string>
     <string name="get_it_on_google_play">Get it on Google Play</string>
     <string name="notes">Notes</string>
@@ -265,7 +264,7 @@
     <string name="feature_become_pro_subtitle">₹%1$d/month unless cancelled</string>
     <string name="start_free">START FREE</string>
     <string name="try_now">Try now</string>
-    <string name="feature_unlimited_labors">Add Unlimited labors/staff</string>
+    <string name="feature_unlimited_staff">Add Unlimited staff</string>
     <string name="feature_generate_reports">Generate Reports</string>
     <string name="feature_share_whatsapp">Share via Whatsapp</string>
     <string name="feature_unlimited_income_expense">Unlimited Income/Expense Entries</string>

@@ -317,7 +317,7 @@ class TransactionReportsFragment : BaseFragment<FragmentTransactionReportsBindin
         try {
             val uri = FileProvider.getUriForFile(
                 requireContext(),
-                "co.dailybook.provider",
+                "${requireContext().packageName}.provider",
                 pdfFile
             )
 

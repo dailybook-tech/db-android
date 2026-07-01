@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_secondary"
-    tools:context=".screen.calendar.fragment.LaborMonthlyCalendarFragment">
+    tools:context=".screen.calendar.fragment.StaffMonthlyCalendarFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/toolbar"
@@ -543,7 +543,7 @@
         android:layout_marginVertical="@dimen/margin_48"
         android:background="@drawable/rounded_button_black_100"
         android:drawablePadding="@dimen/margin_4"
-        android:fontFamily="@font/inter_bold"
+        android:fontFamily="@font/poppins_bold"
         android:paddingHorizontal="@dimen/margin_12"
         android:paddingVertical="@dimen/margin_8"
         android:text="@string/share_to"

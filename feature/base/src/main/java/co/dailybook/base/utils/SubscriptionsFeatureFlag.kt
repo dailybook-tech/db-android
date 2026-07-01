@@ -20,7 +20,7 @@ object SubscriptionsFeatureFlag {
     }
 
     /**
-     * Maximum number of staff (labors) visible for free users. Staff beyond this limit are locked.
+     * Maximum number of staff visible for free users. Staff beyond this limit are locked.
      * Configured via Remote Config key "free_user_max_staff_count" (default 1).
      *
      * @param remoteConfig Firebase Remote Config instance

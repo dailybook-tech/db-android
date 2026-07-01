@@ -33,7 +33,7 @@ import co.dailybook.keep.model.AddStaffUserRequestBody
 import co.dailybook.keep.screen.addstaff.adapter.ContactItemAdapter
 import co.dailybook.keep.screen.addstaff.uistate.AddStaffUiState
 import co.dailybook.keep.screen.addstaff.viewmodel.ContactsViewModel
-import co.dailybook.keep.screen.calendar.fragment.LaborMonthlyCalendarFragment
+import co.dailybook.keep.screen.calendar.fragment.StaffMonthlyCalendarFragment
 import co.dailybook.keep.screen.calendar.utils.ObserverUtil
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first
@@ -133,7 +133,7 @@ class AddStaffContactsFragment : BaseFragment<FragmentAddStaffContactsBinding>()
                     dataStoreManager.read(DataStoreManager.USER_ID, "").first()
                 )
                 viewModel.addStaffUser(addStaffRequestBody)
-                recordClickEvent(ConstantEventNames.ADD_LABOR_FROM_CONTACTS)
+                recordClickEvent(ConstantEventNames.ADD_STAFF_FROM_CONTACTS)
             }
         }
     }
@@ -188,7 +188,7 @@ class AddStaffContactsFragment : BaseFragment<FragmentAddStaffContactsBinding>()
                         etStaffMobileNumber.text.clear()
                         etStaffName.requestFocus()
                     }
-                    recordClickEvent(ConstantEventNames.ADD_LABOR_MANUAL)
+                    recordClickEvent(ConstantEventNames.ADD_STAFF_MANUAL)
                 }
             }
 
@@ -230,7 +230,7 @@ class AddStaffContactsFragment : BaseFragment<FragmentAddStaffContactsBinding>()
         } else {
             isAddStaffOpen = true
             showAddStaffLayout()
-            recordClickEvent(ConstantEventNames.SHOW_MANUAL_ADD_LABOR_FORM)
+            recordClickEvent(ConstantEventNames.SHOW_MANUAL_ADD_STAFF_FORM)
         }
     }
 
@@ -336,7 +336,7 @@ class AddStaffContactsFragment : BaseFragment<FragmentAddStaffContactsBinding>()
                     binding?.pb?.hide()
                     binding?.etSearchContacts?.hideKeyboard(requireActivity())
                     observerUtil.addedStaff?.invoke(true)
-                    fragmentNavigator.start(LaborMonthlyCalendarFragment.newInstance(uiState.id, uiState.mobileNumber))
+                    fragmentNavigator.start(StaffMonthlyCalendarFragment.newInstance(uiState.id, uiState.mobileNumber))
                 }
 
                 is AddStaffUiState.OpenNonContactStaff -> {

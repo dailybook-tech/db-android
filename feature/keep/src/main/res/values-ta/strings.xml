@@ -7,7 +7,6 @@
     <string name="dailybook" translatable="false">DailyBook</string>
     <string name="good_morning">காலை வணக்கம்</string>
     <string name="add_staff">தொழிலாளி சேர்க்கவும்</string>
-    <string name="add_labor">தொழிலாளி சேர்க்கவும்</string>
     <string name="add">சேர்க்கவும்</string>
     <string name="upload">பதிவேற்றவும்</string>
     <string name="tap_here_to_add_staff">தொழிலாளி சேர்க்க இங்கே தட்டவும்</string>
@@ -36,7 +35,7 @@
     <string name="ok">சரி</string>
     <string name="refer_a_friend">பரிந்துரை</string>
     <string name="refer_friend_message">உங்கள் நண்பர்களுடன் DailyBook ஐ பகிர்ந்து, தினசரி வேலையை எளிதாக நிர்வகிக்க உதவுங்கள்!</string>
-    <string name="refer_friend_whatsapp_message">நான் தினசரி வேலையை எளிதாக நிர்வகிக்க DailyBook பயன்படுத்துகிறேன். இப்போது 5 லட்சம்+ பேர் இதைப் பயன்படுத்துகிறார்கள்! இங்கே முயற்சிக்கவும் 👉 https://play.google.com/store/apps/details?id=co.dailybook</string>
+    <string name="refer_friend_whatsapp_message">நான் தினசரி வேலையை எளிதாக நிர்வகிக்க DailyBook பயன்படுத்துகிறேன். இப்போது 5 லட்சம்+ பேர் இதைப் பயன்படுத்துகிறார்கள்! இங்கே முயற்சிக்கவும் 👉 https://play.google.com/store/apps/details?id=co.in.dailybook</string>
     <string name="share_on_whatsapp">WhatsApp இல் பகிரவும்</string>
     <string name="thank_you_refer_message">எங்கள் பயணத்தின் ஒரு பகுதியாக இருந்ததற்கு நன்றி ❤️</string>
     <string name="profile_info">சுயவிவர தகவல்</string>
@@ -71,7 +70,7 @@
     <string name="remove_marked">அகற்று</string>
     <string name="remove_overtime">அதிக நேரம் அகற்று</string>
     <string name="share_to">பகிரவும்</string>
-    <string name="swipe_to_delete_labor">அகற்ற ஸ்வைப் செய்யவும்</string>
+    <string name="swipe_to_delete_staff">அகற்ற ஸ்வைப் செய்யவும்</string>
     <string name="delete_advace">முன்தொகை அழிக்கவும்</string>
     <string name="removed">அகற்றப்பட்டது</string>
     <string name="adv">முன்தொகை</string>
@@ -156,8 +155,8 @@
     <string name="failed_to_generate_pdf">PDF உருவாக்க இயலவில்லை: %s</string>
     <string name="failed_to_share_pdf">PDF பகிர இயலவில்லை: %s</string>
     <string name="share_pdf_report_title">PDF அறிக்கையை பகிரவும்</string>
-    <string name="staff_report_subject">ஊழியர் அறிக்கை - %s - %s</string>
-    <string name="staff_report_message">%s இற்கான %s மாத வருகை அறிக்கையை இணைத்துள்ளேன்.</string>
+    <string name="staff_report_subject" formatted="false">ஊழியர் அறிக்கை - %s - %s</string>
+    <string name="staff_report_message" formatted="false">%s இற்கான %s மாத வருகை அறிக்கையை இணைத்துள்ளேன்.</string>
     <string name="download_app_for_free">அப்பை இலவசமாக பதிவிறக்கவும்</string>
     <string name="get_it_on_google_play">Google Play இல் பெறுங்கள்</string>
     <string name="notes">Notes</string>
@@ -215,7 +214,7 @@
     <string name="paywall_reviews_count">20,000+</string>
     <string name="paywall_reviews">மதிப்பீடுகள்</string>
     <string name="features">அம்சங்கள்</string>
-    <string name="feature_unlimited_labors">வரம்பற்ற தொழிலாளர்கள்/ஊழியர்கள் சேர்க்கவும்</string>
+    <string name="feature_unlimited_staff">வரம்பற்ற தொழிலாளர்கள்/ஊழியர்கள் சேர்க்கவும்</string>
     <string name="feature_generate_reports">அறிக்கைகள் உருவாக்கவும்</string>
     <string name="feature_share_whatsapp">WhatsApp மூலம் பகிரவும்</string>
     <string name="feature_unlimited_income_expense">வரம்பற்ற வரவு/செலவு பதிவுகள்</string>

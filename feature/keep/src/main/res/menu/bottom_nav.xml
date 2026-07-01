@@ -8,11 +8,6 @@
         android:checked="true"/>
 
     <item
-        android:id="@+id/navigation_cashbook"
-        android:icon="@drawable/ic_expense"
-        android:title="@string/cashbook"/>
-
-    <item
         android:id="@+id/navigation_settings"
         android:icon="@drawable/ic_settings"
         android:title="@string/settings"/>

@@ -22,7 +22,7 @@ class RoundedRedButton : ActionButton {
         cornerRadius = Utils.dpToPx(100f,context)
         insetBottom = 0
         insetTop = 0
-        typeface = Utils.getFont(context,R.font.inter_bold)
+        typeface = Utils.getFont(context,R.font.poppins_bold)
 
         backgroundTintList = ColorStateList.valueOf(Utils.getThemeAttrData(context,R.attr.buttonRedColor))
         setTextColor(Utils.getThemeAttrData(context, R.attr.buttonEnabledTextColor))

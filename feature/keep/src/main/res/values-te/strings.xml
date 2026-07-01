@@ -7,7 +7,6 @@
     <string name="dailybook" translatable="false">DailyBook</string>
     <string name="good_morning">శుభోదయం</string>
     <string name="add_staff">కార్మికుడిని జోడించండి</string>
-    <string name="add_labor">కార్మికుడిని జోడించండి</string>
     <string name="add">జోడించు</string>
     <string name="upload">అప్‌లోడ్ చేయండి</string>
     <string name="tap_here_to_add_staff">కార్మికుడిని జోడించడానికి ఇక్కడ ట్యాప్ చేయండి</string>
@@ -36,7 +35,7 @@
     <string name="ok">అలాగే</string>
     <string name="refer_a_friend">మిత్రుడికి సూచించండి</string>
     <string name="refer_friend_message">మీ స్నేహితులతో DailyBook ని షేర్ చేసి, వారికి రోజువారీ పనిని సులభంగా నిర్వహించడంలో సహాయపడండి!</string>
-    <string name="refer_friend_whatsapp_message">నేను రోజువారీ పనిని సులభంగా నిర్వహించడానికి DailyBook ని ఉపయోగిస్తున్నాను. ఇప్పుడు 5 లక్షల+ మంది దీన్ని ఉపయోగిస్తున్నారు! ఇక్కడ ప్రయత్నించండి 👉 https://play.google.com/store/apps/details?id=co.dailybook</string>
+    <string name="refer_friend_whatsapp_message">నేను రోజువారీ పనిని సులభంగా నిర్వహించడానికి DailyBook ని ఉపయోగిస్తున్నాను. ఇప్పుడు 5 లక్షల+ మంది దీన్ని ఉపయోగిస్తున్నారు! ఇక్కడ ప్రయత్నించండి 👉 https://play.google.com/store/apps/details?id=co.in.dailybook</string>
     <string name="share_on_whatsapp">WhatsApp లో షేర్ చేయండి</string>
     <string name="thank_you_refer_message">మా ప్రయాణంలో భాగమైనందుకు ధన్యవాదాలు ❤️</string>
     <string name="profile_info">ప్రొఫైల్ వివరాలు</string>
@@ -71,7 +70,7 @@
     <string name="remove_marked">గుర్తించబడిన వాటిని తొలగించండి</string>
     <string name="remove_overtime">ఓవర్‌టైమ్ తొలగించండి</string>
     <string name="share_to">పంపండి</string>
-    <string name="swipe_to_delete_labor">కార్మికుడిని తొలగించడానికి స్వైప్ చేయండి</string>
+    <string name="swipe_to_delete_staff">కార్మికుడిని తొలగించడానికి స్వైప్ చేయండి</string>
     <string name="delete_advace">అడ్వాన్స్ తొలగించండి</string>
     <string name="removed">తొలగించబడింది</string>
     <string name="adv">అడ్వాన్స్</string>
@@ -156,8 +155,8 @@
     <string name="failed_to_generate_pdf">PDF తయారు చేయడంలో విఫలం: %s</string>
     <string name="failed_to_share_pdf">PDF షేర్ చేయడంలో విఫలం: %s</string>
     <string name="share_pdf_report_title">PDF రిపోర్ట్ షేర్ చేయండి</string>
-    <string name="staff_report_subject">స్టాఫ్ రిపోర్ట్ - %s - %s</string>
-    <string name="staff_report_message">%s నెలకు %s యొక్క హాజరు రిపోర్ట్ జతచేయబడింది.</string>
+    <string name="staff_report_subject" formatted="false">స్టాఫ్ రిపోర్ట్ - %s - %s</string>
+    <string name="staff_report_message" formatted="false">%s నెలకు %s యొక్క హాజరు రిపోర్ట్ జతచేయబడింది.</string>
     <string name="download_app_for_free">యాప్‌ను ఉచితంగా డౌన్‌లోడ్ చేయండి</string>
     <string name="get_it_on_google_play">Google Playలో పొందండి</string>
     <string name="notes">Notes</string>
@@ -215,7 +214,7 @@
     <string name="paywall_reviews_count">20,000+</string>
     <string name="paywall_reviews">సమీక్షలు</string>
     <string name="features">ఫీచర్‌లు</string>
-    <string name="feature_unlimited_labors">అపరిమిత శ్రామికులు/సిబ్బంది జోడించండి</string>
+    <string name="feature_unlimited_staff">అపరిమిత శ్రామికులు/సిబ్బంది జోడించండి</string>
     <string name="feature_generate_reports">నివేదికలు ఉత్పత్తి చేయండి</string>
     <string name="feature_share_whatsapp">WhatsApp ద్వారా షేర్ చేయండి</string>
     <string name="feature_unlimited_income_expense">అపరిమిత ఆదాయ/ఖర్చు ఎంట్రీలు</string>

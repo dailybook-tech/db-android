@@ -9,7 +9,7 @@
     <string name="tamil" translatable="false">தமிழ்</string>
     <string name="telugu" translatable="false">తెలుగు</string>
     <string name="bengali" translatable="false">বাংলা</string>
-    <string name="share_content">क्या आप कागज पर हाजिरी लगाने से थक गए हैं? चिंता मत करो। Play Store लिंक से DailyBook ऐप डाउनलोड करें और हाजिरी जल्दी से लगाना शुरू करें।\n\n        अभी Google Play से डाउनलोड करें: https://play.google.com/store/apps/details?id=co.dailybook</string>
+    <string name="share_content">क्या आप कागज पर हाजिरी लगाने से थक गए हैं? चिंता मत करो। Play Store लिंक से DailyBook ऐप डाउनलोड करें और हाजिरी जल्दी से लगाना शुरू करें।\n\n        अभी Google Play से डाउनलोड करें: https://play.google.com/store/apps/details?id=co.in.dailybook</string>
 
     <string name="name">नाम</string>
     <string name="phone_number_label">फ़ोन नंबर:</string>
@@ -25,5 +25,5 @@
     <string name="total_earnings_label">कुल कमाई</string>
     <string name="report_generated_by_dailybook">रिपोर्ट DailyBook द्वारा बनाई गई</string>
     <string name="download_app_for_free_newline">ऐप मुफ्त में डाउनलोड करें\nGoogle Play पर प्राप्त करें</string>
-    <string name="refer_friend_whatsapp_message">मैं दैनिक काम को आसानी से प्रबंधित करने के लिए DailyBook का उपयोग करता हूं। अब 5 लाख+ लोग इसका उपयोग कर रहे हैं! यहाँ आज़माएं 👉 https://play.google.com/store/apps/details?id=co.dailybook</string>
+    <string name="refer_friend_whatsapp_message">मैं दैनिक काम को आसानी से प्रबंधित करने के लिए DailyBook का उपयोग करता हूं। अब 5 लाख+ लोग इसका उपयोग कर रहे हैं! यहाँ आज़माएं 👉 https://play.google.com/store/apps/details?id=co.in.dailybook</string>
 </resources>

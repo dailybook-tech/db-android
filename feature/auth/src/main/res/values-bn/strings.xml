@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="dailybook" translatable="false">লেবারবুক</string>
+    <string name="dailybook" translatable="false">DailyBook</string>
     <string name="made_in_india">ভারতে তৈরি 🇮🇳</string>
     <string name="enter_mobile_number">আপনার মোবাইল নম্বর লিখুন</string>
     <string name="login_number_hint">মোবাইল নম্বর</string>

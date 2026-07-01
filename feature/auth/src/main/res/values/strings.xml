@@ -14,7 +14,7 @@
     <string name="verify_otp">Verify OTP</string>
     <string name="otp_has_been_sent_to">OTP has been sent to</string>
     <string name="invalid_otp">Invalid OTP</string>
-    <string name="resend_otp">Haven’t received OTP? <font color="#3270D2"><u>Resend</u></font></string>
+    <string name="resend_otp">Haven\'t received OTP? <font color="#3270D2"><u>Resend</u></font></string>
     <string name="_100_secure_data">100% Secure data</string>
     <string name="daily_attendance">Daily attendance</string>
 </resources>

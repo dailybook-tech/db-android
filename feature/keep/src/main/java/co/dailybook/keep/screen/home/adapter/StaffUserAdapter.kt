@@ -22,7 +22,7 @@ import co.dailybook.base.setRandomLightCircleBackground
 import co.dailybook.keep.databinding.ItemContactListBinding
 import co.dailybook.keep.databinding.ItemNativeAdBinding
 import co.dailybook.keep.model.StaffUser
-import co.dailybook.keep.screen.calendar.fragment.LaborMonthlyCalendarFragment
+import co.dailybook.keep.screen.calendar.fragment.StaffMonthlyCalendarFragment
 import co.dailybook.keep.utils.SubscriptionsFeatureFlag
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -92,7 +92,7 @@ class StaffUserAdapter(
                 binding.itemRoot.isClickable = true
                 binding.itemRoot.setOnClickListener {
                     onNavigate()
-                    fragmentNavigator.start(LaborMonthlyCalendarFragment.newInstance(staffUser.id, staffUser.mobileNumber))
+                    fragmentNavigator.start(StaffMonthlyCalendarFragment.newInstance(staffUser.id, staffUser.mobileNumber))
                 }
             }
         }

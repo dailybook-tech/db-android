@@ -47,7 +47,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 class StaffListFragment : BaseFragment<FragmentStaffListBinding>() {
 
     override val screenName: String
-        get() = ConstantEventNames.LABORS
+        get() = ConstantEventNames.STAFF
     private var shouldScrollToTop: Boolean = false
     private lateinit var adapter: StaffUserAdapter
     private val viewModel : StaffsViewModel by viewModel()
@@ -212,7 +212,7 @@ class StaffListFragment : BaseFragment<FragmentStaffListBinding>() {
     private fun setupView() {
         adapter = StaffUserAdapter(
             onNavigate = {
-            recordClickEvent(ConstantEventNames.VIEW_LABOR_CALENDAR)
+            recordClickEvent(ConstantEventNames.VIEW_STAFF_CALENDAR)
             binding?.etSearchStaffs?.setText("")
             activity?.let { binding?.etSearchStaffs?.hideKeyboard(it) }
             },
@@ -224,7 +224,7 @@ class StaffListFragment : BaseFragment<FragmentStaffListBinding>() {
                     // Show premium offer dialog when locked staff is clicked
                     val premiumDialog = co.dailybook.keep.screen.premium.PremiumOfferDialogFragment.newInstance()
                     premiumDialog.show(parentFragmentManager, co.dailybook.keep.screen.premium.PremiumOfferDialogFragment.TAG)
-                    recordClickEvent(ConstantEventNames.VIEW_LABOR_CALENDAR, hashMapOf(Pair("blocked_by_subscription", true)))
+                    recordClickEvent(ConstantEventNames.VIEW_STAFF_CALENDAR, hashMapOf(Pair("blocked_by_subscription", true)))
                 }
             }
         )
@@ -272,11 +272,11 @@ class StaffListFragment : BaseFragment<FragmentStaffListBinding>() {
                         // Free user at or above max staff limit - show premium offer
                         val premiumDialog = co.dailybook.keep.screen.premium.PremiumOfferDialogFragment.newInstance()
                         premiumDialog.show(parentFragmentManager, co.dailybook.keep.screen.premium.PremiumOfferDialogFragment.TAG)
-                        recordClickEvent(ConstantEventNames.ADD_LABOR, hashMapOf(Pair("blocked_by_subscription", true)))
+                        recordClickEvent(ConstantEventNames.ADD_STAFF, hashMapOf(Pair("blocked_by_subscription", true)))
                     } else {
                         // Pro user or free user under limit or feature disabled - allow adding
                         fragmentNavigator.start(AddStaffContactsFragment.newInstance())
-                        recordClickEvent(ConstantEventNames.ADD_LABOR)
+                        recordClickEvent(ConstantEventNames.ADD_STAFF)
                     }
                 }
             }
@@ -284,7 +284,7 @@ class StaffListFragment : BaseFragment<FragmentStaffListBinding>() {
             tvShare.setOnClickListener {
                 ReferFriendBottomSheetFragment.newInstance()
                     .show(parentFragmentManager, ReferFriendBottomSheetFragment.TAG)
-                recordClickEvent(ConstantEventNames.REFER_A_FRIEND, hashMapOf(Pair(ConstantEventAttributes.SOURCE, ConstantEventSources.LABOR_LIST)))
+                recordClickEvent(ConstantEventNames.REFER_A_FRIEND, hashMapOf(Pair(ConstantEventAttributes.SOURCE, ConstantEventSources.STAFF_LIST)))
             }
 
             ivProTag.setOnClickListener {
@@ -304,7 +304,7 @@ class StaffListFragment : BaseFragment<FragmentStaffListBinding>() {
             }
 
             etSearchStaffs.setOnClickListener {
-                recordClickEvent(ConstantEventNames.SEARCH_LABOR)
+                recordClickEvent(ConstantEventNames.SEARCH_STAFF)
             }
         }
     }

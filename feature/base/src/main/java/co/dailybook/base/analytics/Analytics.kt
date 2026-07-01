@@ -24,9 +24,9 @@ class Analytics(val analyticsManager: AnalyticsManager, val dataStoreManager: Da
         private val MIXPANEL_EVENT_TO_V2: Map<String, String> = mapOf(
             ConstantEventNames.APP_OPEN to "app_open_v2",
             ConstantEventNames.MOBILE_OTP_TRUECALLER to "mobile_otp_truecaller_v2",
-            ConstantEventNames.ADD_LABOR_MANUAL to "added_labor_v2",
-            ConstantEventNames.ADD_LABOR_FROM_CONTACTS to "added_labor_v2",
-            ConstantEventNames.LABOR_REPORTS_TAP to "labor_reports_tap_v2",
+            ConstantEventNames.ADD_STAFF_MANUAL to "added_staff_v2",
+            ConstantEventNames.ADD_STAFF_FROM_CONTACTS to "added_staff_v2",
+            ConstantEventNames.STAFF_REPORTS_TAP to "staff_reports_tap_v2",
             ConstantEventNames.SAVE_EXPENSE to "expense_added_v2",
             ConstantEventNames.SAVE_INCOME to "income_added_v2",
             ConstantEventNames.START_TRIAL_CLICK to "trial_v2",

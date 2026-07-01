@@ -10,7 +10,7 @@
     <string name="tamil" translatable="false">தமிழ்</string>
     <string name="telugu" translatable="false">తెలుగు</string>
     <string name="bengali" translatable="false">বাংলা</string>
-    <string name="share_content">If you are tired of marking attendance on paper, don\'t worry. Download the DailyBook app from the Play Store link and start marking attendance faster.\n\n        Download now on Google Play: https://play.google.com/store/apps/details?id=co.dailybook</string>
+    <string name="share_content">If you are tired of marking attendance on paper, don\'t worry. Download the DailyBook app from the Play Store link and start marking attendance faster.\n\n        Download now on Google Play: https://play.google.com/store/apps/details?id=co.in.dailybook</string>
     
     <!-- PDF Generator Strings -->
     <string name="name">Name</string>
@@ -32,5 +32,5 @@
     <string name="ot" translatable="false">OT</string>
     <string name="_1_2" translatable="false">1/2</string>
     <string name="ad" translatable="false">Ad</string>
-    <string name="refer_friend_whatsapp_message">I use DailyBook to manage daily work easily. Now 5 lakh+ people are using it! Try it here 👉 https://play.google.com/store/apps/details?id=co.dailybook</string>
+    <string name="refer_friend_whatsapp_message">I use DailyBook to manage daily work easily. Now 5 lakh+ people are using it! Try it here 👉 https://play.google.com/store/apps/details?id=co.in.dailybook</string>
 </resources>

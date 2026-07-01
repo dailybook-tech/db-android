@@ -31,7 +31,7 @@ class BaselineProfileGenerator {
     }
 
     /**
-     * A - Full login flow → phone → otp → language → home → add labor
+     * A - Full login flow → phone → otp → language → home → add staff
      */
     @Test
     fun testA_LoginAndHomeFlow() {
@@ -58,7 +58,7 @@ class BaselineProfileGenerator {
     }
 
     /**
-     * B - Post login flow → open app → home → add labor
+     * B - Post login flow → open app → home → add staff
      */
     @Test
     fun testB_PostLoginHomeFlow() {
@@ -76,8 +76,8 @@ class BaselineProfileGenerator {
             pressHome()
             startActivityAndWait()
 
-            // Post login → wait till ADD LABOR
-            device.wait(Until.hasObject(By.text("ADD LABOR")), TIMEOUT)
+            // Post login → wait till ADD STAFF
+            device.wait(Until.hasObject(By.text("ADD STAFF")), TIMEOUT)
 
             // Done
             device.waitForIdle()
@@ -85,7 +85,7 @@ class BaselineProfileGenerator {
     }
 
     /**
-     * Enter phone number → otp → language (optional) → home (add labor)
+     * Enter phone number → otp → language (optional) → home (add staff)
      */
     private fun loginAndWaitForHome(packageName: String) {
         // Enter phone number
@@ -99,8 +99,8 @@ class BaselineProfileGenerator {
         // Language selection (optional)
         device.findObjectOrNull(By.res(packageName, "btnEnglish"))?.click()
 
-        // Wait for Home → ADD LABOR
-        device.wait(Until.hasObject(By.text("ADD LABOR")), TIMEOUT)
+        // Wait for Home → ADD STAFF
+        device.wait(Until.hasObject(By.text("ADD STAFF")), TIMEOUT)
 
         device.waitForIdle()
     }

@@ -25,7 +25,7 @@ object SubscriptionsFeatureFlag {
     }
 
     /**
-     * Maximum number of staff (labors) visible for free users. Staff beyond this limit are locked.
+     * Maximum number of staff visible for free users. Staff beyond this limit are locked.
      * Delegates to [BaseSubscriptionsFeatureFlag.getFreeUserMaxStaffCount].
      */
     fun getFreeUserMaxStaffCount(remoteConfig: FirebaseRemoteConfig): Int {

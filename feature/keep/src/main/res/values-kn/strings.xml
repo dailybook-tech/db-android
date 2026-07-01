@@ -7,7 +7,6 @@
     <string name="dailybook" translatable="false">DailyBook</string>
     <string name="good_morning">ಶುಭೋದಯ</string>
     <string name="add_staff">ಕಾರ್ಮಿಕರನ್ನು ಸೇರಿಸಿ</string>
-    <string name="add_labor">ಕಾರ್ಮಿಕರನ್ನು ಸೇರಿಸಿ</string>
     <string name="add">ಸೇರಿಸಿ</string>
     <string name="upload">ಅಪ್‌ಲೋಡ್ ಮಾಡಿ</string>
     <string name="tap_here_to_add_staff">ಕಾರ್ಮಿಕರನ್ನು ಸೇರಿಸಲು ಇಲ್ಲಿ ತಟ್ಟಿರಿ</string>
@@ -36,7 +35,7 @@
     <string name="ok">ಸರಿ</string>
     <string name="refer_a_friend">ಮಿತ್ರನಿಗೆ ತಿಳಿಸಿ</string>
     <string name="refer_friend_message">ನಿಮ್ಮ ಸ್ನೇಹಿತರೊಂದಿಗೆ DailyBook ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಿ ಮತ್ತು ಅವರಿಗೆ ದೈನಂದಿನ ಕೆಲಸವನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಲು ಸಹಾಯ ಮಾಡಿ!</string>
-    <string name="refer_friend_whatsapp_message">ನಾನು ದೈನಂದಿನ ಕೆಲಸವನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಲು DailyBook ಬಳಸುತ್ತೇನೆ. ಈಗ 5 ಲಕ್ಷ+ ಜನರು ಇದನ್ನು ಬಳಸುತ್ತಿದ್ದಾರೆ! ಇಲ್ಲಿ ಪ್ರಯತ್ನಿಸಿ 👉 https://play.google.com/store/apps/details?id=co.dailybook</string>
+    <string name="refer_friend_whatsapp_message">ನಾನು ದೈನಂದಿನ ಕೆಲಸವನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಲು DailyBook ಬಳಸುತ್ತೇನೆ. ಈಗ 5 ಲಕ್ಷ+ ಜನರು ಇದನ್ನು ಬಳಸುತ್ತಿದ್ದಾರೆ! ಇಲ್ಲಿ ಪ್ರಯತ್ನಿಸಿ 👉 https://play.google.com/store/apps/details?id=co.in.dailybook</string>
     <string name="share_on_whatsapp">WhatsApp ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ</string>
     <string name="thank_you_refer_message">ನಮ್ಮ ಪ್ರಯಾಣದ ಭಾಗವಾಗಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು ❤️</string>
     <string name="profile_info">ಪ್ರೊಫೈಲ್ ಮಾಹಿತಿ</string>
@@ -71,7 +70,7 @@
     <string name="remove_marked">ಗುರುತಿಸಿದವನ್ನು ತೆಗೆದುಹಾಕಿ</string>
     <string name="remove_overtime">ಹೆಚ್ಚುವರಿ ಸಮಯ ತೆಗೆದುಹಾಕಿ</string>
     <string name="share_to">ಹಂಚಿ</string>
-    <string name="swipe_to_delete_labor">ಕಾರ್ಮಿಕರನ್ನು ಅಳಿಸಲು ಸ್ವೈಪ್ ಮಾಡಿ</string>
+    <string name="swipe_to_delete_staff">ಕಾರ್ಮಿಕರನ್ನು ಅಳಿಸಲು ಸ್ವೈಪ್ ಮಾಡಿ</string>
     <string name="delete_advace">ಮುಂಗಡ ತೆಗೆದುಹಾಕಿ</string>
     <string name="removed">ತೆಗೆದುಹಾಕಲಾಗಿದೆ</string>
     <string name="adv">ಮುಂಗಡ</string>
@@ -156,8 +155,8 @@
     <string name="failed_to_generate_pdf">PDF ರಚಿಸಲಾಗಿಲ್ಲ: %s</string>
     <string name="failed_to_share_pdf">PDF ಹಂಚಲಾಗಿಲ್ಲ: %s</string>
     <string name="share_pdf_report_title">PDF ವರದಿ ಹಂಚಿಕೊಳ್ಳಿ</string>
-    <string name="staff_report_subject">ಸಿಬ್ಬಂದಿ ವರದಿ - %s - %s</string>
-    <string name="staff_report_message">%s ರ %s ಹಾಜರಿ ವರದಿ ಲಗತ್ತಿಸಲಾಗಿದೆ.</string>
+    <string name="staff_report_subject" formatted="false">ಸಿಬ್ಬಂದಿ ವರದಿ - %s - %s</string>
+    <string name="staff_report_message" formatted="false">%s ರ %s ಹಾಜರಿ ವರದಿ ಲಗತ್ತಿಸಲಾಗಿದೆ.</string>
     <string name="download_app_for_free">ಅ್ಯಪ್ ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</string>
     <string name="get_it_on_google_play">Google Play ನಲ್ಲಿ ಪಡೆಯಿರಿ</string>
     <string name="notes">Notes</string>
@@ -215,7 +214,7 @@
     <string name="paywall_reviews_count">20,000+</string>
     <string name="paywall_reviews">ವಿಮರ್ಶೆಗಳು</string>
     <string name="features">ವೈಶಿಷ್ಟ್ಯಗಳು</string>
-    <string name="feature_unlimited_labors">ಅಪರಿಮಿತ ಶ್ರಮಿಕರು/ಸಿಬ್ಬಂದಿ ಸೇರಿಸಿ</string>
+    <string name="feature_unlimited_staff">ಅಪರಿಮಿತ ಶ್ರಮಿಕರು/ಸಿಬ್ಬಂದಿ ಸೇರಿಸಿ</string>
     <string name="feature_generate_reports">ವರದಿಗಳನ್ನು ರಚಿಸಿ</string>
     <string name="feature_share_whatsapp">WhatsApp ಮೂಲಕ ಶೇರ್ ಮಾಡಿ</string>
     <string name="feature_unlimited_income_expense">ಅಪರಿಮಿತ ಆದಾಯ/ಖರ್ಚು ಏಣಿಗಳು</string>

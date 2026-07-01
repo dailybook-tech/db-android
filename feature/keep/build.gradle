@@ -16,6 +16,8 @@ android {
         resourceConfigurations += ['en', 'hi', 'ta', 'te', 'kn', 'mr', 'bn']
         
         buildConfigField "boolean", "DEBUG", "true"
+        buildConfigField "String", "RAZORPAY_KEY_ID", "\"rzp_test_T8HlZYQyMKWfY6\""
+        buildConfigField "String", "RAZORPAY_KEY_SECRET", "\"9louMCOO8klI6PHnbMNBXSho\""
     }
 
     buildTypes {
