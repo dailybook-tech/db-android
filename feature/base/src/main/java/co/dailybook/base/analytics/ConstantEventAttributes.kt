@@ -22,7 +22,7 @@ class ConstantEventAttributes {
         const val LANGUAGE = "language"
         const val CURRENT_MONTH = "current_month"
         const val CHOSEN_MONTH = "chosen_month"
-        const val LABOR_NAME = "labor_name"
+        const val STAFF_NAME = "staff_name"
         const val MESSAGE = "message"
         const val AMOUNT = "amount"
         const val EXPENSE_TYPE = "expense_type"

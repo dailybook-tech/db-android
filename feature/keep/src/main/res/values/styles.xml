@@ -19,5 +19,22 @@
         <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
     </style>
 
+    <!-- Razorpay Checkout Theme (Edge-to-Edge Support) -->
+    <style name="RazorpayCheckoutTheme" parent="Theme.Dailybook">
+        <!-- Enable edge-to-edge by drawing behind system bars -->
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="p">shortEdges</item>
+        
+        <!-- Transparent status bar for edge-to-edge -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        
+        <!-- Light status bar icons (adjust based on your Razorpay theme) -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        
+        <!-- Keep navigation bar color consistent -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        
+        <!-- Ensure Razorpay content doesn't go under system bars -->
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
 
 </resources> 

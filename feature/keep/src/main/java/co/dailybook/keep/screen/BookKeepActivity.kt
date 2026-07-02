@@ -60,7 +60,7 @@ import co.dailybook.expense.util.ExpenseObserverUtil
 import co.dailybook.income.util.IncomeObserverUtil
 import co.dailybook.keep.R
 import co.dailybook.keep.databinding.ActivityBookKeepBinding
-import co.dailybook.keep.screen.calendar.fragment.LaborMonthlyCalendarFragment
+import co.dailybook.keep.screen.calendar.fragment.StaffMonthlyCalendarFragment
 import co.dailybook.keep.screen.calendar.utils.ObserverUtil
 import co.dailybook.keep.screen.home.fragment.CashbookFragment
 import co.dailybook.keep.screen.home.fragment.ReferFriendBottomSheetFragment
@@ -89,8 +89,6 @@ class BookKeepActivity : BaseActivity(), Navigator.NavigatorListener {
     private lateinit var binding: ActivityBookKeepBinding
     private val fragmentNavigator: FragmentNavigator by inject()
     private val observerUtil: ObserverUtil by inject()
-    private val expenseObserverUtil: ExpenseObserverUtil by inject()
-    private val incomeObserverUtil: IncomeObserverUtil by inject()
     val dataStoreManager: DataStoreManager by inject()
     private val premiumOfferManager: PremiumOfferManager by inject()
     private val subscriptionViewModel: SubscriptionViewModel by viewModel()
@@ -103,12 +101,10 @@ class BookKeepActivity : BaseActivity(), Navigator.NavigatorListener {
     private var calendarExitInterstitial: InterstitialAd? = null
     private var calendarExitInterstitialLoading: Boolean = false
     private var calendarExitInterstitialShownThisSession: Boolean = false
-    private var referFriendBottomSheetCheckedThisSession: Boolean = false
     private var subscriptionStatusCheckedThisSession: Boolean = false
 
     private val rootFragmentProvider: ArrayList<() -> Fragment> = arrayListOf(
         { StaffListFragment.newInstance() },
-        { CashbookFragment.newInstance() },
         { SettingsFragment.newInstance() }
     )
 
@@ -362,9 +358,6 @@ class BookKeepActivity : BaseActivity(), Navigator.NavigatorListener {
                 binding?.bottomNav?.selectedItemId = R.id.navigation_staff
             }
             1 -> {
-                binding?.bottomNav?.selectedItemId = R.id.navigation_cashbook
-            }
-            2 -> {
                 binding?.bottomNav?.selectedItemId = R.id.navigation_settings
             }
         }
@@ -383,13 +376,8 @@ class BookKeepActivity : BaseActivity(), Navigator.NavigatorListener {
                     return@OnItemSelectedListener true
                 }
 
-                R.id.navigation_cashbook -> {
-                    fragmentNavigator?.switchTab(1)
-                    return@OnItemSelectedListener true
-                }
-
                 R.id.navigation_settings -> {
-                    fragmentNavigator?.switchTab(2)
+                    fragmentNavigator?.switchTab(1)
                     return@OnItemSelectedListener true
                 }
             }
@@ -404,12 +392,12 @@ class BookKeepActivity : BaseActivity(), Navigator.NavigatorListener {
             lastDestinationClassName = it::class.java.name
 
             // Preload when entering Calendar so it's ready when user returns back.
-            if (it is LaborMonthlyCalendarFragment) {
+            if (it is StaffMonthlyCalendarFragment) {
                 preloadCalendarExitInterstitialIfEligible()
             }
 
             // Show when coming back from Calendar (max N/day from remote config).
-            if (isFromPopBack && previousDestination == LaborMonthlyCalendarFragment::class.java.name) {
+            if (isFromPopBack && previousDestination == StaffMonthlyCalendarFragment::class.java.name) {
                 lifecycleScope.launch {
                     if (canShowDailyCalendarExitInterstitial()) {
                         showCalendarExitInterstitialIfReady()
@@ -426,17 +414,11 @@ class BookKeepActivity : BaseActivity(), Navigator.NavigatorListener {
                     }
                 }
 
-                is CashbookFragment -> {
-                    binding?.bottomNav?.show()
-                    expenseObserverUtil.clearExpenseSearchText?.invoke(true)
-                    incomeObserverUtil.clearIncomeSearchText?.invoke(true)
-                }
-
                 is SettingsFragment -> {
                     binding?.bottomNav?.show()
                 }
 
-                is LaborMonthlyCalendarFragment -> {
+                is StaffMonthlyCalendarFragment -> {
                     binding?.bottomNav?.hide()
                     if(isFromPopBack) {
                         observerUtil.refreshCalendar?.invoke(true, false, "",0)
@@ -519,12 +501,6 @@ class BookKeepActivity : BaseActivity(), Navigator.NavigatorListener {
                 }
             }
         
-        // Check and show refer friend bottom sheet if needed (only once per session)
-        if (!referFriendBottomSheetCheckedThisSession) {
-            lifecycleScope.launch {
-                checkAndShowReferFriendBottomSheet()
-            }
-        }
     }
 
     override fun onStart() {
@@ -792,43 +768,6 @@ class BookKeepActivity : BaseActivity(), Navigator.NavigatorListener {
         } catch (e: Exception) {
             // Silent failure - don't show any error to user
             // Local data will remain unchanged
-        }
-    }
-
-    private suspend fun checkAndShowReferFriendBottomSheet() {
-        // Only check once per session
-        if (referFriendBottomSheetCheckedThisSession) return
-        referFriendBottomSheetCheckedThisSession = true
-
-        // Check if user is logged in
-        val isLoggedIn = dataStoreManager.read(DataStoreManager.IS_LOGGED_IN, false).first()
-        if (!isLoggedIn) return
-
-        // Check if bottom sheet has been shown before
-        val hasBeenShown = dataStoreManager.read(DataStoreManager.REFER_FRIEND_BOTTOM_SHEET_SHOWN, false).first()
-        if (hasBeenShown) return
-
-        // Add a small delay to ensure UI is fully ready (increased delay since Pro offer shows first)
-        delay(1500)
-
-        // Show the bottom sheet
-        if (!isFinishing && !isDestroyed) {
-            runOnUiThread {
-                try {
-                    ReferFriendBottomSheetFragment.newInstance()
-                        .show(supportFragmentManager, ReferFriendBottomSheetFragment.TAG)
-                    
-                    // Mark as shown
-                    lifecycleScope.launch {
-                        dataStoreManager.write(DataStoreManager.REFER_FRIEND_BOTTOM_SHEET_SHOWN, true)
-                    }
-                } catch (e: Exception) {
-                    // Handle any exceptions (e.g., if fragment manager is not ready)
-                    referFriendBottomSheetCheckedThisSession = false
-                }
-            }
-        } else {
-            referFriendBottomSheetCheckedThisSession = false
         }
     }
 

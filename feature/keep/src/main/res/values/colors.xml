@@ -47,7 +47,8 @@
     <color name="delete">#850c0c</color>
     <color name="app_update_bg">#fdf3da</color>
     <color name="tab_unselected_text_color">#909192</color>
-    <color name="primary_light">#E8EDF5</color>
+    <color name="primary_light">#FFEBEE</color>
+    <color name="primary_color">@color/color_primary</color>
     <!-- Paywall plan list: dark gray card, white border when selected -->
     <color name="paywall_plan_card_bg">#1B2B4D</color>
     <!-- Paywall (dark background): text color for design system -->

@@ -27,7 +27,7 @@ import co.dailybook.base.captureAndShareFullContent
 import co.dailybook.base.datastore.DataStoreManager
 import co.dailybook.income.screen.monthchooser.MonthYearChooserFragment
 import co.dailybook.keep.R
-import co.dailybook.keep.databinding.FragmentLaborMonthlyCalendarBinding
+import co.dailybook.keep.databinding.FragmentStaffMonthlyCalendarBinding
 import co.dailybook.keep.model.AttendanceUser
 import co.dailybook.keep.model.CurrentSalaryResponse
 import co.dailybook.keep.screen.calendar.adapter.AttendanceCalendarItemAdapter
@@ -54,7 +54,7 @@ import java.util.Locale
 private const val STAFF_ID = "staff_id"
 private const val STAFF_PHONE = "staff_phone"
 
-class LaborMonthlyCalendarFragment : BaseFragment<FragmentLaborMonthlyCalendarBinding>() {
+class StaffMonthlyCalendarFragment : BaseFragment<FragmentStaffMonthlyCalendarBinding>() {
 
     override val screenName: String
         get() = ConstantEventNames.CALENDAR
@@ -90,8 +90,8 @@ class LaborMonthlyCalendarFragment : BaseFragment<FragmentLaborMonthlyCalendarBi
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): FragmentLaborMonthlyCalendarBinding? {
-        return FragmentLaborMonthlyCalendarBinding.inflate(inflater, container, false)
+    ): FragmentStaffMonthlyCalendarBinding? {
+        return FragmentStaffMonthlyCalendarBinding.inflate(inflater, container, false)
     }
 
     override fun onCreateView(
@@ -157,7 +157,7 @@ class LaborMonthlyCalendarFragment : BaseFragment<FragmentLaborMonthlyCalendarBi
             }
         } catch (e: IllegalStateException) {
             // Fragment view is destroyed, ignore the call
-            android.util.Log.d("LaborMonthlyCalendarFragment", "View destroyed, ignoring getCalendarData call")
+            android.util.Log.d("StaffMonthlyCalendarFragment", "View destroyed, ignoring getCalendarData call")
         }
     }
 
@@ -175,7 +175,7 @@ class LaborMonthlyCalendarFragment : BaseFragment<FragmentLaborMonthlyCalendarBi
                     }
                 } catch (e: IllegalStateException) {
                     // Fragment view is destroyed, ignore the callback
-                    android.util.Log.d("LaborMonthlyCalendarFragment", "View destroyed, ignoring attendance mark callback")
+                    android.util.Log.d("StaffMonthlyCalendarFragment", "View destroyed, ignoring attendance mark callback")
                 }
             }
         }
@@ -243,7 +243,7 @@ class LaborMonthlyCalendarFragment : BaseFragment<FragmentLaborMonthlyCalendarBi
 
             btnShare.setOnClickListener {
                 checkPermissionsAndCapture()
-                recordClickEvent(ConstantEventNames.SHARE_ATTENDANCE_TO_LABOR, hashMapOf(Pair(ConstantEventAttributes.LABOR_NAME, staffFullName)))
+                recordClickEvent(ConstantEventNames.SHARE_ATTENDANCE_TO_STAFF, hashMapOf(Pair(ConstantEventAttributes.STAFF_NAME, staffFullName)))
             }
 
             ivDeleteStaff.setOnClickListener {
@@ -252,7 +252,7 @@ class LaborMonthlyCalendarFragment : BaseFragment<FragmentLaborMonthlyCalendarBi
                         sId, staffFullName
                     )
                 }?.let { deleteStaffBs ->
-                    recordClickEvent(ConstantEventNames.DELETE_LABOR_BS, hashMapOf(Pair(ConstantEventAttributes.LABOR_NAME, staffFullName)))
+                    recordClickEvent(ConstantEventNames.DELETE_STAFF_BS, hashMapOf(Pair(ConstantEventAttributes.STAFF_NAME, staffFullName)))
                     fragmentNavigator.start(deleteStaffBs)
                 }
             }
@@ -263,7 +263,7 @@ class LaborMonthlyCalendarFragment : BaseFragment<FragmentLaborMonthlyCalendarBi
                         sId, staffFullName
                     )
                 }?.let { deleteStaffBs ->
-                    recordClickEvent(ConstantEventNames.DELETE_LABOR_BS, hashMapOf(Pair(ConstantEventAttributes.LABOR_NAME, staffFullName)))
+                    recordClickEvent(ConstantEventNames.DELETE_STAFF_BS, hashMapOf(Pair(ConstantEventAttributes.STAFF_NAME, staffFullName)))
                     fragmentNavigator.start(deleteStaffBs)
                 }
             }
@@ -306,14 +306,14 @@ class LaborMonthlyCalendarFragment : BaseFragment<FragmentLaborMonthlyCalendarBi
                                             try {
                                                 coachMarkManager.markCoachMarkAsShown(requireContext())
                                             } catch (e: Exception) {
-                                                android.util.Log.e("LaborMonthlyCalendarFragment", "Long press: Error marking coach mark as shown", e)
+                                                android.util.Log.e("StaffMonthlyCalendarFragment", "Long press: Error marking coach mark as shown", e)
                                             }
                                         }
                                     }
                                 }
                             }
                         } catch (e: Exception) {
-                            android.util.Log.e("LaborMonthlyCalendarFragment", "Long press: Error resetting coach mark", e)
+                            android.util.Log.e("StaffMonthlyCalendarFragment", "Long press: Error resetting coach mark", e)
                         }
                     }
                     true
@@ -327,13 +327,13 @@ class LaborMonthlyCalendarFragment : BaseFragment<FragmentLaborMonthlyCalendarBi
             }
             btnGeneratePayslip.setOnClickListener {
                 generateAndSharePayslip()
-                recordClickEvent(ConstantEventNames.LABOR_REPORTS_TAP)
+                recordClickEvent(ConstantEventNames.STAFF_REPORTS_TAP)
             }
         }
     }
 
     private fun openReport() {
-        recordClickEvent(ConstantEventNames.LABOR_REPORTS_TAP)
+        recordClickEvent(ConstantEventNames.STAFF_REPORTS_TAP)
         if (currentAttendanceUser == null) {
             Toast.makeText(
                 requireContext(),
@@ -888,7 +888,7 @@ class LaborMonthlyCalendarFragment : BaseFragment<FragmentLaborMonthlyCalendarBi
 
     companion object {
         @JvmStatic
-        fun newInstance(staffId: String, staffPhone: String) = LaborMonthlyCalendarFragment().apply {
+        fun newInstance(staffId: String, staffPhone: String) = StaffMonthlyCalendarFragment().apply {
             arguments = Bundle().apply {
                 putString(STAFF_ID, staffId)
                 putString(STAFF_PHONE, staffPhone)

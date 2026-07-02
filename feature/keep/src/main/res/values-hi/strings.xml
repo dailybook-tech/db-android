@@ -7,7 +7,6 @@
     <string name="dailybook" translatable="false">DailyBook</string>
     <string name="good_morning">सुप्रभात</string>
     <string name="add_staff">मज़दूर जोड़ें</string>
-    <string name="add_labor">मज़दूर जोड़ें</string>
     <string name="add">जोड़ें</string>
     <string name="upload">अपलोड करें</string>
     <string name="tap_here_to_add_staff">मज़दूर जोड़ने के लिए यहाँ टैप करें</string>
@@ -36,7 +35,7 @@
     <string name="ok">ठीक है</string>
     <string name="refer_a_friend">एक मित्र को आमंत्रित करें</string>
     <string name="refer_friend_message">अपने दोस्तों के साथ DailyBook साझा करें और उन्हें अपने दैनिक काम को आसानी से प्रबंधित करने में मदद करें!</string>
-    <string name="refer_friend_whatsapp_message">मैं दैनिक काम को आसानी से प्रबंधित करने के लिए DailyBook का उपयोग करता हूं। अब 5 लाख+ लोग इसका उपयोग कर रहे हैं! यहाँ आज़माएं 👉 https://play.google.com/store/apps/details?id=co.dailybook</string>
+    <string name="refer_friend_whatsapp_message">मैं दैनिक काम को आसानी से प्रबंधित करने के लिए DailyBook का उपयोग करता हूं। अब 5 लाख+ लोग इसका उपयोग कर रहे हैं! यहाँ आज़माएं 👉 https://play.google.com/store/apps/details?id=co.in.dailybook</string>
     <string name="share_on_whatsapp">WhatsApp पर साझा करें</string>
     <string name="thank_you_refer_message">हमारी यात्रा का हिस्सा बनने के लिए धन्यवाद ❤️</string>
     <string name="profile_info">प्रोफ़ाइल जानकारी</string>
@@ -71,7 +70,7 @@
     <string name="remove_marked">चिन्हित को हटाएं</string>
     <string name="remove_overtime">ओवरटाइम हटाएं</string>
     <string name="share_to">शेयर करें</string>
-    <string name="swipe_to_delete_labor">मज़दूर हटाने के लिए स्वाइप करें</string>
+    <string name="swipe_to_delete_staff">मज़दूर हटाने के लिए स्वाइप करें</string>
     <string name="delete_advace">अग्रिम हटाएं</string>
     <string name="removed">हटा दिया गया</string>
     <string name="adv">अग्रिम</string>
@@ -156,8 +155,8 @@
     <string name="failed_to_generate_pdf">PDF बनाने में विफल: %s</string>
     <string name="failed_to_share_pdf">PDF साझा करने में विफल: %s</string>
     <string name="share_pdf_report_title">PDF रिपोर्ट साझा करें</string>
-    <string name="staff_report_subject">स्टाफ रिपोर्ट - %s - %s</string>
-    <string name="staff_report_message">%s की %s के लिए उपस्थिति रिपोर्ट संलग्न है।</string>
+    <string name="staff_report_subject" formatted="false">स्टाफ रिपोर्ट - %s - %s</string>
+    <string name="staff_report_message" formatted="false">%s की %s के लिए उपस्थिति रिपोर्ट संलग्न है।</string>
     <string name="download_app_for_free">ऐप मुफ्त डाउनलोड करें</string>
     <string name="get_it_on_google_play">Google Play पर प्राप्त करें</string>
     <string name="notes">Notes</string>
@@ -215,7 +214,7 @@
     <string name="paywall_reviews_count">20,000+</string>
     <string name="paywall_reviews">समीक्षाएं</string>
     <string name="features">सुविधाएं</string>
-    <string name="feature_unlimited_labors">असीमित मज़दूर/स्टाफ जोड़ें</string>
+    <string name="feature_unlimited_staff">असीमित मज़दूर/स्टाफ जोड़ें</string>
     <string name="feature_generate_reports">रिपोर्ट बनाएं</string>
     <string name="feature_share_whatsapp">WhatsApp पर शेयर करें</string>
     <string name="feature_unlimited_income_expense">असीमित आय/खर्च एंट्री</string>

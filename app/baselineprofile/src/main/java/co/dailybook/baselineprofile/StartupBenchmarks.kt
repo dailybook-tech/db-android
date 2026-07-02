@@ -110,7 +110,7 @@ class StartupBenchmarks {
                     device.findObjectOrNull(By.res(packageName, "btnEnglish"))?.click()
                 }
 
-                device.wait(Until.hasObject(By.text("ADD LABOR")), TIMEOUT)
+                device.wait(Until.hasObject(By.text("ADD STAFF")), TIMEOUT)
                 device.waitForIdle()
             }
         )

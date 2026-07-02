@@ -56,11 +56,11 @@
     </style>
 
     <style name="textview_regular_20" parent="textview_20">
-        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
     </style>
 
     <style name="textview_bold_20" parent="textview_20">
-        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
     </style>
 
     <style name="textview_bold_primary_color_20" parent="textview_bold_20">
@@ -81,11 +81,11 @@
     </style>
 
     <style name="textview_regular_22" parent="textview_22">
-        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
     </style>
 
     <style name="textview_bold_22" parent="textview_22">
-        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
     </style>
     <!--  Text 22  -->
 
@@ -114,11 +114,11 @@
     </style>
 
     <style name="textview_regular_18" parent="textview_18">
-        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
     </style>
 
     <style name="textview_bold_18" parent="textview_18">
-        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
     </style>
 
     <style name="textview_bold_primary_color_18" parent="textview_regular_18">
@@ -132,20 +132,20 @@
     </style>
 
     <style name="textview_regular_16" parent="textview_16">
-        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
     </style>
 
     <style name="textview_bold_16" parent="textview_16">
-        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
     </style>
 
     <style name="textview_bold_error_16" parent="textview_16">
-        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
         <item name="android:textColor">@color/absent</item>
     </style>
 
     <style name="textview_bold_green_16" parent="textview_16">
-        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
         <item name="android:textColor">@color/present</item>
     </style>
 
@@ -156,7 +156,7 @@
     </style>
 
     <style name="textview_regular_14" parent="textview_14">
-        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
     </style>
 
     <style name="textview_regular_primary_color_14" parent="textview_14">
@@ -164,7 +164,7 @@
     </style>
 
     <style name="textview_bold_14" parent="textview_14">
-        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
     </style>
 
     <style name="textview_bold_primary_color_14" parent="textview_bold_14">
@@ -178,7 +178,7 @@
     </style>
 
     <style name="textview_regular_12" parent="textview_12">
-        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
     </style>
 
     <style name="textview_regular_white_12" parent="textview_12">
@@ -186,7 +186,7 @@
     </style>
 
     <style name="textview_bold_12" parent="textview_12">
-        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
     </style>
 
     <!--  Text 10  -->
@@ -196,11 +196,11 @@
     </style>
 
     <style name="textview_regular_10" parent="textview_10">
-        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
     </style>
 
     <style name="textview_bold_10" parent="textview_10">
-        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
     </style>
 
     <!-- Custom Bottom Sheet Theme -->

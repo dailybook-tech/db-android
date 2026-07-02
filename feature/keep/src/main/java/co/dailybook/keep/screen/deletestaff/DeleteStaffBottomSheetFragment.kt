@@ -26,7 +26,7 @@ private const val NAME = "name"
 class DeleteStaffBottomsheetFragment : BaseBottomsheetFragment<FragmentDeleteStaffBottomsheetBinding>() {
 
     override val screenName: String
-        get() = ConstantEventNames.DELETE_LABOR_BS
+        get() = ConstantEventNames.DELETE_STAFF_BS
     private var id: String? = ""
     private var name: String? = ""
     private val viewModel: DeleteStaffViewModel by viewModel()

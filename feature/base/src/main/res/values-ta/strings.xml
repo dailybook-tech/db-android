@@ -9,7 +9,7 @@
     <string name="tamil" translatable="false">தமிழ்</string>
     <string name="telugu" translatable="false">తెలుగు</string>
     <string name="bengali" translatable="false">বাংলা</string>
-    <string name="share_content">பேப்பரில் ஹாஜரீயை குறிக்க விட்டு களைத்து விட்டீர்களா? கவலைப்படாதீர்கள். DailyBook செயலியை Play Store லிங்கிலிருந்து பதிவிறக்கி, ஹாஜரீயை விரைவாக குறிக்க தொடங்குங்கள்.\n\n        இப்போது Google Play இல் பதிவிறக்கவும்: https://play.google.com/store/apps/details?id=co.dailybook</string>
+    <string name="share_content">பேப்பரில் ஹாஜரீயை குறிக்க விட்டு களைத்து விட்டீர்களா? கவலைப்படாதீர்கள். DailyBook செயலியை Play Store லிங்கிலிருந்து பதிவிறக்கி, ஹாஜரீயை விரைவாக குறிக்க தொடங்குங்கள்.\n\n        இப்போது Google Play இல் பதிவிறக்கவும்: https://play.google.com/store/apps/details?id=co.in.dailybook</string>
 
     <string name="name">பெயர்</string>
     <string name="phone_number_label">தொலைபேசி எண்:</string>
@@ -25,5 +25,5 @@
     <string name="total_earnings_label">மொத்த வருமானம்</string>
     <string name="report_generated_by_dailybook">இந்த அறிக்கையை லேபர்புக் உருவாக்கியது</string>
     <string name="download_app_for_free_newline">இணையத்தில் இலவசமாக பதிவிறக்கவும்\nGoogle Play இல் பெறுங்கள்</string>
-    <string name="refer_friend_whatsapp_message">நான் தினசரி வேலையை எளிதாக நிர்வகிக்க DailyBook பயன்படுத்துகிறேன். இப்போது 5 லட்சம்+ பேர் இதைப் பயன்படுத்துகிறார்கள்! இங்கே முயற்சிக்கவும் 👉 https://play.google.com/store/apps/details?id=co.dailybook</string>
+    <string name="refer_friend_whatsapp_message">நான் தினசரி வேலையை எளிதாக நிர்வகிக்க DailyBook பயன்படுத்துகிறேன். இப்போது 5 லட்சம்+ பேர் இதைப் பயன்படுத்துகிறார்கள்! இங்கே முயற்சிக்கவும் 👉 https://play.google.com/store/apps/details?id=co.in.dailybook</string>
 </resources>

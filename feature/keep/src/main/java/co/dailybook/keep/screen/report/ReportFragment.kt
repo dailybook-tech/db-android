@@ -267,7 +267,7 @@ class ReportFragment : BaseFragment<FragmentReportBinding>() {
                 }
 
                 if (pdfFile != null && pdfFile.exists()) {
-                    val uri = FileProvider.getUriForFile(requireContext(), "co.dailybook.provider", pdfFile)
+                    val uri = FileProvider.getUriForFile(requireContext(), "${requireContext().packageName}.provider", pdfFile)
                     val summary = getString(R.string.whatsapp_report_summary, staffName, monthYear, presentCount, formatCurrency(totalEarnings))
                     val whatsappIntent = Intent(Intent.ACTION_SEND).apply {
                         type = "application/pdf"
@@ -317,7 +317,7 @@ class ReportFragment : BaseFragment<FragmentReportBinding>() {
                     file
                 }
 
-                val uri = FileProvider.getUriForFile(requireContext(), "co.dailybook.provider", csvFile)
+                val uri = FileProvider.getUriForFile(requireContext(), "${requireContext().packageName}.provider", csvFile)
                 val shareIntent = Intent(Intent.ACTION_SEND).apply {
                     type = "text/csv"
                     putExtra(Intent.EXTRA_STREAM, uri)
@@ -351,7 +351,7 @@ class ReportFragment : BaseFragment<FragmentReportBinding>() {
             
             val uri = FileProvider.getUriForFile(
                 requireContext(),
-                "co.dailybook.provider",
+                "${requireContext().packageName}.provider",
                 pdfFile
             )
             

@@ -97,14 +97,10 @@ class MainApp : Application() {
 
     private fun initialiseFacebookSdk() {
         try {
-            // Initialize Facebook SDK
             FacebookSdk.sdkInitialize(this)
             FacebookSdk.setAutoInitEnabled(true)
             FacebookSdk.fullyInitialize()
-            
-            // Enable automatic event logging for install tracking
             AppEventsLogger.activateApp(this)
-            
             Logger.d("Facebook SDK initialized successfully")
         } catch (e: Exception) {
             Logger.e("Facebook SDK initialization failed: ${e.message}")

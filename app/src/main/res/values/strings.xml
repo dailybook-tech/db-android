@@ -5,8 +5,8 @@
     <string name="secure_made_in_india">100% Secure data ∙ Made in India 🇮🇳</string>
     <string name="truecaller_client_id" translatable="false">6tjrnz50zrypljwxt_o2qz54tcmtxrwhld7nl1y8xfo</string>
     <string name="attendance_reminder_title">Be the Leader Your Team Needs! 💪</string>
-    <string name="attendance_reminder_content">Mark Labor attendance now</string>
-    <string name="facebook_app_id" translatable="false">1985990635613774</string>
-    <string name="facebook_secret" translatable="false">65830fb242a63cfa382ade619586115b</string>
+    <string name="attendance_reminder_content">Mark staff attendance now</string>
+    <string name="facebook_app_id" translatable="false">858502416704999</string>
+    <string name="facebook_secret" translatable="false">9b1bce3fe263bb61d746d27f6535c519</string>
     <string name="facebook_client_token" translatable="false">ec8738047f80434550257a829eced173</string>
 </resources>

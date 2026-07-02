@@ -44,7 +44,7 @@
         android:layout_height="@dimen/margin_130"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/gradient_background"/>
 
     <ImageView
@@ -66,10 +66,10 @@
         android:layout_marginStart="@dimen/margin_8"
         android:layout_marginTop="@dimen/margin_2"
         app:layout_constraintVertical_chainStyle="packed"
-        app:layout_constraintStart_toEndOf="@+id/tv_lb"
+        app:layout_constraintStart_toEndOf="@+id/iv_logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_lb"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_lb"/>
+        app:layout_constraintTop_toTopOf="@+id/iv_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_logo"/>
 
     <co.dailybook.boilerplate.uikit.views.textviews.text12.TextViewBold12
         android:id="@+id/tv_made_in_india"
@@ -385,6 +385,7 @@
                 android:id="@+id/cl_app_backup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:background="@drawable/rounded_box_top_corner"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -474,6 +475,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_pricing"
                 android:layout_width="match_parent"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
@@ -800,7 +802,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scroll_content"
-        app:layout_constraintBottom_toTopOf="@+id/tv_lb"
+        app:layout_constraintBottom_toTopOf="@+id/iv_logo"
         android:layout_marginHorizontal="@dimen/margin_16"
         android:layout_marginBottom="@dimen/margin_16"
         android:paddingHorizontal="@dimen/margin_12"

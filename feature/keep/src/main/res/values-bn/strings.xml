@@ -7,7 +7,6 @@
     <string name="dailybook" translatable="false">DailyBook</string>
     <string name="good_morning">শুভ সকাল</string>
     <string name="add_staff">শ্রমিক যোগ করুন</string>
-    <string name="add_labor">শ্রমিক যোগ করুন</string>
     <string name="add">যোগ করুন</string>
     <string name="upload">আপলোড করুন</string>
     <string name="tap_here_to_add_staff">শ্রমিক যোগ করতে এখানে ট্যাপ করুন</string>
@@ -37,7 +36,7 @@
     <string name="ok">ঠিক আছে</string>
     <string name="refer_a_friend">একজন বন্ধুকে উল্লেখ করুন</string>
     <string name="refer_friend_message">আপনার বন্ধুদের সাথে DailyBook শেয়ার করুন এবং তাদের দৈনন্দিন কাজ সহজে পরিচালনা করতে সাহায্য করুন!</string>
-    <string name="refer_friend_whatsapp_message">আমি দৈনন্দিন কাজ সহজে পরিচালনা করতে DailyBook ব্যবহার করি। এখন 5 লক্ষ+ মানুষ এটি ব্যবহার করছে! এখানে চেষ্টা করুন 👉 https://play.google.com/store/apps/details?id=co.dailybook</string>
+    <string name="refer_friend_whatsapp_message">আমি দৈনন্দিন কাজ সহজে পরিচালনা করতে DailyBook ব্যবহার করি। এখন 5 লক্ষ+ মানুষ এটি ব্যবহার করছে! এখানে চেষ্টা করুন 👉 https://play.google.com/store/apps/details?id=co.in.dailybook</string>
     <string name="share_on_whatsapp">WhatsApp এ শেয়ার করুন</string>
     <string name="thank_you_refer_message">আমাদের যাত্রার অংশ হওয়ার জন্য ধন্যবাদ ❤️</string>
     <string name="profile_info">প্রোফাইল তথ্য</string>
@@ -72,7 +71,7 @@
     <string name="remove_marked">চিহ্নিত মুছে ফেলুন</string>
     <string name="remove_overtime">অতিরিক্ত সময় সরান</string>
     <string name="share_to">শেয়ার করুন</string>
-    <string name="swipe_to_delete_labor">শ্রমিক মুছে ফেলতে সোয়াইপ করুন</string>
+    <string name="swipe_to_delete_staff">শ্রমিক মুছে ফেলতে সোয়াইপ করুন</string>
     <string name="delete_advace">অগ্রিম মুছে ফেলুন</string>
     <string name="removed">অপসারণ করা হয়েছে</string>
     <string name="adv">অগ্রিম</string>
@@ -157,8 +156,8 @@
     <string name="failed_to_generate_pdf">PDF তৈরি ব্যর্থ: %s</string>
     <string name="failed_to_share_pdf">PDF শেয়ার ব্যর্থ: %s</string>
     <string name="share_pdf_report_title">PDF রিপোর্ট শেয়ার করুন</string>
-    <string name="staff_report_subject">কর্মী রিপোর্ট - %s - %s</string>
-    <string name="staff_report_message">%s-এর জন্য %s-এর উপস্থিতি রিপোর্ট সংযুক্ত করা হয়েছে।</string>
+    <string name="staff_report_subject" formatted="false">কর্মী রিপোর্ট - %s - %s</string>
+    <string name="staff_report_message" formatted="false">%s-এর জন্য %s-এর উপস্থিতি রিপোর্ট সংযুক্ত করা হয়েছে।</string>
     <string name="download_app_for_free">অ্যাপটি বিনামূল্যে ডাউনলোড করুন</string>
     <string name="get_it_on_google_play">Google Play থেকে পান</string>
     <string name="notes">Notes</string>
@@ -215,7 +214,7 @@
     <string name="paywall_reviews_count">20,000+</string>
     <string name="paywall_reviews">রিভিউ</string>
     <string name="features">বৈশিষ্ট্য</string>
-    <string name="feature_unlimited_labors">অসীম শ্রমিক/কর্মী যোগ করুন</string>
+    <string name="feature_unlimited_staff">অসীম শ্রমিক/কর্মী যোগ করুন</string>
     <string name="feature_generate_reports">রিপোর্ট তৈরি করুন</string>
     <string name="feature_share_whatsapp">WhatsApp এর মাধ্যমে শেয়ার করুন</string>
     <string name="feature_unlimited_income_expense">অসীম আয়/খরচ এন্ট্রি</string>
